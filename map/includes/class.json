@@ -1,0 +1,2065 @@
+{
+	"classes": {
+		"world": {
+			"tag": "世界陆地",
+			"fill_color": [
+				242,
+				239,
+				233
+			]
+		},
+		"buildup": {
+			"tag": "建成区",
+			"fill_color": [
+				221,
+				221,
+				221
+			]
+		},
+		"countries_boundary": {
+			"tag": "国家边界",
+			"line_color": [
+				172,
+				70,
+				172
+			],
+			"line_width": 0.5
+		},
+		"admin01234": {
+			"tag": "2-4等级边界",
+			"line_color": [
+				128,
+				0,
+				128
+			]
+		},
+		"admin5678": {
+			"tag": "5-8等级边界",
+			"line_color": [
+				128,
+				0,
+				128
+			]
+		},
+		"admin-other": {
+			"tag": "9-10等级边界",
+			"line_color": [
+				128,
+				0,
+				128
+			]
+		},
+		"placenames-large": {
+			"tag": "大洲、国家",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				157,
+				108,
+				157
+			]
+		},
+		"placenames-capital": {
+			"tag": "首都",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				0
+			]
+		},
+		"placenames-medium": {
+			"tag": "城市、城镇",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				0
+			]
+		},
+		"placenames-small": {
+			"tag": "乡村",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				0
+			]
+		},
+		"placenames-medium-small-highz": {
+			"tag": "乡镇",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				119,
+				119,
+				119
+			]
+		},
+		"landcover-swimming_pool": {
+			"tag": "游泳池",
+			"fill_color": [
+				181,
+				208,
+				208
+			],
+			"outline_color": [
+				0,
+				0,
+				255
+			]
+		},
+		"landcover-playground": {
+			"tag": "小孩玩耍的地方",
+			"fill_color": [
+				204,
+				255,
+				241
+			],
+			"outline_color": [
+				102,
+				102,
+				102
+			]
+		},
+		"landcover-camp_picnic": {
+			"tag": "露营地、野餐地",
+			"fill_color": [
+				204,
+				255,
+				153
+			],
+			"outline_color": [
+				102,
+				102,
+				102
+			]
+		},
+		"landcover-attraction": {
+			"tag": "旅游景点",
+			"fill_color": [
+				242,
+				204,
+				234
+			]
+		},
+		"landcover-quarry": {
+			"tag": "采矿地",
+			"fill_image": "quarry2.png",
+			"outline_color": [
+				150,
+				150,
+				150
+			]
+		},
+		"landcover-vineyard-lowz": {
+			"tag": "葡萄种植地-低级别",
+			"fill_color": [
+				171,
+				223,
+				150
+			]
+		},
+		"landcover-vineyard-highz": {
+			"tag": "葡萄种植地-高级别",
+			"fill_image": "vineyard.png"
+		},
+		"landcover-orchard": {
+			"tag": "粮食生产地的树木和灌木",
+			"fill_image": "orchard.png"
+		},
+		"landcover-grave_yard-lowz": {
+			"tag": "墓地",
+			"fill_color": [
+				170,
+				203,
+				175
+			]
+		},
+		"landcover-grave_yard-jewish": {
+			"tag": "墓地",
+			"fill_image": "grave_yard.png"
+		},
+		"landcover-grave_yard-generic": {
+			"tag": "墓地",
+			"fill_image": "grave_yard_generic.png"
+		},
+		"landcover-residential": {
+			"tag": "居住地",
+			"fill_color": [
+				221,
+				221,
+				221
+			]
+		},
+		"landcover-garages": {
+			"tag": "车库",
+			"fill_color": [
+				153,
+				153,
+				102
+			]
+		},
+		"landcover-barracks": {
+			"tag": "军营",
+			"fill_color": [
+				255,
+				143,
+				143
+			]
+		},
+		"landcover-field": {
+			"tag": "空旷杂草地",
+			"fill_color": [
+				102,
+				102,
+				0
+			]
+		},
+		"landcover-danger_area-lowz": {
+			"tag": "危险区、禁区",
+			"fill_color": [
+				255,
+				192,
+				203
+			]
+		},
+		"landcover-danger_area-highz": {
+			"tag": "危险区、禁区",
+			"fill_image": "danger.png"
+		},
+		"landcover-grass": {
+			"tag": "草地",
+			"fill_color": [
+				207,
+				236,
+				168
+			]
+		},
+		"landcover-park": {
+			"tag": "公园",
+			"fill_color": [
+				182,
+				253,
+				182
+			]
+		},
+		"landcover-zoo": {
+			"tag": "动物园",
+			"fill_image": "zoo.png"
+		},
+		"landcover-common": {
+			"tag": "不知道是什么东西",
+			"fill_color": [
+				207,
+				236,
+				168
+			]
+		},
+		"landcover-garden": {
+			"tag": "公园",
+			"fill_color": [
+				207,
+				236,
+				168
+			]
+		},
+		"landcover-golf_course": {
+			"tag": "高尔夫球场",
+			"fill_color": [
+				181,
+				227,
+				181
+			]
+		},
+		"landcover-allotments-lowz": {
+			"tag": "山寨？非官方居住地",
+			"fill_color": [
+				229,
+				199,
+				171
+			]
+		},
+		"landcover-allotments-highz": {
+			"tag": "山寨？非官方居住地",
+			"fill_image": "allotments.png"
+		},
+		"landcover-forest-lowz": {
+			"tag": "森林",
+			"fill_color": [
+				141,
+				197,
+				108
+			]
+		},
+		"landcover-forest-highz": {
+			"tag": "森林",
+			"fill_image": "forest.png"
+		},
+		"landcover-farmyard": {
+			"tag": "农场旁的院子，有房子、农具等",
+			"fill_color": [
+				221,
+				191,
+				146
+			]
+		},
+		"landcover-farm": {
+			"tag": "农场",
+			"fill_color": [
+				234,
+				216,
+				189
+			]
+		},
+		"landcover-recreation": {
+			"tag": "球场、网球场等场地",
+			"fill_color": [
+				207,
+				236,
+				168
+			]
+		},
+		"landcover-village_green": {
+			"tag": "村庄中心的绿地",
+			"fill_color": [
+				207,
+				236,
+				168
+			]
+		},
+		"landcover-retail": {
+			"tag": "主要的商店",
+			"fill_color": [
+				241,
+				218,
+				218
+			],
+			"outline_color": [
+				255,
+				0,
+				0
+			]
+		},
+		"landcover-industrial_railway": {
+			"tag": "工业、铁路用地",
+			"fill_color": [
+				223,
+				209,
+				214
+			]
+		},
+		"landcover-pow_station": {
+			"tag": "发电站",
+			"fill_color": [
+				187,
+				187,
+				187
+			],
+			"outline_color": [
+				85,
+				85,
+				85
+			]
+		},
+		"landcover-pow_substation": {
+			"tag": "变电站",
+			"fill_color": [
+				187,
+				187,
+				187
+			],
+			"outline_color": [
+				85,
+				85,
+				85
+			]
+		},
+		"landcover-commercial": {
+			"tag": "商业用地",
+			"fill_color": [
+				239,
+				200,
+				200
+			]
+		},
+		"landcover-develop": {
+			"tag": "改造过程中的土地。拆迁、待建或正在建造中",
+			"fill_color": [
+				239,
+				200,
+				200
+			]
+		},
+		"landcover-wood": {
+			"tag": "林地",
+			"fill_color": [
+				174,
+				209,
+				160
+			]
+		},
+		"landcover-desert": {
+			"tag": "沙漠",
+			"fill_color": [
+				227,
+				181,
+				122
+			]
+		},
+		"landcover-sand": {
+			"tag": "沙地",
+			"fill_color": [
+				255,
+				223,
+				136
+			]
+		},
+		"landcover-heath": {
+			"tag": "地势较低的未开垦的土地，灌木丛，但很少或根本没有树木覆盖",
+			"fill_color": [
+				214,
+				217,
+				159
+			]
+		},
+		"landcover-grassland": {
+			"tag": "杂草丛",
+			"fill_color": [
+				198,
+				228,
+				180
+			]
+		},
+		"landcover-scrub": {
+			"tag": "覆盖着灌木和矮小树木的荒地",
+			"fill_color": [
+				181,
+				227,
+				181
+			],
+			"fill_image": "scrub.png"
+		},
+		"landcover-school_hospital": {
+			"tag": "医疗教育用地",
+			"fill_color": [
+				240,
+				240,
+				216
+			],
+			"outline_color": [
+				165,
+				42,
+				42
+			]
+		},
+		"landcover-parking": {
+			"tag": "停车场",
+			"fill_color": [
+				247,
+				239,
+				183
+			],
+			"outline_color": [
+				238,
+				238,
+				209
+			]
+		},
+		"landcover-prison": {
+			"tag": "监狱",
+			"fill_image": "amenity_prison.png"
+		},
+		"landcover-apron": {
+			"tag": "机场停机坪",
+			"fill_color": [
+				233,
+				209,
+				255
+			]
+		},
+		"landcover-aerodrome": {
+			"tag": "机场",
+			"fill_color": [
+				204,
+				204,
+				204
+			],
+			"fill_opacity": 0.2,
+			"outline_color": [
+				85,
+				85,
+				85
+			]
+		},
+		"landcover-beach": {
+			"tag": "沙滩",
+			"fill_image": "beach.png"
+		},
+		"landcover-highway_service_rest": {
+			"tag": "高速公路服务区、休息区",
+			"fill_color": [
+				239,
+				200,
+				200
+			]
+		},
+		"landcover-cutline": {
+			"tag": "土地利用人工界线",
+			"line_color": [
+				242,
+				239,
+				233
+			]
+		},
+		"sports-stadium": {
+			"tag": "运动馆",
+			"fill_color": [
+				51,
+				204,
+				153
+			]
+		},
+		"sports-track": {
+			"tag": "跑道",
+			"fill_color": [
+				116,
+				220,
+				186
+			],
+			"line_color": [
+				136,
+				136,
+				136
+			]
+		},
+		"sports-pitch": {
+			"tag": "球场",
+			"fill_color": [
+				138,
+				211,
+				175
+			],
+			"line_color": [
+				136,
+				136,
+				136
+			]
+		},
+		"landuse-overlay_military": {
+			"tag": "军事区",
+			"fill_image": "military_red_hz2.png",
+			"outline_color": [
+				255,
+				85,
+				85
+			]
+		},
+		"landuse-nature_reserve-lowz": {
+			"tag": "自然保护区",
+			"fill_image": "nature_reserve5.png",
+			"outline_color": [
+				102,
+				204,
+				51
+			]
+		},
+		"landuse-overlay-nature_reserve-highz": {
+			"tag": "自然保护区",
+			"fill_image": "nature_reserve6.png",
+			"outline_color": [
+				102,
+				204,
+				51
+			]
+		},
+		"water-lines-casing": {
+			"tag": "河流外边线",
+			"line_color": [
+				255,
+				255,
+				255
+			]
+		},
+		"water-line": {
+			"tag": "河流",
+			"line_color": [
+				181,
+				208,
+				208
+			],
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				102,
+				153,
+				204
+			]
+		},
+		"water-weir": {
+			"tag": "水堰",
+			"line_color": [
+				170,
+				170,
+				170
+			]
+		},
+		"water-dam": {
+			"tag": "大坝",
+			"line_color": [
+				68,
+				68,
+				68
+			],
+			"label_text_color": [
+				34,
+				34,
+				34
+			],
+			"label_text_font": "Microsoft Yahei"
+		},
+		"water-area_glacier-lowz": {
+			"tag": "冰川",
+			"fill_image": "glacier.png",
+			"outline_color": [
+				153,
+				204,
+				255
+			]
+		},
+		"water-area_glacier-highz": {
+			"tag": "冰川",
+			"fill_image": "glacier2.png",
+			"outline_color": [
+				153,
+				204,
+				255
+			]
+		},
+		"water-area-docker_canal": {
+			"tag": "码头、人工运输渠",
+			"fill_image": "glacier2.png",
+			"fill_color": [
+				181,
+				208,
+				208
+			]
+		},
+		"water-area-basin": {
+			"tag": "盆地",
+			"fill_color": [
+				181,
+				208,
+				208
+			]
+		},
+		"water-area-water": {
+			"tag": "湖泊河流",
+			"fill_color": [
+				181,
+				208,
+				208
+			]
+		},
+		"water-area-mud": {
+			"tag": "泥浆地",
+			"fill_image": "mud.png"
+		},
+		"water-area-land": {
+			"tag": "水中岛屿",
+			"fill_color": [
+				242,
+				239,
+				233
+			]
+		},
+		"water-area-wetland": {
+			"tag": "湿地",
+			"fill_image": "marsh.png"
+		},
+		"glaciers-text": {
+			"tag": "冰川标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_size": 9,
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_outline_opacity": 1,
+			"label_text_color": [
+				153,
+				153,
+				255
+			]
+		},
+		"marinas-area": {
+			"tag": "休闲游艇和摩托艇的泊车处",
+			"outline_color": [
+				0,
+				0,
+				255
+			]
+		},
+		"piers-area": {
+			"tag": "码头上通往大海的桥梁",
+			"fill_color": [
+				242,
+				239,
+				233
+			],
+			"line_color": [
+				242,
+				239,
+				233
+			]
+		},
+		"piers-breakwater_groyne": {
+			"tag": "码头上保护海岸的丁坝和石矶",
+			"line_color": [
+				170,
+				170,
+				170
+			]
+		},
+		"waterway-lock_gate": {
+			"tag": "闸门",
+			"marker_image": "lock_gate.png"
+		},
+		"casing_motorway": {
+			"tag": "高速公路外边线",
+			"line_color": [
+				80,
+				96,
+				119
+			]
+		},
+		"casing_trunk": {
+			"tag": "城市主干道外边线",
+			"line_color": [
+				71,
+				113,
+				71
+			]
+		},
+		"casing_primary": {
+			"tag": "城市以一级道路外边线",
+			"line_color": [
+				141,
+				67,
+				70
+			]
+		},
+		"casing_secondary": {
+			"tag": "城市以二级道路外边线",
+			"line_color": [
+				163,
+				123,
+				72
+			]
+		},
+		"casing_street": {
+			"tag": "城市街道隧道外边线",
+			"line_color": [
+				153,
+				153,
+				153
+			]
+		},
+		"casing_pedestrian": {
+			"tag": "人行道外边线",
+			"line_color": [
+				192,
+				192,
+				192
+			]
+		},
+		"casing_raceway": {
+			"tag": "跑道外边线",
+			"line_color": [
+				255,
+				192,
+				203
+			]
+		},
+		"casing_living_street": {
+			"tag": "生活道路外边线",
+			"line_color": [
+				255,
+				255,
+				255
+			]
+		},
+		"taxiway": {
+			"tag": "滑行道。连接机场跑道和机场设施的道路",
+			"line_color": [
+				187,
+				187,
+				204
+			]
+		},
+		"runway": {
+			"tag": "跑道。用于飞机的着陆和起飞制备的矩形区域",
+			"line_color": [
+				187,
+				187,
+				204
+			]
+		},
+		"bridleway": {
+			"tag": "马道",
+			"line_color": [
+				0,
+				255,
+				0
+			]
+		},
+		"path": {
+			"tag": "未指定类型的道路",
+			"line_color": [
+				0,
+				0,
+				0
+			]
+		},
+		"footway": {
+			"tag": "足道",
+			"line_color": [
+				250,
+				128,
+				114
+			]
+		},
+		"track": {
+			"tag": "主要用于农业和林业使用的道路",
+			"line_color": [
+				152,
+				102,
+				0
+			]
+		},
+		"cycleway": {
+			"tag": "自行车道",
+			"line_color": [
+				0,
+				0,
+				255
+			]
+		},
+		"steps": {
+			"tag": "台阶路",
+			"line_color": [
+				153,
+				153,
+				153
+			]
+		},
+		"guideway": {
+			"tag": "有轨电车、有轨巴士",
+			"line_color": [
+				102,
+				102,
+				255
+			]
+		},
+		"railway-turntable": {
+			"tag": "铁路转弯道",
+			"line_color": [
+				153,
+				153,
+				153
+			]
+		},
+		"railway-platform": {
+			"tag": "月台",
+			"line_color": [
+				153,
+				153,
+				153
+			]
+		},
+		"pedestrian": {
+			"tag": "人行道",
+			"line_color": [
+				237,
+				237,
+				237
+			]
+		},
+		"service": {
+			"tag": "服务道路",
+			"line_color": [
+				255,
+				255,
+				255
+			]
+		},
+		"living_street": {
+			"tag": "生活道路",
+			"line_color": [
+				204,
+				204,
+				204
+			]
+		},
+		"road": {
+			"tag": "普通道路",
+			"line_color": [
+				221,
+				221,
+				221
+			]
+		},
+		"residential": {
+			"tag": "居住区道路",
+			"line_color": [
+				255,
+				255,
+				255
+			]
+		},
+		"tertiary": {
+			"tag": "街道",
+			"line_color": [
+				255,
+				255,
+				179
+			]
+		},
+		"secondary": {
+			"tag": "二级道路",
+			"line_color": [
+				254,
+				215,
+				165
+			]
+		},
+		"primary": {
+			"tag": "一级道路",
+			"line_color": [
+				236,
+				152,
+				154
+			]
+		},
+		"trunk": {
+			"tag": "城市主干道",
+			"line_color": [
+				169,
+				219,
+				169
+			]
+		},
+		"motorway": {
+			"tag": "高速公路",
+			"line_color": [
+				128,
+				155,
+				192
+			]
+		},
+		"subway": {
+			"tag": "地铁",
+			"line_color": [
+				153,
+				153,
+				153
+			]
+		},
+		"light_rail": {
+			"tag": "轻轨",
+			"line_color": [
+				102,
+				102,
+				102
+			]
+		},
+		"tram": {
+			"tag": "电车",
+			"line_color": [
+				68,
+				68,
+				68
+			]
+		},
+		"miniature": {
+			"tag": "公园里的微型火车",
+			"line_color": [
+				153,
+				153,
+				153
+			]
+		},
+		"narrow_gauge": {
+			"tag": "窄轨",
+			"line_color": [
+				170,
+				170,
+				170
+			]
+		},
+		"tram-light_rail-narrow_gauge-lowz": {
+			"tag": "电车、窄轨、轻轨",
+			"line_color": [
+				204,
+				204,
+				204
+			]
+		},
+		"tram-light_rail-narrow_gauge-middlez": {
+			"tag": "电车、窄轨、轻轨",
+			"line_color": [
+				170,
+				170,
+				170
+			]
+		},
+		"rail-lowz": {
+			"tag": "铁路",
+			"line_color": [
+				170,
+				170,
+				170
+			]
+		},
+		"rail": {
+			"tag": "铁路",
+			"line_color": [
+				153,
+				153,
+				153
+			]
+		},
+		"rail_disused": {
+			"tag": "废弃的铁路",
+			"line_color": [
+				155,
+				155,
+				155
+			]
+		},
+		"ferry": {
+			"tag": "航站楼之间的摆渡路线",
+			"line_color": [
+				102,
+				102,
+				255
+			]
+		},
+		"cable_car": {
+			"tag": "缆车",
+			"line_image": "cable_car.png"
+		},
+		"chair_lift": {
+			"tag": "升降椅",
+			"line_image": "chair_lift.png"
+		},
+		"monorail": {
+			"tag": "单轨铁路",
+			"line_color": [
+				119,
+				119,
+				119
+			]
+		},
+		"railway_short": {
+			"tag": "相对短的铁路",
+			"line_color": [
+				153,
+				153,
+				153
+			]
+		},
+		"highway-construction": {
+			"tag": "在建、待建道路",
+			"line_color": [
+				153,
+				204,
+				204
+			]
+		},
+		"highway-area_platform": {
+			"tag": "站台",
+			"outline_color": [
+				155,
+				155,
+				155
+			],
+			"fill_color": [
+				187,
+				187,
+				187
+			]
+		},
+		"highway-area_track": {
+			"tag": "农业和林业用地（面状）",
+			"outline_color": [
+				153,
+				102,
+				0
+			],
+			"fill_color": [
+				223,
+				204,
+				102
+			]
+		},
+		"highway-area_pedestrian": {
+			"tag": "农业和林业用地（面状）",
+			"outline_color": [
+				155,
+				155,
+				155
+			],
+			"fill_color": [
+				237,
+				237,
+				237
+			]
+		},
+		"highway-area_residential": {
+			"tag": "居民区道路（面状）",
+			"outline_color": [
+				155,
+				155,
+				155
+			],
+			"fill_color": [
+				255,
+				255,
+				255
+			]
+		},
+		"highway-area_living_street": {
+			"tag": "生活道路",
+			"fill_color": [
+				204,
+				204,
+				204
+			]
+		},
+		"bridges-outline": {
+			"tag": "高架桥外边线",
+			"line_color": [
+				0,
+				0,
+				0
+			]
+		},
+		"tunnels-fill_motorway": {
+			"tag": "高速公路隧道",
+			"line_color": [
+				214,
+				223,
+				234
+			]
+		},
+		"tunnels-fill_trunk": {
+			"tag": "城市主干道隧道",
+			"line_color": [
+				205,
+				234,
+				205
+			]
+		},
+		"tunnels-fill_primary": {
+			"tag": "城市以一级道路隧道",
+			"line_color": [
+				244,
+				195,
+				196
+			]
+		},
+		"tunnels-fill_secondary": {
+			"tag": "城市以二级道路隧道",
+			"line_color": [
+				254,
+				224,
+				184
+			]
+		},
+		"tunnels-fill_street": {
+			"tag": "城市街道隧道",
+			"line_color": [
+				255,
+				255,
+				204
+			]
+		},
+		"tunnels-fill_residential": {
+			"tag": "城市居民区道路隧道",
+			"line_color": [
+				255,
+				255,
+				255
+			]
+		},
+		"access-permissive": {
+			"tag": "经私人准许允许通行",
+			"line_color": [
+				204,
+				255,
+				153
+			]
+		},
+		"access-destination": {
+			"tag": "准许目的地在限定区域内通行",
+			"line_color": [
+				194,
+				224,
+				255
+			]
+		},
+		"access-private": {
+			"tag": "禁止通行",
+			"line_color": [
+				239,
+				169,
+				169
+			]
+		},
+		"highway-direction": {
+			"tag": "道路方向箭头",
+			"line_color": [
+				108,
+				112,
+				213
+			]
+		},
+		"line-featuers_cliff-lowz": {
+			"tag": "悬崖",
+			"line_image": "cliff.png"
+		},
+		"line-featuers_cliff-highz": {
+			"tag": "悬崖",
+			"line_image": "cliff2.png"
+		},
+		"line-featuers_embankment": {
+			"tag": "用来在低洼地架起道路或是铁路的桥梁",
+			"line_image": "cliff.png",
+			"line_color": [
+				68,
+				68,
+				68
+			]
+		},
+		"line-featuers_hedge": {
+			"tag": "类似于篱笆的绿色分隔线",
+			"line_color": [
+				174,
+				209,
+				260
+			]
+		},
+		"line-featuers_barrier": {
+			"tag": "线状分隔物",
+			"line_color": [
+				68,
+				68,
+				68
+			]
+		},
+		"polygon-barriers_hedge": {
+			"tag": "面状的植物分隔带",
+			"fill_color": [
+				174,
+				209,
+				160
+			]
+		},
+		"polygon-barriers": {
+			"tag": "面状的其它分隔带",
+			"outline_color": [
+				68,
+				68,
+				68
+			]
+		},
+		"minor-roads-casing_motorway": {
+			"tag": "高速公路外边线",
+			"line_color": [
+				80,
+				96,
+				119
+			]
+		},
+		"minor-roads-casing_trunk": {
+			"tag": "城市主干道外边线",
+			"line_color": [
+				80,
+				96,
+				119
+			]
+		},
+		"buildings-station": {
+			"tag": "火车站台",
+			"fill_color": [
+				212,
+				170,
+				170
+			]
+		},
+		"buildings-supermarket": {
+			"tag": "超市",
+			"fill_color": [
+				255,
+				192,
+				103
+			]
+		},
+		"buildings-place_of_worship": {
+			"tag": "教堂或清真寺",
+			"fill_color": [
+				170,
+				170,
+				170
+			],
+			"outline_color": [
+				17,
+				17,
+				17
+			]
+		},
+		"buildings-light": {
+			"tag": "一般的建筑",
+			"fill_color": [
+				188,
+				169,
+				169
+			],
+			"outline_color": [
+				51,
+				0,
+				102
+			]
+		},
+		"buildings-terminal": {
+			"tag": "航站楼",
+			"fill_color": [
+				204,
+				153,
+				255
+			],
+			"outline_color": [
+				51,
+				0,
+				102
+			]
+		},
+		"amenity-stations-subway_entrance": {
+			"tag": "地铁出入口",
+			"marker_image": "walking.n.12.png"
+		},
+		"amenity-stations-disused_station-lowz": {
+			"tag": "没用的站台",
+			"marker_image": "halt.png"
+		},
+		"amenity-stations-disused_station-highz": {
+			"tag": "没用的站台",
+			"marker_image": "station_disused.png",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				193,
+				193,
+				193
+			]
+		},
+		"amenity-station-lowz": {
+			"tag": "站台",
+			"marker_image": "station_small.png"
+		},
+		"amenity-station-highz": {
+			"tag": "站台",
+			"marker_image": "station.png",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				102,
+				102,
+				255
+			]
+		},
+		"amenity-station-halt-lowz": {
+			"tag": "小站台、电车站点",
+			"marker_image": "halt.png"
+		},
+		"amenity-station-halt-highz": {
+			"tag": "小站台、电车站点",
+			"marker_image": "station_small.png",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				102,
+				102,
+				255
+			]
+		},
+		"amenity-symbols-helipad": {
+			"tag": "直升机升降台",
+			"label_icon": "helipad.p.16.png",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				102,
+				146,
+				218
+			]
+		},
+		"amenity-symbols-airport": {
+			"tag": "飞机场",
+			"label_icon": "airport.p.16.png",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				102,
+				146,
+				218
+			]
+		},
+		"amenity-symbols-aerodrome": {
+			"tag": "飞机场，飞机在的主要地区",
+			"label_icon": "aerodrome.p.16.png",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				102,
+				146,
+				218
+			]
+		},
+		"amenity-symbols-level_crossing-lowz": {
+			"tag": "铁路道路交叉口",
+			"marker_image": "level_crossing.png"
+		},
+		"amenity-symbols-level_crossing-highz": {
+			"tag": "铁路道路交叉口",
+			"marker_image": "level_crossing2.png"
+		},
+		"amenity-symbols-lighthouse": {
+			"tag": "灯塔",
+			"marker_image": "lighthouse.p.20.png"
+		},
+		"amenity-symbols-peak": {
+			"tag": "山峰",
+			"marker_image": "peak.png"
+		},
+		"amenity-symbols-volcano": {
+			"tag": "火山",
+			"marker_image": "volcano.png"
+		},
+		"amenity-symbols-cave_entrance": {
+			"tag": "山洞入口",
+			"marker_image": "poi_cave.p.16.png"
+		},
+		"amenity-symbols-cave_spring": {
+			"tag": "温泉",
+			"marker_image": "spring.png"
+		},
+		"amenity-symbols-tree-lowz": {
+			"tag": "树",
+			"marker_image": "tree.png"
+		},
+		"amenity-symbols-tree-highz": {
+			"tag": "树",
+			"marker_image": "tree2.png"
+		},
+		"amenity-symbols-power_wind": {
+			"tag": "风力发电",
+			"marker_image": "power_wind.png"
+		},
+		"amenity-symbols-windmill": {
+			"tag": "古代风力发电屋",
+			"marker_image": "windmill.png"
+		},
+		"amenity-symbols-mast": {
+			"tag": "天线塔",
+			"marker_image": "communications.p.20.png"
+		},
+		"amenity-symbols-mini_roundabout": {
+			"tag": "小环岛",
+			"marker_image": "mini_round.png"
+		},
+		"amenity-symbols-gate": {
+			"tag": "路障",
+			"marker_image": "gate2.png"
+		},
+		"amenity-symbols-lift_gate": {
+			"tag": "可升降的路障",
+			"marker_image": "liftgate.png"
+		},
+		"amenity-symbols-bollard": {
+			"tag": "道路中间的路障，用来阻止大车通过",
+			"marker_image": "bollard.png"
+		},
+		"amenity-points-alpine_hut": {
+			"tag": "高山小屋",
+			"marker_image": "alpinehut.p.16.png"
+		},
+		"amenity-points-shelter": {
+			"tag": "庇护所",
+			"marker_image": "shelter2.p.16.png"
+		},
+		"amenity-points-atm": {
+			"tag": "自动取款机",
+			"marker_image": "atm2.p.16.png"
+		},
+		"amenity-points-bank": {
+			"tag": "银行",
+			"marker_image": "bank2.p.16.png"
+		},
+		"amenity-points-bar": {
+			"tag": "酒吧",
+			"marker_image": "bar.p.20.png"
+		},
+		"amenity-points-bicycle_rental": {
+			"tag": "自行车租赁处",
+			"marker_image": "rental_bicycle.p.20.png"
+		},
+		"amenity-points-bus_stop-lowz": {
+			"tag": "公交车站",
+			"marker_image": "bus_stop_small.png"
+		},
+		"amenity-points-bus_stop-highz": {
+			"tag": "公交车站",
+			"marker_image": "bus_stop.p.12.png"
+		},
+		"amenity-points-traffic_light": {
+			"tag": "红绿灯",
+			"marker_image": "traffic_light.png"
+		},
+		"amenity-points-cafe": {
+			"tag": "咖啡厅",
+			"marker_image": "cafe.p.16.png"
+		},
+		"amenity-points-camp_site": {
+			"tag": "露营点",
+			"marker_image": "camping.n.16.png"
+		},
+		"amenity-points-ford": {
+			"tag": "带水路段",
+			"marker_image": "transport_ford.p.16.png"
+		},
+		"amenity-points-caravan_site": {
+			"tag": "营地",
+			"marker_image": "caravan_park.p.24.png"
+		},
+		"amenity-points-car_sharing": {
+			"tag": "拼车点",
+			"marker_image": "car_share.p.16.png"
+		},
+		"amenity-points-chalet": {
+			"tag": "木屋",
+			"marker_image": "chalet.p.16.png"
+		},
+		"amenity-points-cinema": {
+			"tag": "电影院",
+			"marker_image": "cinema.p.24.png"
+		},
+		"amenity-points-fire_station": {
+			"tag": "消防局",
+			"marker_image": "firestation.p.16.png"
+		},
+		"amenity-points-fuel": {
+			"tag": "加油站",
+			"marker_image": "fuel.p.16.png"
+		},
+		"amenity-points-guest_house": {
+			"tag": "自营旅馆",
+			"marker_image": "guest_house.p.16.png"
+		},
+		"amenity-points-bed_and_breakfast": {
+			"tag": "带早餐旅馆",
+			"marker_image": "bandb.p.20.png"
+		},
+		"amenity-points-bed_hospital": {
+			"tag": "医院",
+			"marker_image": "hospital.p.16.png"
+		},
+		"amenity-points-bed_hostel": {
+			"tag": "旅舍",
+			"marker_image": "hostel.p.20.png"
+		},
+		"amenity-points-bed_hotel": {
+			"tag": "酒店",
+			"marker_image": "hotel2.p.20.png"
+		},
+		"amenity-points-motel": {
+			"tag": "汽车旅馆",
+			"marker_image": "information.p.16.png"
+		},
+		"amenity-points-embassy": {
+			"tag": "大使馆",
+			"marker_image": "embassy.png"
+		},
+		"amenity-points-library": {
+			"tag": "图书馆",
+			"marker_image": "library.p.20.png"
+		},
+		"amenity-points-courthouse": {
+			"tag": "法庭",
+			"marker_image": "amenity_court.p.20.png"
+		},
+		"amenity-points-lock": {
+			"tag": "闸门",
+			"marker_image": "lock_gate.png"
+		},
+		"amenity-points-mast": {
+			"tag": "天线塔",
+			"marker_image": "communications.p.20.png"
+		},
+		"amenity-points-museum": {
+			"tag": "博物馆",
+			"marker_image": "museum.p.16.png"
+		},
+		"amenity-points-public_parking": {
+			"tag": "开放停车场",
+			"marker_image": "parking.p.16.png"
+		},
+		"amenity-points-private_parking": {
+			"tag": "私人停车场",
+			"marker_image": "parking_private.p.16.png"
+		},
+		"amenity-points-pharmacy": {
+			"tag": "药店",
+			"marker_image": "pharmacy.p.16.png"
+		},
+		"amenity-points-christian": {
+			"tag": "基督教场所",
+			"marker_image": "christian3.p.14.png"
+		},
+		"amenity-points-muslim": {
+			"tag": "穆斯林场所",
+			"marker_image": "islamic3.p.16.png"
+		},
+		"amenity-points-jewish": {
+			"tag": "犹太人场所",
+			"marker_image": "jewish3.p.16.png"
+		},
+		"amenity-points-worship_others": {
+			"tag": "其它宗教场所",
+			"marker_image": "jewish3.p.16.png"
+		},
+		"amenity-points-police": {
+			"tag": "警察局",
+			"marker_image": "police.p.16.png"
+		},
+		"amenity-points-post_box": {
+			"tag": "邮筒",
+			"marker_image": "post_box.p.16.png"
+		},
+		"amenity-points-post_office": {
+			"tag": "邮局",
+			"marker_image": "post_office.p.16.png"
+		},
+		"amenity-points-pub": {
+			"tag": "酒吧",
+			"marker_image": "pub.p.16.png"
+		},
+		"amenity-points-biergarten": {
+			"tag": "露天花园啤酒店",
+			"marker_image": "biergarten.p.16.png"
+		},
+		"amenity-points-recycling": {
+			"tag": "垃圾桶，垃圾回收处",
+			"marker_image": "recycling.p.16.png"
+		},
+		"amenity-points-restaurant": {
+			"tag": "饭店",
+			"marker_image": "restaurant.p.16.png"
+		},
+		"amenity-points-fast_food": {
+			"tag": "快餐店",
+			"marker_image": "fast_food.png"
+		},
+		"amenity-points-telephone": {
+			"tag": "电话亭",
+			"marker_image": "telephone.p.16.png"
+		},
+		"amenity-points-theatre": {
+			"tag": "剧院",
+			"marker_image": "theatre.p.20.png"
+		},
+		"amenity-points-toilets": {
+			"tag": "洗手间",
+			"marker_image": "toilets.p.20.png"
+		},
+		"amenity-points-drinking_water": {
+			"tag": "饮用水",
+			"marker_image": "food_drinkingtap.p.20.png"
+		},
+		"amenity-points-drinking_prison": {
+			"tag": "监狱",
+			"marker_image": "amenity_prison.p.20.png"
+		},
+		"amenity-points-view_point": {
+			"tag": "观景台",
+			"marker_image": "view_point.p.16.png"
+		},
+		"amenity-points-veterinary": {
+			"tag": "兽医",
+			"marker_image": "amenity_veterinary.p.16.png"
+		},
+		"amenity-points-waste_basket": {
+			"tag": "垃圾桶",
+			"marker_image": "amenity_waste_basket.p.8.png"
+		},
+		"amenity-points-water_tower": {
+			"tag": "水塔",
+			"marker_image": "tower_water.p.20.png"
+		},
+		"amenity-points-memorial": {
+			"tag": "纪念碑",
+			"marker_image": "tourist_memorial.p.20.png"
+		},
+		"amenity-points-archaeological_site": {
+			"tag": "历史遗迹",
+			"marker_image": "tourist_archaeological2.glow.16.png"
+		},
+		"amenity-points-supermarket": {
+			"tag": "超市",
+			"marker_image": "shop_supermarket.p.16.png"
+		},
+		"amenity-points-bakery": {
+			"tag": "面包店",
+			"marker_image": "shop_bakery.p.16.png"
+		},
+		"amenity-points-bicycle": {
+			"tag": "自行车店",
+			"marker_image": "shopping_bicycle.p.16.png"
+		},
+		"amenity-points-books": {
+			"tag": "书店",
+			"marker_image": "shop_books.p_16.png"
+		},
+		"amenity-points-car": {
+			"tag": "汽车店",
+			"marker_image": "shopping_car.p.16.png"
+		},
+		"amenity-points-car_repair": {
+			"tag": "汽车维修店",
+			"marker_image": "shopping_car_repair.p.16.png"
+		},
+		"amenity-points-car_clothes": {
+			"tag": "服装店",
+			"marker_image": "shop_clothes.p.16.png"
+		},
+		"amenity-points-computer": {
+			"tag": "电脑店",
+			"marker_image": "shop_computer.p_16.png"
+		},
+		"amenity-points-convenience": {
+			"tag": "便利店",
+			"marker_image": "shop_convenience.p.16.png"
+		},
+		"amenity-points-department_store": {
+			"tag": "百货商店",
+			"marker_image": "department_store.p.16.png"
+		},
+		"amenity-points-doityourself": {
+			"tag": "手工制作品店",
+			"marker_image": "shop_diy.p.16.png"
+		},
+		"amenity-points-dry_cleaning": {
+			"tag": "干洗店",
+			"marker_image": "shop_dry_cleaning.p_16.png"
+		},
+		"amenity-points-florist": {
+			"tag": "花店",
+			"marker_image": "florist.p.16.png"
+		},
+		"amenity-points-gift": {
+			"tag": "礼品店",
+			"marker_image": "shop_gift.p_16.png"
+		},
+		"amenity-points-greengrocer": {
+			"tag": "蔬菜水果店",
+			"marker_image": "shop_greengrocer.p_16.png"
+		},
+		"amenity-points-hairdresser": {
+			"tag": "理发店",
+			"marker_image": "shop_hairdresser.p.16.png"
+		},
+		"amenity-points-jewelry": {
+			"tag": "珠宝店",
+			"marker_image": "shop_jewelry.p.16.png"
+		},
+		"amenity-points-mobile_phone": {
+			"tag": "手机店",
+			"marker_image": "shop_mobile_phone.p_16.png"
+		},
+		"amenity-points-optician": {
+			"tag": "眼镜店",
+			"marker_image": "shop_optician.p_16.png"
+		},
+		"amenity-points-pet": {
+			"tag": "宠物店",
+			"marker_image": "shop_pet.p_16.png"
+		},
+		"amenity-points-playground": {
+			"tag": "玩耍地",
+			"marker_image": "playground.p.20.png"
+		},
+		"amenity-points-picnic_site": {
+			"tag": "野餐地",
+			"marker_image": "picnic.p.16.png"
+		},
+		"amenity-points-slipway": {
+			"tag": "滑道",
+			"marker_image": "transport_slipway.p.20.png"
+		},
+		"amenity-points-power_line": {
+			"tag": "电线",
+			"line_color": [
+				119,
+				119,
+				119
+			]
+		},
+		"amenity-points-power-lowz": {
+			"tag": "高压电线杆",
+			"marker_image": "power_tower_3x3.png"
+		},
+		"amenity-points-power-middlez": {
+			"tag": "高压电线杆",
+			"marker_image": "power_tower_5x5.png"
+		},
+		"amenity-points-power-highz": {
+			"tag": "高压电线杆",
+			"marker_image": "power_tower.png"
+		},
+		"amenity-points-pole": {
+			"tag": "低压电线杆",
+			"marker_image": "power_pole.png"
+		},
+		"text-roads": {
+			"tag": "道路标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				0
+			]
+		},
+		"text-island": {
+			"tag": "岛屿标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				0
+			]
+		},
+		"text-poi": {
+			"tag": "与食物相关的商店的标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				115,
+				74,
+				8
+			]
+		},
+		"text-parking_public": {
+			"tag": "公开停车场标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				102,
+				255
+			]
+		},
+		"text-parking_private": {
+			"tag": "私人停车场标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				102,
+				204,
+				175
+			]
+		},
+		"text-place_of_worship": {
+			"tag": "宗教标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				51
+			]
+		},
+		"text-wood": {
+			"tag": "深林标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				0
+			]
+		},
+		"text-peak_volcano_cave": {
+			"tag": "山峰标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				128,
+				128,
+				0
+			]
+		},
+		"text-memorial_archaeological": {
+			"tag": "历史遗迹标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				128,
+				128,
+				0
+			]
+		},
+		"text-water": {
+			"tag": "河流湖泊标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				102,
+				153,
+				204
+			]
+		},
+		"text-point": {
+			"tag": "(leisure != '' or landuse != '') and point = 'yes'",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				170
+			]
+		},
+		"text-poi2": {
+			"tag": "bay,spring,alpine_but,shelter,bank",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				102,
+				153,
+				204
+			]
+		},
+		"text-poi3": {
+			"tag": "hotel,embassy,guest_house,bed_and_breakfast,fuel,bus_station",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				102,
+				255
+			]
+		},
+		"text-marina": {
+			"tag": "摩托艇停靠处",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				255
+			]
+		},
+		"text-poi4": {
+			"tag": "theam_park,museum",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				115,
+				74,
+				8
+			]
+		},
+		"text-poi5": {
+			"tag": "",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				51
+			]
+		},
+		"text-poi6": {
+			"tag": "",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				218,
+				0,
+				146
+			]
+		},
+		"text-poi7": {
+			"tag": "",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				153,
+				53,
+				153
+			]
+		},
+		"text-danger_area": {
+			"tag": "危险区域标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				255,
+				192,
+				203
+			]
+		},
+		"text-gate": {
+			"tag": "登机口标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				170,
+				102,
+				204
+			]
+		},
+		"text-area": {
+			"tag": "面标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				51
+			]
+		},
+		"interpolation_lines": {
+			"tag": "",
+			"line_color": [
+				136,
+				136,
+				136
+			]
+		},
+		"housenumbers": {
+			"tag": "",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				68,
+				68,
+				68
+			]
+		},
+		"national_park": {
+			"tag": "",
+			"fill_color": [
+				0,
+				0,
+				255
+			],
+			"outline_color": [
+				0,
+				0,
+				255
+			],
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				153,
+				204,
+				153
+			]
+		},
+		"theam_park": {
+			"tag": "",
+			"fill_color": [
+				115,
+				74,
+				8
+			],
+			"outline_color": [
+				115,
+				74,
+				8
+			]
+		}
+	}
+}

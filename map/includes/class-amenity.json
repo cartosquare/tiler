@@ -1,0 +1,484 @@
+{
+	"classes": {
+		"amenity-stations-subway_entrance": {
+			"tag": "地铁出入口",
+			"marker_image": "walking.n.12.png"
+		},
+		"amenity-stations-disused_station-lowz": {
+			"tag": "没用的站台",
+			"marker_image": "halt.png"
+		},
+		"amenity-stations-disused_station-highz": {
+			"tag": "没用的站台",
+			"marker_image": "station_disused.png",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				193,
+				193,
+				193
+			]
+		},
+		"amenity-station-lowz": {
+			"tag": "站台",
+			"marker_image": "station_small.png"
+		},
+		"amenity-station-highz": {
+			"tag": "站台",
+			"marker_image": "station.png",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				102,
+				102,
+				255
+			]
+		},
+		"amenity-station-halt-lowz": {
+			"tag": "小站台、电车站点",
+			"marker_image": "halt.png"
+		},
+		"amenity-station-halt-highz": {
+			"tag": "小站台、电车站点",
+			"marker_image": "station_small.png",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				102,
+				102,
+				255
+			]
+		},
+		"amenity-symbols-helipad": {
+			"tag": "直升机升降台",
+			"label_icon": "helipad.p.16.png",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				102,
+				146,
+				218
+			]
+		},
+		"amenity-symbols-airport": {
+			"tag": "飞机场",
+			"label_icon": "airport.p.16.png",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				102,
+				146,
+				218
+			]
+		},
+		"amenity-symbols-aerodrome": {
+			"tag": "飞机场，飞机在的主要地区",
+			"label_icon": "aerodrome.p.16.png",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				102,
+				146,
+				218
+			]
+		},
+		"amenity-symbols-level_crossing-lowz": {
+			"tag": "铁路道路交叉口",
+			"marker_image": "level_crossing.png"
+		},
+		"amenity-symbols-level_crossing-highz": {
+			"tag": "铁路道路交叉口",
+			"marker_image": "level_crossing2.png"
+		},
+		"amenity-symbols-lighthouse": {
+			"tag": "灯塔",
+			"marker_image": "lighthouse.p.20.png"
+		},
+		"amenity-symbols-peak": {
+			"tag": "山峰",
+			"marker_image": "peak.png"
+		},
+		"amenity-symbols-volcano": {
+			"tag": "火山",
+			"marker_image": "volcano.png"
+		},
+		"amenity-symbols-cave_entrance": {
+			"tag": "山洞入口",
+			"marker_image": "poi_cave.p.16.png"
+		},
+		"amenity-symbols-cave_spring": {
+			"tag": "温泉",
+			"marker_image": "spring.png"
+		},
+		"amenity-symbols-tree-lowz": {
+			"tag": "树",
+			"marker_image": "tree.png"
+		},
+		"amenity-symbols-tree-highz": {
+			"tag": "树",
+			"marker_image": "tree2.png"
+		},
+		"amenity-symbols-power_wind": {
+			"tag": "风力发电",
+			"marker_image": "power_wind.png"
+		},
+		"amenity-symbols-windmill": {
+			"tag": "古代风力发电屋",
+			"marker_image": "windmill.png"
+		},
+		"amenity-symbols-mast": {
+			"tag": "天线塔",
+			"marker_image": "communications.p.20.png"
+		},
+		"amenity-symbols-mini_roundabout": {
+			"tag": "小环岛",
+			"marker_image": "mini_round.png"
+		},
+		"amenity-symbols-gate": {
+			"tag": "路障",
+			"marker_image": "gate2.png"
+		},
+		"amenity-symbols-lift_gate": {
+			"tag": "可升降的路障",
+			"marker_image": "liftgate.png"
+		},
+		"amenity-symbols-bollard": {
+			"tag": "道路中间的路障，用来阻止大车通过",
+			"marker_image": "bollard.png"
+		},
+		"amenity-points-alpine_hut": {
+			"tag": "高山小屋",
+			"marker_image": "alpinehut.p.16.png"
+		},
+		"amenity-points-shelter": {
+			"tag": "庇护所",
+			"marker_image": "shelter2.p.16.png"
+		},
+		"amenity-points-atm": {
+			"tag": "自动取款机",
+			"marker_image": "atm2.p.16.png"
+		},
+		"amenity-points-bank": {
+			"tag": "银行",
+			"marker_image": "bank2.p.16.png"
+		},
+		"amenity-points-bar": {
+			"tag": "酒吧",
+			"marker_image": "bar.p.20.png"
+		},
+		"amenity-points-bicycle_rental": {
+			"tag": "自行车租赁处",
+			"marker_image": "rental_bicycle.p.20.png"
+		},
+		"amenity-points-bus_stop-lowz": {
+			"tag": "公交车站",
+			"marker_image": "bus_stop_small.png"
+		},
+		"amenity-points-bus_stop-highz": {
+			"tag": "公交车站",
+			"marker_image": "bus_stop.p.12.png"
+		},
+		"amenity-points-traffic_light": {
+			"tag": "红绿灯",
+			"marker_image": "traffic_light.png"
+		},
+		"amenity-points-cafe": {
+			"tag": "咖啡厅",
+			"marker_image": "cafe.p.16.png"
+		},
+		"amenity-points-camp_site": {
+			"tag": "露营点",
+			"marker_image": "camping.n.16.png"
+		},
+		"amenity-points-ford": {
+			"tag": "带水路段",
+			"marker_image": "transport_ford.p.16.png"
+		},
+		"amenity-points-caravan_site": {
+			"tag": "营地",
+			"marker_image": "caravan_park.p.24.png"
+		},
+		"amenity-points-car_sharing": {
+			"tag": "拼车点",
+			"marker_image": "car_share.p.16.png"
+		},
+		"amenity-points-chalet": {
+			"tag": "木屋",
+			"marker_image": "chalet.p.16.png"
+		},
+		"amenity-points-cinema": {
+			"tag": "电影院",
+			"marker_image": "cinema.p.24.png"
+		},
+		"amenity-points-fire_station": {
+			"tag": "消防局",
+			"marker_image": "firestation.p.16.png"
+		},
+		"amenity-points-fuel": {
+			"tag": "加油站",
+			"marker_image": "fuel.p.16.png"
+		},
+		"amenity-points-guest_house": {
+			"tag": "自营旅馆",
+			"marker_image": "guest_house.p.16.png"
+		},
+		"amenity-points-bed_and_breakfast": {
+			"tag": "带早餐旅馆",
+			"marker_image": "bandb.p.20.png"
+		},
+		"amenity-points-bed_hospital": {
+			"tag": "医院",
+			"marker_image": "hospital.p.16.png"
+		},
+		"amenity-points-bed_hostel": {
+			"tag": "旅舍",
+			"marker_image": "hostel.p.20.png"
+		},
+		"amenity-points-bed_hotel": {
+			"tag": "酒店",
+			"marker_image": "hotel2.p.20.png"
+		},
+		"amenity-points-motel": {
+			"tag": "汽车旅馆",
+			"marker_image": "information.p.16.png"
+		},
+		"amenity-points-embassy": {
+			"tag": "大使馆",
+			"marker_image": "embassy.png"
+		},
+		"amenity-points-library": {
+			"tag": "图书馆",
+			"marker_image": "library.p.20.png"
+		},
+		"amenity-points-courthouse": {
+			"tag": "法庭",
+			"marker_image": "amenity_court.p.20.png"
+		},
+		"amenity-points-lock": {
+			"tag": "闸门",
+			"marker_image": "lock_gate.png"
+		},
+		"amenity-points-mast": {
+			"tag": "天线塔",
+			"marker_image": "communications.p.20.png"
+		},
+		"amenity-points-museum": {
+			"tag": "博物馆",
+			"marker_image": "museum.p.16.png"
+		},
+		"amenity-points-public_parking": {
+			"tag": "开放停车场",
+			"marker_image": "parking.p.16.png"
+		},
+		"amenity-points-private_parking": {
+			"tag": "私人停车场",
+			"marker_image": "parking_private.p.16.png"
+		},
+		"amenity-points-pharmacy": {
+			"tag": "药店",
+			"marker_image": "pharmacy.p.16.png"
+		},
+		"amenity-points-christian": {
+			"tag": "基督教场所",
+			"marker_image": "christian3.p.14.png"
+		},
+		"amenity-points-muslim": {
+			"tag": "穆斯林场所",
+			"marker_image": "islamic3.p.16.png"
+		},
+		"amenity-points-jewish": {
+			"tag": "犹太人场所",
+			"marker_image": "jewish3.p.16.png"
+		},
+		"amenity-points-worship_others": {
+			"tag": "其它宗教场所",
+			"marker_image": "jewish3.p.16.png"
+		},
+		"amenity-points-police": {
+			"tag": "警察局",
+			"marker_image": "police.p.16.png"
+		},
+		"amenity-points-post_box": {
+			"tag": "邮筒",
+			"marker_image": "post_box.p.16.png"
+		},
+		"amenity-points-post_office": {
+			"tag": "邮局",
+			"marker_image": "post_office.p.16.png"
+		},
+		"amenity-points-pub": {
+			"tag": "酒吧",
+			"marker_image": "pub.p.16.png"
+		},
+		"amenity-points-biergarten": {
+			"tag": "露天花园啤酒店",
+			"marker_image": "biergarten.p.16.png"
+		},
+		"amenity-points-recycling": {
+			"tag": "垃圾桶，垃圾回收处",
+			"marker_image": "recycling.p.16.png"
+		},
+		"amenity-points-restaurant": {
+			"tag": "饭店",
+			"marker_image": "restaurant.p.16.png"
+		},
+		"amenity-points-fast_food": {
+			"tag": "快餐店",
+			"marker_image": "fast_food.png"
+		},
+		"amenity-points-telephone": {
+			"tag": "电话亭",
+			"marker_image": "telephone.p.16.png"
+		},
+		"amenity-points-theatre": {
+			"tag": "剧院",
+			"marker_image": "theatre.p.20.png"
+		},
+		"amenity-points-toilets": {
+			"tag": "洗手间",
+			"marker_image": "toilets.p.20.png"
+		},
+		"amenity-points-drinking_water": {
+			"tag": "饮用水",
+			"marker_image": "food_drinkingtap.p.20.png"
+		},
+		"amenity-points-drinking_prison": {
+			"tag": "监狱",
+			"marker_image": "amenity_prison.p.20.png"
+		},
+		"amenity-points-view_point": {
+			"tag": "观景台",
+			"marker_image": "view_point.p.16.png"
+		},
+		"amenity-points-veterinary": {
+			"tag": "兽医",
+			"marker_image": "amenity_veterinary.p.16.png"
+		},
+		"amenity-points-waste_basket": {
+			"tag": "垃圾桶",
+			"marker_image": "amenity_waste_basket.p.8.png"
+		},
+		"amenity-points-water_tower": {
+			"tag": "水塔",
+			"marker_image": "tower_water.p.20.png"
+		},
+		"amenity-points-memorial": {
+			"tag": "纪念碑",
+			"marker_image": "tourist_memorial.p.20.png"
+		},
+		"amenity-points-archaeological_site": {
+			"tag": "历史遗迹",
+			"marker_image": "tourist_archaeological2.glow.16.png"
+		},
+		"amenity-points-supermarket": {
+			"tag": "超市",
+			"marker_image": "shop_supermarket.p.16.png"
+		},
+		"amenity-points-bakery": {
+			"tag": "面包店",
+			"marker_image": "shop_bakery.p.16.png"
+		},
+		"amenity-points-bicycle": {
+			"tag": "自行车店",
+			"marker_image": "shopping_bicycle.p.16.png"
+		},
+		"amenity-points-books": {
+			"tag": "书店",
+			"marker_image": "shop_books.p_16.png"
+		},
+		"amenity-points-car": {
+			"tag": "汽车店",
+			"marker_image": "shopping_car.p.16.png"
+		},
+		"amenity-points-car_repair": {
+			"tag": "汽车维修店",
+			"marker_image": "shopping_car_repair.p.16.png"
+		},
+		"amenity-points-car_clothes": {
+			"tag": "服装店",
+			"marker_image": "shop_clothes.p.16.png"
+		},
+		"amenity-points-computer": {
+			"tag": "电脑店",
+			"marker_image": "shop_computer.p_16.png"
+		},
+		"amenity-points-convenience": {
+			"tag": "便利店",
+			"marker_image": "shop_convenience.p.16.png"
+		},
+		"amenity-points-department_store": {
+			"tag": "百货商店",
+			"marker_image": "department_store.p.16.png"
+		},
+		"amenity-points-doityourself": {
+			"tag": "手工制作品店",
+			"marker_image": "shop_diy.p.16.png"
+		},
+		"amenity-points-dry_cleaning": {
+			"tag": "干洗店",
+			"marker_image": "shop_dry_cleaning.p_16.png"
+		},
+		"amenity-points-florist": {
+			"tag": "花店",
+			"marker_image": "florist.p.16.png"
+		},
+		"amenity-points-gift": {
+			"tag": "礼品店",
+			"marker_image": "shop_gift.p_16.png"
+		},
+		"amenity-points-greengrocer": {
+			"tag": "蔬菜水果店",
+			"marker_image": "shop_greengrocer.p_16.png"
+		},
+		"amenity-points-hairdresser": {
+			"tag": "理发店",
+			"marker_image": "shop_hairdresser.p.16.png"
+		},
+		"amenity-points-jewelry": {
+			"tag": "珠宝店",
+			"marker_image": "shop_jewelry.p.16.png"
+		},
+		"amenity-points-mobile_phone": {
+			"tag": "手机店",
+			"marker_image": "shop_mobile_phone.p_16.png"
+		},
+		"amenity-points-optician": {
+			"tag": "眼镜店",
+			"marker_image": "shop_optician.p_16.png"
+		},
+		"amenity-points-pet": {
+			"tag": "宠物店",
+			"marker_image": "shop_pet.p_16.png"
+		},
+		"amenity-points-playground": {
+			"tag": "玩耍地",
+			"marker_image": "playground.p.20.png"
+		},
+		"amenity-points-picnic_site": {
+			"tag": "野餐地",
+			"marker_image": "picnic.p.16.png"
+		},
+		"amenity-points-slipway": {
+			"tag": "滑道",
+			"marker_image": "transport_slipway.p.20.png"
+		},
+		"amenity-points-power_line": {
+			"tag": "电线",
+			"line_color": [
+				119,
+				119,
+				119
+			]
+		},
+		"amenity-points-power-lowz": {
+			"tag": "高压电线杆",
+			"marker_image": "power_tower_3x3.png"
+		},
+		"amenity-points-power-middlez": {
+			"tag": "高压电线杆",
+			"marker_image": "power_tower_5x5.png"
+		},
+		"amenity-points-power-highz": {
+			"tag": "高压电线杆",
+			"marker_image": "power_tower.png"
+		},
+		"amenity-points-pole": {
+			"tag": "低压电线杆",
+			"marker_image": "power_pole.png"
+		}
+	}
+}

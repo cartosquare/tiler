@@ -1,0 +1,83 @@
+{
+	"layers": {
+		"interpolation_lines": {
+			"data_source": "osm",
+			"data_name": "interpolation_lines",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"line_color": "@interpolation_lines",
+					"line_dasharray": [
+						2,
+						4
+					],
+					"line_width": 1
+				}
+			]
+		},
+		"housenumbers": {
+			"data_source": "osm",
+			"data_name": "housenumbers",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"label_field": "addr:housenumber",
+					"label_text_font": "@housenumbers",
+					"label_text_size": 9,
+					"label_align": "center",
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@housenumbers"
+				}
+			]
+		},
+		"housenames": {
+			"data_source": "osm",
+			"data_name": "housenames",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z17",
+					"res_min": "@z17",
+					"label_field": "addr:housename",
+					"label_text_font": "@housenumbers",
+					"label_align": "center",
+					"label_text_size": 8,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@housenumbers"
+				},
+				{
+					"res_max": "@z18",
+					"res_min": "@z19",
+					"label_field": "addr:housename",
+					"label_text_font": "@housenumbers",
+					"label_align": "center",
+					"label_text_size": 9,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@housenumbers"
+				}
+			]
+		}
+	}
+}

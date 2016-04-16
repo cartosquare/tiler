@@ -1,0 +1,242 @@
+{
+	"layers": {
+		"access-pre_bridges": {
+			"data_source": "osm",
+			"data_name": "access_pre_bridges",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z15",
+					"res_min": "@z15",
+					"data_filter": "[access] = 'permissive' and ([highway] = 'service' and not [service] = 'INT-minor')",
+					"line_opacity": 0.5,
+					"line_color": "@access-permissive",
+					"line_dasharray": [
+						6,
+						8
+					],
+					"line_width": 3
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z15",
+					"data_filter": "[access] = 'permissive' and ([highway] = 'unclassified' or [highway] = 'residential' or [highway] = 'footway')",
+					"line_opacity": 0.5,
+					"line_color": "@access-permissive",
+					"line_dasharray": [
+						6,
+						8
+					],
+					"line_width": 6
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[access] = 'permissive' and ([highway] = 'unclassified' or [highway] = 'residential' or [highway] = 'footway' or [highway] = 'service')",
+					"line_opacity": 0.5,
+					"line_color": "@access-permissive",
+					"line_dasharray": [
+						6,
+						8
+					],
+					"line_width": 6
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z15",
+					"data_filter": "[access] = 'destination' and ([highway] = 'service' and not [service] = 'INT-minor')",
+					"line_opacity": 0.5,
+					"line_color": "@access-destination",
+					"line_dasharray": [
+						6,
+						8
+					],
+					"line_width": 3
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z15",
+					"data_filter": "[access] = 'destination' and ([highway] = 'unclassified' or [highway] = 'residential')",
+					"line_opacity": 0.5,
+					"line_color": "@access-destination",
+					"line_dasharray": [
+						6,
+						8
+					],
+					"line_width": 6
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[access] = 'destination' and ([highway] = 'unclassified' or [highway] = 'residential' or [highway] = 'service')",
+					"line_opacity": 0.5,
+					"line_color": "@access-destination",
+					"line_dasharray": [
+						6,
+						8
+					],
+					"line_width": 6
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z15",
+					"data_filter": "([access] = 'private' or [access] = 'no') and ([highway] = 'service' and not [service] = 'INT-minor')",
+					"line_opacity": 0.5,
+					"line_color": "@access-private",
+					"line_dasharray": [
+						6,
+						8
+					],
+					"line_width": 3
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z15",
+					"data_filter": "([access] = 'private' or [access] = 'no') and not [highway] = 'service'",
+					"line_opacity": 0.5,
+					"line_color": "@access-private",
+					"line_dasharray": [
+						6,
+						8
+					],
+					"line_width": 6
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[access] = 'private' or [access] = 'no'",
+					"line_opacity": 0.5,
+					"line_color": "@access-private",
+					"line_dasharray": [
+						6,
+						8
+					],
+					"line_width": 6
+				}
+			]
+		},
+		"direction_pre_bridges": {
+			"data_source": "osm",
+			"data_name": "direction_pre_bridges",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[oneway] = 'yes'",
+					"line_join": "bevel",
+					"line_color": "@highway-direction",
+					"line_width": 1,
+					"line_dasharray": [
+						0,
+						12,
+						10,
+						152
+					]
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[oneway] = 'yes'",
+					"line_join": "bevel",
+					"line_color": "@highway-direction",
+					"line_width": 2,
+					"line_dasharray": [
+						0,
+						12,
+						9,
+						153
+					]
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[oneway] = 'yes'",
+					"line_join": "bevel",
+					"line_color": "@highway-direction",
+					"line_width": 3,
+					"line_dasharray": [
+						0,
+						18,
+						2,
+						154
+					]
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[oneway] = 'yes'",
+					"line_join": "bevel",
+					"line_color": "@highway-direction",
+					"line_width": 4,
+					"line_dasharray": [
+						0,
+						18,
+						1,
+						155
+					]
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[oneway] = '-1'",
+					"line_join": "bevel",
+					"line_color": "@highway-direction",
+					"line_width": 1,
+					"line_dasharray": [
+						0,
+						12,
+						10,
+						152
+					]
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[oneway] = '-1'",
+					"line_join": "bevel",
+					"line_color": "@highway-direction",
+					"line_width": 2,
+					"line_dasharray": [
+						0,
+						13,
+						9,
+						152
+					]
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[oneway] = '-1'",
+					"line_join": "bevel",
+					"line_color": "@highway-direction",
+					"line_width": 3,
+					"line_dasharray": [
+						0,
+						14,
+						2,
+						158
+					]
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[oneway] = '-1'",
+					"line_join": "bevel",
+					"line_color": "@highway-direction",
+					"line_width": 4,
+					"line_dasharray": [
+						0,
+						15,
+						1,
+						158
+					]
+				}
+			]
+		}
+	}
+}

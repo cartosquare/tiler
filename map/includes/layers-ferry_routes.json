@@ -1,0 +1,33 @@
+{
+	"layers": {
+		"ferry-routes": {
+			"data_source": "osm",
+			"data_name": "ferry_routes",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z7",
+					"res_min": "@z10",
+					"line_color": "@ferry",
+					"line_width": 0.4,
+					"line_dasharray": [
+						4,
+						4
+					]
+				},
+				{
+					"res_max": "@z11",
+					"res_min": "@z19",
+					"line_color": "@ferry",
+					"line_width": 0.8,
+					"line_dasharray": [
+						6,
+						6
+					]
+				}
+			]
+		}
+	}
+}

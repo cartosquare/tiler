@@ -1,0 +1,49 @@
+{
+	"layers": {
+		"world": {
+			"data_source": "osm",
+			"data_name": "simplified_land_polygons",
+			"rules": [
+				{
+					"res_max": "@z0",
+					"res_min": "@z10",
+					"fill_color": "@world"
+				}
+			]
+		},
+		"coast-poly": {
+			"data_source": "osm",
+			"data_name": "land_polygons",
+			"rules": [
+				{
+					"res_max": "@z11",
+					"res_min": "@z19",
+					"fill_color": "@world"
+				}
+			]
+		},
+		"builtup": {
+			"data_source": "osm",
+			"data_name": "builtup_area",
+			"rules": [
+				{
+					"res_max": "@z8",
+					"res_min": "@z10",
+					"fill_color": "@buildup"
+				}
+			]
+		},
+		"necountries": {
+			"data_source": "osm",
+			"data_name": "ne_110m_admin_0_boundary_lines_land",
+			"rules": [
+				{
+					"res_max": "@z1",
+					"res_min": "@z3",
+					"line_color": "@countries_boundary",
+					"line_width": 0.5
+				}
+			]
+		}
+	}
+}

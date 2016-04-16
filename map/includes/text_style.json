@@ -1,0 +1,830 @@
+{
+	"rules": [
+		{
+			"res_max": "@z12",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[place] = 'island'",
+			"label_text_font": "@text-island",
+			"label_text_size": 9,
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-island"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[amenity] = 'pub' or [amenity] = 'restaurant' or [amenity] = 'cafe' or [amenity] = 'fast_food' or [amenity] = 'biergarten'",
+			"label_text_font": "@text-poi",
+			"label_text_size": 10,
+			"label_offset_y": 9,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[amenity] = 'bar'",
+			"label_text_font": "@text-poi",
+			"label_text_size": 10,
+			"label_offset_y": 11,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[amenity] = 'library' or [amenity] = 'theatre' or [amenity] = 'courthouse'",
+			"label_text_font": "@text-poi",
+			"label_text_size": 10,
+			"label_offset_y": 12,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[amenity] = 'cinema'",
+			"label_text_font": "@text-poi",
+			"label_text_size": 10,
+			"label_offset_y": 14,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[amenity] = 'parking' and ( [access] = 'public' or not [access] != '')",
+			"label_text_font": "@text-parking_public",
+			"label_text_size": 9,
+			"label_offset_y": 9,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-parking_public"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[amenity] = 'parking' and ( [access] != '' and not [access] = 'public')",
+			"label_text_font": "@text-parking_private",
+			"label_text_size": 9,
+			"label_offset_y": 9,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-parking_private"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[amenity] = 'police'",
+			"label_text_font": "@text-poi",
+			"label_text_size": 10,
+			"label_offset_y": 10,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[amenity] = 'fire_station'",
+			"label_text_font": "@text-poi",
+			"label_text_size": 10,
+			"label_offset_y": 9,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[amenity] = 'place_of_worship'",
+			"label_text_font": "@text-place_of_worship",
+			"label_text_size": 10,
+			"label_offset_y": 11,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-place_of_worship"
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[natural] = 'wood'",
+			"label_text_font": "@text-wood",
+			"label_text_size": 10,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-wood"
+		},
+		{
+			"res_max": "@z13",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[natural] = 'peak'",
+			"label_text_font": "@text-peak",
+			"label_text_size": 10,
+			"label_offset_y": 5,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-peak"
+		},
+		{
+			"res_max": "@z14",
+			"res_min": "@z19",
+			"label_field": "ele",
+			"data_filter": "[natural] = 'peak' and not [name] != ''",
+			"label_text_font": "@text-peak",
+			"label_text_size": 9,
+			"label_offset_y": 6,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-peak"
+		},
+		{
+			"res_max": "@z14",
+			"res_min": "@z19",
+			"label_field": "ele",
+			"data_filter": "[natural] = 'peak' and [name] != ''",
+			"label_text_font": "@text-peak",
+			"label_text_size": 9,
+			"label_offset_y": 18,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-peak"
+		},
+		{
+			"res_max": "@z13",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[natural] = 'volcano'",
+			"label_text_font": "@text-peak",
+			"label_text_size": 10,
+			"label_offset_y": 5,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-peak"
+		},
+		{
+			"res_max": "@z14",
+			"res_min": "@z19",
+			"label_field": "ele",
+			"data_filter": "[natural] = 'volcano' and not [name] != ''",
+			"label_text_font": "@text-peak",
+			"label_text_size": 9,
+			"label_offset_y": 6,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-peak"
+		},
+		{
+			"res_max": "@z14",
+			"res_min": "@z19",
+			"label_field": "ele",
+			"data_filter": "[natural] = 'volcano' and [name] != ''",
+			"label_text_font": "@text-peak",
+			"label_text_size": 9,
+			"label_offset_y": 16,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-peak"
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[natural] = 'cave_entrance'",
+			"label_text_font": "@text-peak",
+			"label_text_size": 10,
+			"label_offset_y": 9,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-peak"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[natural] = 'memorial' or historic = 'archaeological_site'",
+			"label_text_font": "@text-memorial_archaeological",
+			"label_text_size": 9,
+			"label_offset_y": 12,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-memorial_archaeological"
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[natural] = 'water' or [natural] = 'lake' or [landuse] = 'reservoir' or [landuse] = 'basin'",
+			"label_text_font": "@text-water",
+			"label_text_size": 10,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-water"
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "([leisure] != '' or [landuse] != '') and [point] = 'yes'",
+			"label_text_font": "@text-point",
+			"label_text_size": 9,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-point"
+		},
+		{
+			"res_max": "@z14",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[natural] = 'bay'",
+			"label_text_font": "@text-poi2",
+			"label_text_size": 10,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi2"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[natural] = 'spring'",
+			"label_text_font": "@text-poi2",
+			"label_text_size": 8,
+			"label_offset_y": 10,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi2"
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[tourism] = 'alpine_hut'",
+			"label_text_font": "@text-poi2",
+			"label_text_size": 9,
+			"label_offset_y": 10,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi2"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[amenity] = 'shelter'",
+			"label_text_font": "@text-poi2",
+			"label_text_size": 9,
+			"label_offset_y": 10,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi2"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[amenity] = 'bank'",
+			"label_text_font": "@text-poi2",
+			"label_text_size": 9,
+			"label_offset_y": 9,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi2"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[tourism] = 'hotel' or [tourism] = 'hostel' or [tourism] = 'chalet'",
+			"label_text_font": "@text-poi3",
+			"label_text_size": 10,
+			"label_offset_y": 11,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi3"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[amenity] = 'embassy'",
+			"label_text_font": "@text-poi3",
+			"label_text_size": 9,
+			"label_offset_y": 8,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi3"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[tourism] = 'guest_house'",
+			"label_text_font": "@text-poi3",
+			"label_text_size": 8,
+			"label_offset_y": 9,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi3"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[tourism] = 'bed_and_breakfast'",
+			"label_text_font": "@text-poi3",
+			"label_text_size": 8,
+			"label_offset_y": 7,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi3"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[amenity] = 'fuel' or [amenity] = 'bus_station'",
+			"label_text_font": "@text-poi3",
+			"label_text_size": 9,
+			"label_offset_y": 9,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi3"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[tourism] = 'camp_site'",
+			"label_text_font": "@text-poi3",
+			"label_text_size": 10,
+			"label_offset_y": 15,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi3"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[tourism] = 'caravan_site'",
+			"label_text_font": "@text-poi3",
+			"label_text_size": 10,
+			"label_offset_y": 19,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi3"
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[waterway] = 'lock'",
+			"label_text_font": "@text-poi3",
+			"label_text_size": 9,
+			"label_offset_y": 10,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi3"
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z16",
+			"label_field": "name",
+			"data_filter": "[leisure] = 'marina'",
+			"label_text_font": "@text-marina",
+			"label_text_size": 8,
+			"label_offset_y": 0,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-marina"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[leisure] = 'marina'",
+			"label_text_font": "@text-marina",
+			"label_text_size": 10,
+			"label_offset_y": 0,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-marina"
+		},
+		{
+			"res_max": "@z14",
+			"res_min": "@z15",
+			"label_field": "name",
+			"data_filter": "[tourism] = 'theme_park'",
+			"label_text_font": "@text-poi4",
+			"label_text_size": 8,
+			"label_offset_y": 0,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi4"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[tourism] = 'theme_park'",
+			"label_text_font": "@text-poi4",
+			"label_text_size": 10,
+			"label_offset_y": 0,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi4"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[tourism] = 'museum'",
+			"label_text_font": "@text-poi4",
+			"label_text_size": 10,
+			"label_offset_y": 10,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi4"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[amenity] = 'prison'",
+			"label_text_font": "@text-poi4",
+			"label_text_size": 10,
+			"label_offset_y": 16,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi4"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[tourism] = 'attraction'",
+			"label_text_font": "@text-poi5",
+			"label_text_size": 10,
+			"label_offset_y": 0,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi5"
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[amenity] = 'university'",
+			"label_text_font": "@text-poi5",
+			"label_text_size": 9,
+			"label_offset_y": 0,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi5"
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[amenity] = 'school' or [amenity] = 'college'",
+			"label_text_font": "@text-poi5",
+			"label_text_size": 9,
+			"label_offset_y": 0,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi5"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[amenity] = 'kindergarten'",
+			"label_text_font": "@text-poi5",
+			"label_text_size": 8,
+			"label_offset_y": 0,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi5"
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[man_made] = 'lighthouse'",
+			"label_text_font": "@text-poi5",
+			"label_text_size": 9,
+			"label_offset_y": 16,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi5"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[man_made] = 'windmill'",
+			"label_text_font": "@text-poi4",
+			"label_text_size": 9,
+			"label_offset_y": 12,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi5"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[amenity] = 'hospital'",
+			"label_text_font": "@text-poi6",
+			"label_text_size": 8,
+			"label_offset_y": 10,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi6"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[amenity] = 'pharmacy'",
+			"label_text_font": "@text-poi6",
+			"label_text_size": 8,
+			"label_offset_y": 9,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi6"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[shop]='bakery' or [shop]='clothes' or [shop]='fashion' or [shop]='convenience' or [shop]='doityourself' or [shop]='hairdresser' or [shop]='butcher' or [shop]='car' or [shop]='car_repair' or [shop]='bicycle' or [shop]='florist'",
+			"label_text_font": "@text-poi7",
+			"label_text_size": 8,
+			"label_offset_y": 9,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi7"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[shop] = 'supermarket' or [shop] = 'department_store'",
+			"label_text_font": "@text-poi7",
+			"label_text_size": 9,
+			"label_offset_y": 9,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-poi7"
+		},
+		{
+			"res_max": "@z12",
+			"res_min": "@z19",
+			"label_field": "name",
+			"data_filter": "[military] = 'danger_area'",
+			"label_text_font": "@text-danger_area",
+			"label_text_size": 9,
+			"label_offset_y": 0,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-danger_area"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"label_field": "ref",
+			"data_filter": "[aeroway] = 'gate'",
+			"label_text_font": "@text-gate",
+			"label_text_size": 10,
+			"label_offset_y": 0,
+			"label_align": "center",
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@text-gate"
+		}
+	]
+}

@@ -1,0 +1,115 @@
+{
+	"layers": {
+		"misc_boundaries": {
+			"data_source": "osm",
+			"data_name": "misc_boundaries",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"clip": false,
+			"rules": [
+				{
+					"res_max": "@z7",
+					"res_min": "@z9",
+					"fill_color": "@national_park",
+					"fill_opacity": 0.05,
+					"outline_color": "@national_park",
+					"outline_width": 1.5,
+					"outline_opacity": 0.15,
+					"outline_dasharray": [
+						4,
+						2
+					]
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z12",
+					"fill_color": "@national_park",
+					"fill_opacity": 0.05,
+					"outline_color": "@national_park",
+					"outline_width": 3,
+					"outline_opacity": 0.15,
+					"outline_dasharray": [
+						6,
+						2
+					]
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z19",
+					"fill_color": "@national_park",
+					"fill_opacity": 0,
+					"outline_width": 3,
+					"outline_opacity": 0.15,
+					"outline_dasharray": [
+						6,
+						2
+					]
+				},
+				{
+					"res_max": "@z8",
+					"res_min": "@z9",
+					"data_filter": "[way_area] >= 200000000",
+					"label_field": "name",
+					"label_text_font": "@national_park",
+					"label_text_size": 8,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@national_park"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z11",
+					"label_field": "name",
+					"label_text_font": "@national_park",
+					"label_text_size": 11,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@national_park"
+				}
+			]
+		},
+		"theme_park": {
+			"data_source": "osm",
+			"data_name": "theme_park",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"clip": false,
+			"rules": [
+				{
+					"res_max": "@z13",
+					"res_min": "@z14",
+					"fill_color": "@theam_park",
+					"fill_opacity": 0,
+					"outline_color": "@theam_park",
+					"outline_width": 1.5,
+					"outline_opacity": 0.6,
+					"outline_dasharray": [
+						9,
+						3
+					]
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"fill_color": "@theam_park",
+					"fill_opacity": 0,
+					"outline_color": "@theam_park",
+					"outline_width": 2.5,
+					"outline_opacity": 0.6,
+					"outline_dasharray": [
+						9,
+						3
+					]
+				}
+			]
+		}
+	}
+}

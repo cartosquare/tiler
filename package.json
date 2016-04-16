@@ -1,0 +1,13 @@
+{
+  "name": "tiler",
+  "version": "0.1.0",
+  "description": "slippy tile restful service",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "CartoSquare",
+  "dependencies": {
+    "restify": "^2.8.5"
+  }
+}

@@ -1,0 +1,126 @@
+{
+	"rules": [
+		{
+			"res_max": "@z18",
+			"res_min": "@z19",
+			"data_filter": "[railway] = 'subway_entrance'",
+			"marker_image": "@amenity-stations-subway_entrance"
+		},
+		{
+			"res_max": "@z12",
+			"res_min": "@z12",
+			"data_filter": "[railway] = 'station' and [disused] = 'yes'",
+			"marker_image": "@amenity-stations-disused_station-lowz"
+		},
+		{
+			"res_max": "@z13",
+			"res_min": "@z19",
+			"data_filter": "[railway] = 'station' and [disused] = 'yes'",
+			"marker_image": "@amenity-stations-disused_station-highz"
+		},
+		{
+			"res_max": "@z13",
+			"res_min": "@z14",
+			"data_filter": "[railway] = 'station' and not [disused] = 'yes'",
+			"marker_image": "@amenity-station-lowz"
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z19",
+			"data_filter": "[railway] = 'station' and not [disused] = 'yes'",
+			"marker_image": "@amenity-station-highz"
+		},
+		{
+			"res_max": "@z13",
+			"res_min": "@z14",
+			"data_filter": "[railway] = 'halt' or [railway] = 'tram_stop' or [aerialway] = 'station'",
+			"marker_image": "@amenity-station-halt-lowz"
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z19",
+			"data_filter": "[railway] = 'halt' or [railway] = 'tram_stop' or [aerialway] = 'station'",
+			"marker_image": "@amenity-station-halt-highz"
+		},
+		{
+			"res_max": "@z14",
+			"res_min": "@z14",
+			"data_filter": "[railway] = 'halt' or [railway] = 'tram_stop' or [aerialway] = 'station'",
+			"label_field": "name",
+			"label_text_font": "@amenity-station-halt-highz",
+			"label_text_size": 8,
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@amenity-station-halt-highz",
+			"label_offset_y": -10,
+			"label_align": "center"
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z19",
+			"data_filter": "[railway] = 'halt' or [railway] = 'tram_stop' or [aerialway] = 'station'",
+			"label_field": "name",
+			"label_text_font": "@amenity-station-halt-highz",
+			"label_text_size": 10,
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@amenity-station-halt-highz",
+			"label_offset_y": -10,
+			"label_align": "center"
+		},
+		{
+			"res_max": "@z14",
+			"res_min": "@z14",
+			"data_filter": "[railway] = 'station' and not [disused] = 'yes'",
+			"label_field": "name",
+			"label_text_font": "@amenity-station-highz",
+			"label_text_size": 9,
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@amenity-station-highz",
+			"label_offset_y": -8,
+			"label_align": "center"
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z19",
+			"data_filter": "[railway] = 'station' and not disused = 'yes'",
+			"label_field": "name",
+			"label_text_font": "@amenity-station-highz",
+			"label_text_size": 11,
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@amenity-station-highz",
+			"label_offset_y": -10,
+			"label_align": "center"
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z19",
+			"data_filter": "[railway] = 'station' and [disused] = 'yes'",
+			"label_field": "name",
+			"label_text_font": "@amenity-stations-disused_station-highz",
+			"label_text_size": 9,
+			"label_text_outline_color": [
+				255,
+				255,
+				255
+			],
+			"label_text_color": "@amenity-stations-disused_station-highz",
+			"label_offset_y": -9,
+			"label_align": "center"
+		}
+	]
+}

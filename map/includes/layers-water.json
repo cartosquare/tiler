@@ -1,0 +1,936 @@
+{
+	"layers": {
+		"water-lines-casing": {
+			"data_source": "osm",
+			"data_name": "water_lines_casing",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z13",
+					"res_min": "@z14",
+					"data_filter": "[waterway] = 'stream' or [waterway] = 'ditch' or [waterway] = 'drain'",
+					"line_color": "@water-lines-casing",
+					"line_width": 1.5
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'stream'",
+					"line_color": "@water-lines-casing",
+					"line_width": 2.5
+				}
+			]
+		},
+		"water-areas": {
+			"data_source": "osm",
+			"data_name": "water_areas",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z6",
+					"res_min": "@z7",
+					"data_filter": "[natural] = 'glacier'",
+					"fill_image": "@water-area_glacier-lowz",
+					"outline_color": "@water-area_glacier-lowz",
+					"outline_width": 1.5,
+					"outline_dasharray": [
+						4,
+						2
+					]
+				},
+				{
+					"res_max": "@z8",
+					"res_min": "@z19",
+					"data_filter": "[natural] = 'glacier'",
+					"fill_image": "@water-area_glacier-highz",
+					"outline_color": "@water-area_glacier-highz",
+					"outline_width": 1.5,
+					"outline_dasharray": [
+						4,
+						2
+					]
+				},
+				{
+					"res_max": "@z9",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'dock' or [waterway] = 'mill_pond' or [waterway] = 'canal'",
+					"fill_color": "@water-area-docker_canal"
+				},
+				{
+					"res_max": "@z7",
+					"res_min": "@z19",
+					"data_filter": "[landuse] = 'basin'",
+					"fill_color": "@water-area-basin"
+				},
+				{
+					"res_max": "@z6",
+					"res_min": "@z19",
+					"data_filter": "[natural] = 'lake' or [natural] = 'water' or [landuse] = 'reservoir' or [waterway] = 'riverbank' or [landuse] = 'water' or [natural] = 'bay'",
+					"fill_color": "@water-area-water"
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z19",
+					"data_filter": "[natural] = 'mud'",
+					"fill_image": "@water-area-mud"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[natural] = 'land'",
+					"fill_color": "@water-area-land"
+				}
+			]
+		},
+		"water-areas-overlay": {
+			"data_source": "osm",
+			"data_name": "water_areas_overlay",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z13",
+					"res_min": "@z19",
+					"data_filter": "[natural] = 'marsh' or [natural] = 'wetland'",
+					"fill_image": "@water-area-wetland"
+				}
+			]
+		},
+		"glaciers-text": {
+			"data_source": "osm",
+			"data_name": "glaciers_text",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[way_area] >= 10000000",
+					"label_align": "center",
+					"label_field": "name",
+					"label_text_font": "@glaciers-text",
+					"label_text_size": 9,
+					"label_text_color": "@glaciers-text",
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_outline_opacity": 1,
+					"label_max_line_length": 20
+				},
+				{
+					"res_max": "@z11",
+					"res_min": "@z19",
+					"data_filter": "[way_area] >= 5000000 and [way_area] < 10000000",
+					"label_align": "center",
+					"label_field": "name",
+					"label_text_font": "@glaciers-text",
+					"label_text_size": 9,
+					"label_text_color": "@glaciers-text",
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_outline_opacity": 1,
+					"label_max_line_length": 20
+				},
+				{
+					"res_max": "@z11",
+					"res_min": "@z19",
+					"data_filter": "[way_area] < 5000000",
+					"label_align": "center",
+					"label_field": "name",
+					"label_text_font": "@glaciers-text",
+					"label_text_size": 9,
+					"label_text_color": "@glaciers-text",
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_outline_opacity": 1,
+					"label_max_line_length": 20
+				}
+			]
+		},
+		"water-lines-low-zoom": {
+			"data_source": "osm",
+			"data_name": "water_lines_low_zoom",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z8",
+					"res_min": "@z8",
+					"data_filter": "[waterway] = 'river'",
+					"line_color": "@water-line",
+					"line_width": 0.7
+				},
+				{
+					"res_max": "@z9",
+					"res_min": "@z9",
+					"data_filter": "[waterway] = 'river'",
+					"line_color": "@water-line",
+					"line_width": 1.2
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z11",
+					"data_filter": "[waterway] = 'river'",
+					"line_color": "@water-line",
+					"line_width": 1.6
+				}
+			]
+		},
+		"water-lines": {
+			"data_source": "osm",
+			"data_name": "water_lines",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'weir'",
+					"line_join": "round",
+					"line_cap": "round",
+					"line_color": "@water-weir",
+					"line_width": 2
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z15",
+					"data_filter": "[waterway] = 'wadi'",
+					"line_join": "round",
+					"line_cap": "round",
+					"line_color": "@water-line",
+					"line_width": 1,
+					"line_dasharray": [
+						4,
+						4
+					]
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'wadi'",
+					"line_join": "round",
+					"line_cap": "round",
+					"line_color": "@water-line",
+					"line_width": 2,
+					"line_dasharray": [
+						4,
+						4
+					]
+				},
+				{
+					"res_max": "@z12",
+					"res_min": "@z12",
+					"data_filter": "[waterway] = 'river'",
+					"line_join": "round",
+					"line_cap": "round",
+					"line_color": "@water-line",
+					"line_width": 2
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z13",
+					"data_filter": "[waterway] = 'river'",
+					"line_join": "round",
+					"line_cap": "round",
+					"line_color": "@water-line",
+					"line_width": 3
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z13",
+					"data_filter": "[waterway] = 'river'",
+					"label_field": "name",
+					"label_text_font": "@water-line",
+					"label_text_size": 9,
+					"label_text_color": "@water-line",
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_outline_opacity": 1
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z14",
+					"data_filter": "[waterway] = 'river'",
+					"line_join": "round",
+					"line_cap": "round",
+					"line_color": "@water-line",
+					"line_width": 5
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z16",
+					"data_filter": "[waterway] = 'river'",
+					"line_join": "round",
+					"line_cap": "round",
+					"line_color": "@water-line",
+					"line_width": 6
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z17",
+					"data_filter": "[waterway] = 'river'",
+					"line_join": "round",
+					"line_cap": "round",
+					"line_color": "@water-line",
+					"line_width": 10
+				},
+				{
+					"res_max": "@z18",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'river'",
+					"line_join": "round",
+					"line_cap": "round",
+					"line_color": "@water-line",
+					"line_width": 12
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'river'",
+					"label_field": "name",
+					"label_text_font": "@water-line",
+					"label_text_size": 10,
+					"label_text_color": "@water-line",
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_outline_opacity": 1
+				},
+				{
+					"res_max": "@z12",
+					"res_min": "@z12",
+					"data_filter": "[waterway] = 'canal' and not [disused] = 'yes'",
+					"line_join": "round",
+					"line_cap": "round",
+					"line_color": "@water-line",
+					"line_width": 3
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z13",
+					"data_filter": "[waterway] = 'canal' and not [disused] = 'yes'",
+					"line_join": "round",
+					"line_cap": "round",
+					"line_color": "@water-line",
+					"line_width": 4
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z13",
+					"data_filter": "[waterway] = 'canal' and not [disused] = 'yes'",
+					"label_field": "name",
+					"label_text_font": "@water-line",
+					"label_text_size": 8,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_outline_opacity": 1,
+					"label_text_color": "@water-line"
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z14",
+					"data_filter": "[waterway] = 'stream' or [waterway] = 'ditch' or [waterway] = 'drain'",
+					"line_join": "round",
+					"line_cap": "round",
+					"line_color": "@water-line",
+					"line_width": 1
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z14",
+					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"line_color": "@water-line",
+					"line_width": 6,
+					"line_dasharray": [
+						4,
+						2
+					]
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z14",
+					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"line_color": [
+						255,
+						255,
+						255
+					],
+					"line_width": 4
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z14",
+					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"label_field": "name",
+					"label_text_font": "@water-line",
+					"label_text_size": 10,
+					"label_text_spacing": 2,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_outline_opacity": 1,
+					"label_text_color": "@water-line"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z16",
+					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"line_color": "@water-line",
+					"line_width": 7,
+					"line_dasharray": [
+						4,
+						2
+					]
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z16",
+					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"line_color": [
+						255,
+						255,
+						255
+					],
+					"line_width": 5
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z16",
+					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"label_field": "name",
+					"label_text_font": "@water-line",
+					"label_text_size": 10,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_outline_opacity": 1,
+					"label_text_color": "@water-line"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z17",
+					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"line_color": "@water-line",
+					"line_width": 11,
+					"line_dasharray": [
+						4,
+						2
+					]
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z17",
+					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"line_color": [
+						255,
+						255,
+						255
+					],
+					"line_width": 7
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z17",
+					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"label_field": "name",
+					"label_text_font": "@water-line",
+					"label_text_size": 10,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_outline_opacity": 1,
+					"label_text_color": "@water-line"
+				},
+				{
+					"res_max": "@z18",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"line_color": "@water-line",
+					"line_width": 13,
+					"line_dasharray": [
+						4,
+						2
+					]
+				},
+				{
+					"res_max": "@z18",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"line_color": [
+						255,
+						255,
+						255
+					],
+					"line_width": 9
+				},
+				{
+					"res_max": "@z18",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"label_field": "name",
+					"label_text_font": "@water-line",
+					"label_text_size": 10,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_outline_opacity": 1,
+					"label_text_color": "@water-line"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z16",
+					"data_filter": "[waterway] = 'canal' and [tunnel] = 'yes'",
+					"line_color": "@water-line",
+					"line_width": 7,
+					"line_dasharray": [
+						4,
+						2
+					]
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z16",
+					"data_filter": "[waterway] = 'canal' and [tunnel] = 'yes'",
+					"line_color": [
+						255,
+						255,
+						255
+					],
+					"line_width": 3
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z16",
+					"data_filter": "[waterway] = 'canal' and [tunnel] = 'yes'",
+					"label_field": "name",
+					"label_text_font": "@water-line",
+					"label_text_size": 9,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_outline_opacity": 1,
+					"label_text_color": "@water-line"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z16",
+					"data_filter": "[waterway] = 'canal' and not [tunnel] = 'yes' and not [disused] = 'yes'",
+					"line_join": "round",
+					"line_color": "@water-line",
+					"line_width": 7
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z16",
+					"data_filter": "[waterway] = 'canal' and not [tunnel] = 'yes' and not [disused] = 'yes'",
+					"label_field": "name",
+					"label_text_font": "@water-line",
+					"label_text_size": 9,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_outline_opacity": 1,
+					"label_text_color": "@water-line"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'canal' and [tunnel] = 'yes'",
+					"line_color": "@water-line",
+					"line_width": 11,
+					"line_dasharray": [
+						4,
+						2
+					]
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'canal' and [tunnel] = 'yes'",
+					"line_color": [
+						255,
+						255,
+						255
+					],
+					"line_width": 7
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'canal' and [tunnel] = 'yes'",
+					"label_field": "name",
+					"label_text_font": "@water-line",
+					"label_text_size": 9,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_outline_opacity": 1,
+					"label_text_color": "@water-line"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'canal' and not [tunnel] = 'yes' and not [disused] = 'yes'",
+					"line_cap": "round",
+					"line_color": "@water-line",
+					"line_width": 7
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'canal' and not [tunnel] = 'yes' and not [disused] = 'yes'",
+					"label_field": "name",
+					"label_text_font": "@water-line",
+					"label_text_size": 9,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_outline_opacity": 1,
+					"label_text_color": "@water-line"
+				},
+				{
+					"res_max": "@z12",
+					"res_min": "@z12",
+					"data_filter": "[waterway] = 'derelict_canal' or ([waterway] = 'canal' and [disused] = 'yes')",
+					"line_join": "round",
+					"line_cap": "round",
+					"line_color": "@water-line",
+					"line_width": 1.5,
+					"line_opacity": 0.5,
+					"line_dasharray": [
+						4,
+						4
+					]
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z13",
+					"data_filter": "[waterway] = 'derelict_canal' or ([waterway] = 'canal' and [disused] = 'yes')",
+					"line_join": "round",
+					"line_cap": "round",
+					"line_color": "@water-line",
+					"line_width": 2.5,
+					"line_opacity": 0.5,
+					"line_dasharray": [
+						4,
+						6
+					]
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z13",
+					"data_filter": "[waterway] = 'derelict_canal' or ([waterway] = 'canal' and [disused] = 'yes')",
+					"label_field": "name",
+					"label_text_font": "@water-line",
+					"label_text_size": 9,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_outline_opacity": 1,
+					"label_text_color": "@water-line"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'derelict_canal' or ([waterway] = 'canal' and [disused] = 'yes')",
+					"line_join": "round",
+					"line_cap": "round",
+					"line_color": "@water-line",
+					"line_width": 4.5,
+					"line_opacity": 0.5,
+					"line_dasharray": [
+						4,
+						8
+					]
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'derelict_canal' or ([waterway] = 'canal' and [disused] = 'yes')",
+					"label_field": "name",
+					"label_text_font": "@water-line",
+					"label_text_size": 10,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_outline_opacity": 1,
+					"label_text_color": "@water-line"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'stream' and [tunnel] = 'yes'",
+					"line_color": "@water-line",
+					"line_width": 2.4,
+					"line_dasharray": [
+						4,
+						2
+					]
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'stream' and [tunnel] = 'yes'",
+					"line_color": [
+						243,
+						247,
+						247
+					],
+					"line_width": 1.2
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'stream' and not [tunnel] = 'yes'",
+					"line_color": "@water-line",
+					"line_width": 2
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'stream' and not [tunnel] = 'yes'",
+					"label_field": "name",
+					"label_text_font": "@water-line",
+					"label_text_size": 8,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_outline_opacity": 1,
+					"label_text_color": "@water-line"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"data_filter": "([waterway] = 'drain' or [waterway] = 'ditch') and [tunnel] = 'yes'",
+					"line_color": "@water-line",
+					"line_width": 2,
+					"line_dasharray": [
+						4,
+						2
+					]
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"data_filter": "([waterway] = 'drain' or [waterway] = 'ditch') and [tunnel] = 'yes'",
+					"line_color": [
+						243,
+						247,
+						247
+					],
+					"line_width": 1
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"data_filter": "([waterway] = 'drain' or [waterway] = 'ditch') and not [tunnel] = 'yes'",
+					"line_color": "@water-line",
+					"line_width": 1
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"data_filter": "([waterway] = 'drain' or [waterway] = 'ditch') and not [tunnel] = 'yes'",
+					"label_field": "name",
+					"label_text_font": "@water-line",
+					"label_text_size": 8,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_outline_opacity": 1,
+					"label_text_color": "@water-line"
+				}
+			]
+		},
+		"dam": {
+			"data_source": "osm",
+			"data_name": "dam",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z13",
+					"res_min": "@z19",
+					"line_join": "round",
+					"line_cap": "round",
+					"line_color": "@water-dam",
+					"line_width": 2
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"label_field": "name",
+					"label_text_font": "@water-dam",
+					"label_text_size": 8,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_outline_opacity": 1,
+					"label_text_color": "@water-dam"
+				}
+			]
+		},
+		"marinas-area": {
+			"data_source": "osm",
+			"data_name": "marinas_area",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z14",
+					"res_min": "@z15",
+					"outline_color": "@marinas-area",
+					"outline_width": 1,
+					"outline_dasharray": [
+						6,
+						2
+					],
+					"outline_opacity": 0.5
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"outline_color": "@marinas-area",
+					"outline_width": 2,
+					"outline_dasharray": [
+						6,
+						2
+					],
+					"outline_opacity": 0.5
+				}
+			]
+		},
+		"piers-area": {
+			"data_source": "osm",
+			"data_name": "piers_area",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z12",
+					"res_min": "@z19",
+					"fill_color": "@piers-area"
+				}
+			]
+		},
+		"piers": {
+			"data_source": "osm",
+			"data_name": "piers",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z11",
+					"res_min": "@z12",
+					"data_filter": "[man_made] = 'breakwater' or [man_made] = 'groyne'",
+					"line_color": "@piers-breakwater_groyne",
+					"line_width": 1
+				},
+				{
+					"res_max": "@z11",
+					"res_min": "@z12",
+					"data_filter": "[man_made] = 'pier'",
+					"line_color": "@piers-area",
+					"line_width": 1.5
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z15",
+					"data_filter": "[man_made] = 'breakwater' or [man_made] = 'groyne'",
+					"line_color": "@piers-breakwater_groyne",
+					"line_width": 2
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z15",
+					"data_filter": "[man_made] = 'pier'",
+					"line_color": "@piers-area",
+					"line_width": 3
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[man_made] = 'breakwater' or [man_made] = 'groyne'",
+					"line_color": "@piers-breakwater_groyne",
+					"line_width": 4
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[man_made] = 'pier'",
+					"line_color": "@piers-area",
+					"line_width": 7
+				}
+			]
+		},
+		"locks": {
+			"data_source": "osm",
+			"data_name": "locks",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[waterway] = 'lock_gate'",
+					"marker_image": "@waterway-lock_gate"
+				}
+			]
+		}
+	}
+}

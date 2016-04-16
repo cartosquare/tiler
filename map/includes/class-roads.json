@@ -1,0 +1,528 @@
+{
+	"classes": {
+		"casing_motorway": {
+			"tag": "高速公路外边线",
+			"line_color": [
+				80,
+				96,
+				119
+			]
+		},
+		"casing_trunk": {
+			"tag": "城市主干道外边线",
+			"line_color": [
+				71,
+				113,
+				71
+			]
+		},
+		"casing_primary": {
+			"tag": "城市以一级道路外边线",
+			"line_color": [
+				141,
+				67,
+				70
+			]
+		},
+		"casing_secondary": {
+			"tag": "城市以二级道路外边线",
+			"line_color": [
+				163,
+				123,
+				72
+			]
+		},
+		"casing_street": {
+			"tag": "城市街道隧道外边线",
+			"line_color": [
+				153,
+				153,
+				153
+			]
+		},
+		"casing_pedestrian": {
+			"tag": "人行道外边线",
+			"line_color": [
+				192,
+				192,
+				192
+			]
+		},
+		"casing_raceway": {
+			"tag": "跑道外边线",
+			"line_color": [
+				255,
+				192,
+				203
+			]
+		},
+		"casing_living_street": {
+			"tag": "生活道路外边线",
+			"line_color": [
+				255,
+				255,
+				255
+			]
+		},
+		"taxiway": {
+			"tag": "滑行道。连接机场跑道和机场设施的道路",
+			"line_color": [
+				187,
+				187,
+				204
+			]
+		},
+		"runway": {
+			"tag": "跑道。用于飞机的着陆和起飞制备的矩形区域",
+			"line_color": [
+				187,
+				187,
+				204
+			]
+		},
+		"bridleway": {
+			"tag": "马道",
+			"line_color": [
+				0,
+				255,
+				0
+			]
+		},
+		"path": {
+			"tag": "未指定类型的道路",
+			"line_color": [
+				0,
+				0,
+				0
+			]
+		},
+		"footway": {
+			"tag": "足道",
+			"line_color": [
+				250,
+				128,
+				114
+			]
+		},
+		"track": {
+			"tag": "主要用于农业和林业使用的道路",
+			"line_color": [
+				152,
+				102,
+				0
+			]
+		},
+		"cycleway": {
+			"tag": "自行车道",
+			"line_color": [
+				0,
+				0,
+				255
+			]
+		},
+		"steps": {
+			"tag": "台阶路",
+			"line_color": [
+				153,
+				153,
+				153
+			]
+		},
+		"guideway": {
+			"tag": "有轨电车、有轨巴士",
+			"line_color": [
+				102,
+				102,
+				255
+			]
+		},
+		"railway-turntable": {
+			"tag": "铁路转弯道",
+			"line_color": [
+				153,
+				153,
+				153
+			]
+		},
+		"railway-platform": {
+			"tag": "月台",
+			"line_color": [
+				153,
+				153,
+				153
+			]
+		},
+		"pedestrian": {
+			"tag": "人行道",
+			"line_color": [
+				237,
+				237,
+				237
+			]
+		},
+		"service": {
+			"tag": "服务道路",
+			"line_color": [
+				255,
+				255,
+				255
+			]
+		},
+		"living_street": {
+			"tag": "生活道路",
+			"line_color": [
+				204,
+				204,
+				204
+			]
+		},
+		"road": {
+			"tag": "普通道路",
+			"line_color": [
+				221,
+				221,
+				221
+			]
+		},
+		"residential": {
+			"tag": "居住区道路",
+			"line_color": [
+				255,
+				255,
+				255
+			]
+		},
+		"tertiary": {
+			"tag": "街道",
+			"line_color": [
+				255,
+				255,
+				179
+			]
+		},
+		"secondary": {
+			"tag": "二级道路",
+			"line_color": [
+				254,
+				215,
+				165
+			]
+		},
+		"primary": {
+			"tag": "一级道路",
+			"line_color": [
+				236,
+				152,
+				154
+			]
+		},
+		"trunk": {
+			"tag": "城市主干道",
+			"line_color": [
+				169,
+				219,
+				169
+			]
+		},
+		"motorway": {
+			"tag": "高速公路",
+			"line_color": [
+				128,
+				155,
+				192
+			]
+		},
+		"subway": {
+			"tag": "地铁",
+			"line_color": [
+				153,
+				153,
+				153
+			]
+		},
+		"light_rail": {
+			"tag": "轻轨",
+			"line_color": [
+				102,
+				102,
+				102
+			]
+		},
+		"tram": {
+			"tag": "电车",
+			"line_color": [
+				68,
+				68,
+				68
+			]
+		},
+		"miniature": {
+			"tag": "公园里的微型火车",
+			"line_color": [
+				153,
+				153,
+				153
+			]
+		},
+		"narrow_gauge": {
+			"tag": "窄轨",
+			"line_color": [
+				170,
+				170,
+				170
+			]
+		},
+		"tram-light_rail-narrow_gauge-lowz": {
+			"tag": "电车、窄轨、轻轨",
+			"line_color": [
+				204,
+				204,
+				204
+			]
+		},
+		"tram-light_rail-narrow_gauge-middlez": {
+			"tag": "电车、窄轨、轻轨",
+			"line_color": [
+				170,
+				170,
+				170
+			]
+		},
+		"rail-lowz": {
+			"tag": "铁路",
+			"line_color": [
+				170,
+				170,
+				170
+			]
+		},
+		"rail": {
+			"tag": "铁路",
+			"line_color": [
+				153,
+				153,
+				153
+			]
+		},
+		"rail_disused": {
+			"tag": "废弃的铁路",
+			"line_color": [
+				155,
+				155,
+				155
+			]
+		},
+		"ferry": {
+			"tag": "航站楼之间的摆渡路线",
+			"line_color": [
+				102,
+				102,
+				255
+			]
+		},
+		"cable_car": {
+			"tag": "缆车",
+			"line_image": "cable_car.png"
+		},
+		"chair_lift": {
+			"tag": "升降椅",
+			"line_image": "chair_lift.png"
+		},
+		"monorail": {
+			"tag": "单轨铁路",
+			"line_color": [
+				119,
+				119,
+				119
+			]
+		},
+		"railway_short": {
+			"tag": "相对短的铁路",
+			"line_color": [
+				153,
+				153,
+				153
+			]
+		},
+		"highway-construction": {
+			"tag": "在建、待建道路",
+			"line_color": [
+				153,
+				204,
+				204
+			]
+		},
+		"highway-area_platform": {
+			"tag": "站台",
+			"outline_color": [
+				155,
+				155,
+				155
+			],
+			"fill_color": [
+				187,
+				187,
+				187
+			]
+		},
+		"highway-area_track": {
+			"tag": "农业和林业用地（面状）",
+			"outline_color": [
+				153,
+				102,
+				0
+			],
+			"fill_color": [
+				223,
+				204,
+				102
+			]
+		},
+		"highway-area_pedestrian": {
+			"tag": "农业和林业用地（面状）",
+			"outline_color": [
+				155,
+				155,
+				155
+			],
+			"fill_color": [
+				237,
+				237,
+				237
+			]
+		},
+		"highway-area_residential": {
+			"tag": "居民区道路（面状）",
+			"outline_color": [
+				155,
+				155,
+				155
+			],
+			"fill_color": [
+				255,
+				255,
+				255
+			]
+		},
+		"highway-area_living_street": {
+			"tag": "生活道路",
+			"fill_color": [
+				204,
+				204,
+				204
+			]
+		},
+		"bridges-outline": {
+			"tag": "高架桥外边线",
+			"line_color": [
+				0,
+				0,
+				0
+			]
+		},
+		"tunnels-fill_motorway": {
+			"tag": "高速公路隧道",
+			"line_color": [
+				214,
+				223,
+				234
+			]
+		},
+		"tunnels-fill_trunk": {
+			"tag": "城市主干道隧道",
+			"line_color": [
+				205,
+				234,
+				205
+			]
+		},
+		"tunnels-fill_primary": {
+			"tag": "城市以一级道路隧道",
+			"line_color": [
+				244,
+				195,
+				196
+			]
+		},
+		"tunnels-fill_secondary": {
+			"tag": "城市以二级道路隧道",
+			"line_color": [
+				254,
+				224,
+				184
+			]
+		},
+		"tunnels-fill_street": {
+			"tag": "城市街道隧道",
+			"line_color": [
+				255,
+				255,
+				204
+			]
+		},
+		"tunnels-fill_residential": {
+			"tag": "城市居民区道路隧道",
+			"line_color": [
+				255,
+				255,
+				255
+			]
+		},
+		"access-permissive": {
+			"tag": "经私人准许允许通行",
+			"line_color": [
+				204,
+				255,
+				153
+			]
+		},
+		"access-destination": {
+			"tag": "准许目的地在限定区域内通行",
+			"line_color": [
+				194,
+				224,
+				255
+			]
+		},
+		"access-private": {
+			"tag": "禁止通行",
+			"line_color": [
+				239,
+				169,
+				169
+			]
+		},
+		"highway-direction": {
+			"tag": "道路方向箭头",
+			"line_color": [
+				108,
+				112,
+				213
+			]
+		},
+		"polygon-barriers": {
+			"tag": "面状的其它分隔带",
+			"outline_color": [
+				68,
+				68,
+				68
+			]
+		},
+		"minor-roads-casing_motorway": {
+			"tag": "高速公路外边线",
+			"line_color": [
+				80,
+				96,
+				119
+			]
+		},
+		"minor-roads-casing_trunk": {
+			"tag": "城市主干道外边线",
+			"line_color": [
+				80,
+				96,
+				119
+			]
+		}
+	}
+}

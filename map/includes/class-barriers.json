@@ -1,0 +1,45 @@
+{
+	"classes": {
+		"line-featuers_cliff-lowz": {
+			"tag": "悬崖",
+			"line_image": "cliff.png"
+		},
+		"line-featuers_cliff-highz": {
+			"tag": "悬崖",
+			"line_image": "cliff2.png"
+		},
+		"line-featuers_embankment": {
+			"tag": "用来在低洼地架起道路或是铁路的桥梁",
+			"line_image": "cliff.png",
+			"line_color": [
+				68,
+				68,
+				68
+			]
+		},
+		"line-featuers_hedge": {
+			"tag": "类似于篱笆的绿色分隔线",
+			"line_color": [
+				174,
+				209,
+				260
+			]
+		},
+		"line-featuers_barrier": {
+			"tag": "线状分隔物",
+			"line_color": [
+				68,
+				68,
+				68
+			]
+		},
+		"polygon-barriers_hedge": {
+			"tag": "面状的植物分隔带",
+			"fill_color": [
+				174,
+				209,
+				160
+			]
+		}
+	}
+}

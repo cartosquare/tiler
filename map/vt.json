@@ -1,0 +1,1573 @@
+{
+  "background_color": [
+    181,
+    208,
+    208
+  ],
+  "data_sources": {
+    "world": {
+      "source": "data/simplified-land-polygons-complete-3857",
+      "type": "shapefile"
+    },
+    "coast-poly": {
+      "source": "data/land-polygons-split-3857",
+      "type": "shapefile"
+    },
+    "builtup": {
+      "source": "data/world_boundaries-3857",
+      "type": "shapefile"
+    },
+    "necountries": {
+      "source": "data/ne_110m_admin_0_boundary_lines_land-3857",
+      "type": "shapefile"
+    },
+    "nepopulated": {
+      "source": "data/ne_10m_populated_places-3857",
+      "type": "shapefile"
+    },
+    "osm": {
+      "source": "PG:dbname=osm host=localhost port=5432 user=gis",
+      "type": "sql",
+      "initial_size": 10,
+      "max_size": 20
+    }
+  },
+  "icon": "icons/",
+  "classes": {
+    "z0": {
+      "res_max": 156544,
+      "res_min": 156543
+    },
+    "z1": {
+      "res_max": 78272,
+      "res_min": 78271
+    },
+    "z2": {
+      "res_max": 39136,
+      "res_min": 39135
+    },
+    "z3": {
+      "res_max": 19568,
+      "res_min": 19567
+    },
+    "z4": {
+      "res_max": 9784,
+      "res_min": 9783
+    },
+    "z5": {
+      "res_max": 4892,
+      "res_min": 4891
+    },
+    "z6": {
+      "res_max": 2446,
+      "res_min": 2445
+    },
+    "z7": {
+      "res_max": 1223,
+      "res_min": 1222
+    },
+    "z8": {
+      "res_max": 612,
+      "res_min": 611
+    },
+    "z9": {
+      "res_max": 306,
+      "res_min": 305
+    },
+    "z10": {
+      "res_max": 153,
+      "res_min": 152
+    },
+    "z11": {
+      "res_max": 77,
+      "res_min": 76
+    },
+    "z12": {
+      "res_max": 39,
+      "res_min": 38
+    },
+    "z13": {
+      "res_max": 20,
+      "res_min": 19
+    },
+    "z14": {
+      "res_max": 10,
+      "res_min": 9
+    },
+    "z15": {
+      "res_max": 5,
+      "res_min": 4
+    },
+    "z16": {
+      "res_max": 3,
+      "res_min": 2
+    },
+    "z17": {
+      "res_max": 2,
+      "res_min": 1
+    },
+    "z18": {
+      "res_max": 0.6,
+      "res_min": 0.5
+    },
+    "z19": {
+      "res_max": 0.3,
+      "res_min": 0.2
+    }
+  },
+  "layers": {
+    "world": {
+      "data_source": "world",
+      "data_name": "simplified_land_polygons",
+      "rules": [
+        {
+          "res_max": "@z0",
+          "res_min": "@z10",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "coast-poly": {
+      "data_source": "coast-poly",
+      "data_name": "land_polygons",
+      "rules": [
+        {
+          "res_max": "@z11",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "builtup": {
+      "data_source": "builtup",
+      "data_name": "builtup_area",
+      "rules": [
+        {
+          "res_max": "@z8",
+          "res_min": "@z10",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "necountries": {
+      "data_source": "necountries",
+      "data_name": "ne_110m_admin_0_boundary_lines_land",
+      "rules": [
+        {
+          "res_max": "@z1",
+          "res_min": "@z3",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "landcover": {
+      "data_source": "osm",
+      "data_name": "landcover",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z8",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "landcover-line": {
+      "data_source": "osm",
+      "data_name": "landcover_line",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z14",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "sports-grounds": {
+      "data_source": "osm",
+      "data_name": "sports_grounds",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z10",
+          "res_min": "@z19",
+          "fill_color": [
+            51,
+            204,
+            153
+          ]
+        }
+      ]
+    },
+    "water-lines-casing": {
+      "data_source": "osm",
+      "data_name": "water_lines_casing",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z13",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "water-areas": {
+      "data_source": "osm",
+      "data_name": "water_areas",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z6",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "water-areas-overlay": {
+      "data_source": "osm",
+      "data_name": "water_areas_overlay",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z13",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "glaciers-text": {
+      "data_source": "osm",
+      "data_name": "glaciers_text",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z10",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "water-lines-low-zoom": {
+      "data_source": "osm",
+      "data_name": "water_lines_low_zoom",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z8",
+          "res_min": "@z11",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "water-lines": {
+      "data_source": "osm",
+      "data_name": "water_lines",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z12",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "dam": {
+      "data_source": "osm",
+      "data_name": "dam",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z13",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "marinas-area": {
+      "data_source": "osm",
+      "data_name": "marinas_area",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z14",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "piers-area": {
+      "data_source": "osm",
+      "data_name": "piers_area",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z12",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "piers": {
+      "data_source": "osm",
+      "data_name": "piers",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z11",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "locks": {
+      "data_source": "osm",
+      "data_name": "locks",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z17",
+          "res_min": "@z19",
+          "marker_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "tunnels-casing": {
+      "data_source": "osm",
+      "data_name": "tunnels",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z12",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "landuse_overlay": {
+      "data_source": "osm",
+      "data_name": "landuse_overlay",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z10",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "turning_circle_casing": {
+      "data_source": "osm",
+      "data_name": "turning_circle",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "tag": "路端的圆环区域，通常用来车辆的转弯",
+      "rules": [
+        {
+          "res_max": "@z15",
+          "res_min": "@z19",
+          "marker_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "footbikecycle-tunnels": {
+      "data_source": "osm",
+      "data_name": "footbikecycle_tunnels",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z13",
+          "res_min": "@z19",
+          "line_color": [
+            155,
+            155,
+            155
+          ]
+        }
+      ]
+    },
+    "tracks-tunnels": {
+      "data_source": "osm",
+      "data_name": "tracks_tunnels",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z14",
+          "res_min": "@z19",
+          "line_color": [
+            155,
+            155,
+            155
+          ]
+        }
+      ]
+    },
+    "line-features": {
+      "data_source": "osm",
+      "data_name": "line_features",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z13",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "polygon-barriers ": {
+      "data_source": "osm",
+      "data_name": "polygon_barriers",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z16",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "highway-area-casing": {
+      "data_source": "osm",
+      "data_name": "highway_area_casing",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z14",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "minor-roads-casing": {
+      "data_source": "osm",
+      "data_name": "minor_roads_casing",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z12",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "highway-area-fill": {
+      "data_source": "osm",
+      "data_name": "highway_area_fill",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z14",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "buildings-lz": {
+      "data_source": "osm",
+      "data_name": "buildings_lz",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z10",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "buildings": {
+      "data_source": "osm",
+      "data_name": "buildings",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z12",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "tracks-notunnel-nobridge": {
+      "data_source": "osm",
+      "data_name": "tracks_notunnel_nobridge",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z14",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            255,
+            255
+          ]
+        }
+      ]
+    },
+    "minor-roads-fill": {
+      "data_source": "osm",
+      "data_name": "minor_roads_fill",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z10",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "turning_circle_fill": {
+      "data_source": "osm",
+      "data_name": "turning_circle",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z15",
+          "res_min": "@z19",
+          "marker_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "ferry-routes": {
+      "data_source": "osm",
+      "data_name": "ferry_routes",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z7",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "aerialways": {
+      "data_source": "osm",
+      "data_name": "aerialways",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z12",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "roads": {
+      "data_source": "osm",
+      "data_name": "roads",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z5",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            255,
+            255
+          ]
+        }
+      ]
+    },
+    "access-pre_bridges": {
+      "data_source": "osm",
+      "data_name": "access_pre_bridges",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z15",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "direction_pre_bridges": {
+      "data_source": "osm",
+      "data_name": "direction_pre_bridges",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z16",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "bridges-layer1": {
+      "data_source": "osm",
+      "data_name": "bridges_layer1",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z12",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "bridges-access1": {
+      "data_source": "osm",
+      "data_name": "bridges_access1",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z15",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "bridges-directions1": {
+      "data_source": "osm",
+      "data_name": "bridges_directions1",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z16",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "bridges-layer2": {
+      "data_source": "osm",
+      "data_name": "bridges_layer2",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z12",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "bridges-access2": {
+      "data_source": "osm",
+      "data_name": "bridges_access2",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z15",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "bridges-directions2": {
+      "data_source": "osm",
+      "data_name": "bridges_directions2",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z16",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "bridges-layer3": {
+      "data_source": "osm",
+      "data_name": "bridges_layer3",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z12",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "bridges-access3": {
+      "data_source": "osm",
+      "data_name": "bridges_access3",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z15",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "bridges-directions3": {
+      "data_source": "osm",
+      "data_name": "bridges_directions3",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z16",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "bridges-layer4": {
+      "data_source": "osm",
+      "data_name": "bridges_layer4",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z12",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "bridges-access4": {
+      "data_source": "osm",
+      "data_name": "bridges_access4",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z15",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "bridges-directions4": {
+      "data_source": "osm",
+      "data_name": "bridges_directions4",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z16",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "bridges-layer5": {
+      "data_source": "osm",
+      "data_name": "bridges_layer5",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z12",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "bridges-access5": {
+      "data_source": "osm",
+      "data_name": "bridges_access5",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z15",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "bridges-directions5": {
+      "data_source": "osm",
+      "data_name": "bridges_directions5",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z16",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "trams": {
+      "data_source": "osm",
+      "data_name": "trams",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z13",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "guideways": {
+      "data_source": "osm",
+      "data_name": "guideways",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z13",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "admin-01234": {
+      "data_source": "osm",
+      "data_name": "admin_01234",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z4",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "admin-5678": {
+      "data_source": "osm",
+      "data_name": "admin_5678",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z11",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "admin-other": {
+      "data_source": "osm",
+      "data_name": "admin_other",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z9",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "placenames-large": {
+      "data_source": "osm",
+      "data_name": "placenames_large",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z1",
+          "res_min": "@z8",
+          "marker_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "placenames-capital": {
+      "data_source": "osm",
+      "data_name": "placenames_capital",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z5",
+          "res_min": "@z14",
+          "marker_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "placenames-medium": {
+      "data_source": "osm",
+      "data_name": "placenames_medium",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z6",
+          "res_min": "@z19",
+          "marker_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "placenames-small": {
+      "data_source": "osm",
+      "data_name": "placenames_small",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z12",
+          "res_min": "@z19",
+          "marker_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "amenity-stations": {
+      "data_source": "osm",
+      "data_name": "amenity_stations",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z12",
+          "res_min": "@z19",
+          "marker_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "amenity-stations-poly": {
+      "data_source": "osm",
+      "data_name": "amenity_stations_poly",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "clip": false,
+      "rules": [
+        {
+          "res_max": "@z12",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "amenity-symbols": {
+      "data_source": "osm",
+      "data_name": "amenity_symbols",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z9",
+          "res_min": "@z19",
+          "marker_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "amenity-symbols-poly": {
+      "data_source": "osm",
+      "data_name": "amenity_symbols_poly",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "clip": false,
+      "rules": [
+        {
+          "res_max": "@z9",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "amenity-points": {
+      "data_source": "osm",
+      "data_name": "amenity_points",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z13",
+          "res_min": "@z19",
+          "marker_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "amenity-points-poly": {
+      "data_source": "osm",
+      "data_name": "amenity_points_poly",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "clip": false,
+      "rules": [
+        {
+          "res_max": "@z13",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "power-line": {
+      "data_source": "osm",
+      "data_name": "power_line",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z14",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "power_minorline": {
+      "data_source": "osm",
+      "data_name": "power_minorline",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z16",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "power_towers": {
+      "data_source": "osm",
+      "data_name": "power_towers",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z14",
+          "res_min": "@z19",
+          "marker_color": [
+            244,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "power_poles": {
+      "data_source": "osm",
+      "data_name": "power_poles",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z16",
+          "res_min": "@z19",
+          "marker_color": [
+            244,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "roads-text-name": {
+      "data_source": "osm",
+      "data_name": "roads_text_name",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z13",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "text": {
+      "data_source": "osm",
+      "data_name": "text",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z12",
+          "res_min": "@z19",
+          "marker_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "text-poly": {
+      "data_source": "osm",
+      "data_name": "text_poly",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "clip": false,
+      "rules": [
+        {
+          "res_max": "@z12",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "area-text": {
+      "data_source": "osm",
+      "data_name": "area_text",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "clip": false,
+      "rules": [
+        {
+          "res_max": "@z14",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "interpolation_lines": {
+      "data_source": "osm",
+      "data_name": "interpolation_lines",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z17",
+          "res_min": "@z19",
+          "line_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "housenumbers": {
+      "data_source": "osm",
+      "data_name": "housenumbers",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z17",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "housenames": {
+      "data_source": "osm",
+      "data_name": "housenames",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "rules": [
+        {
+          "res_max": "@z17",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "misc_boundaries": {
+      "data_source": "osm",
+      "data_name": "misc_boundaries",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "*",
+      "clip": false,
+      "rules": [
+        {
+          "res_max": "@z7",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "theme_park": {
+      "data_source": "osm",
+      "data_name": "theme_park",
+      "encode": "utf-8",
+      "geometry_column": "way",
+      "fields": "way",
+      "clip": false,
+      "rules": [
+        {
+          "res_max": "@z13",
+          "res_min": "@z19",
+          "fill_color": [
+            255,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  }
+}

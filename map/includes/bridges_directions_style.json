@@ -1,0 +1,116 @@
+{
+	"rules": [
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[oneway] = 'yes'",
+			"line_join": "bevel",
+			"line_color": "@highway-direction",
+			"line_dasharray": [
+				0,
+				12,
+				10,
+				152
+			],
+			"line_width": 1
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[oneway] = 'yes'",
+			"line_join": "bevel",
+			"line_color": "@highway-direction",
+			"line_dasharray": [
+				0,
+				12,
+				9,
+				153
+			],
+			"line_width": 2
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[oneway] = 'yes'",
+			"line_join": "bevel",
+			"line_color": "@highway-direction",
+			"line_dasharray": [
+				0,
+				18,
+				2,
+				154
+			],
+			"line_width": 3
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[oneway] = 'yes'",
+			"line_join": "bevel",
+			"line_color": "@highway-direction",
+			"line_dasharray": [
+				0,
+				18,
+				1,
+				155
+			],
+			"line_width": 4
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[oneway] = '-1'",
+			"line_join": "bevel",
+			"line_color": "@highway-direction",
+			"line_dasharray": [
+				0,
+				12,
+				10,
+				152
+			],
+			"line_width": 1
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[oneway] = '-1'",
+			"line_join": "bevel",
+			"line_color": "@highway-direction",
+			"line_dasharray": [
+				0,
+				13,
+				9,
+				152
+			],
+			"line_width": 2
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[oneway] = '-1'",
+			"line_join": "bevel",
+			"line_color": "@highway-direction",
+			"line_dasharray": [
+				0,
+				14,
+				2,
+				158
+			],
+			"line_width": 3
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[oneway] = '-1'",
+			"line_join": "bevel",
+			"line_color": "@highway-direction",
+			"line_dasharray": [
+				0,
+				15,
+				1,
+				158
+			],
+			"line_width": 4
+		}
+	]
+}

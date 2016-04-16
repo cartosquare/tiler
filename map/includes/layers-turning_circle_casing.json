@@ -1,0 +1,74 @@
+{
+	"layers": {
+		"turning_circle_casing": {
+			"data_source": "osm",
+			"data_name": "turning_circle",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"tag": "路端的圆环区域，通常用来车辆的转弯",
+			"rules": [
+				{
+					"res_max": "@z16",
+					"res_min": "@z16",
+					"data_filter": "[int_tc_type] = 'service'",
+					"marker_image": "turning_circle-uncl-casing.18.png"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[int_tc_type] = 'service'",
+					"marker_image": "turning_circle-uncl-casing.16.png"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z15",
+					"data_filter": "[int_tc_type] = 'living_street'",
+					"marker_image": "turning_circle-uncl-fill.14.png"
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z16",
+					"data_filter": "[int_tc_type] = 'living_street'",
+					"marker_image": "turning_circle-uncl-fill.18.png"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[int_tc_type] = 'living_street'",
+					"marker_image": "turning_circle-uncl-fill.24.png"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z15",
+					"data_filter": "[int_tc_type] = 'residential' or [int_tc_type] = 'unclassified'",
+					"marker_image": "turning_circle-uncl-casing.14.png"
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z16",
+					"data_filter": "[int_tc_type] = 'residential' or [int_tc_type] = 'unclassified'",
+					"marker_image": "turning_circle-uncl-casing.18.png"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[int_tc_type] = 'residential' or [int_tc_type] = 'unclassified'",
+					"marker_image": "turning_circle-uncl-casing.24.png"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z16",
+					"data_filter": "[int_tc_type] = 'tertiary'",
+					"marker_image": "turning_circle-tert-casing.18.png"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[int_tc_type] = 'tertiary'",
+					"marker_image": "turning_circle-tert-casing.24.png"
+				}
+			]
+		}
+	}
+}

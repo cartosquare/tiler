@@ -1,0 +1,59 @@
+{
+	"layers": {
+		"guideways": {
+			"data_source": "osm",
+			"data_name": "guideways",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z13",
+					"res_min": "@z13",
+					"line_join": "round",
+					"line_color": "@guideway",
+					"line_width": 3
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z13",
+					"line_join": "round",
+					"line_color": [
+						255,
+						255,
+						255
+					],
+					"line_dasharray": [
+						8,
+						12
+					],
+					"line_width": 1
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"line_join": "round",
+					"line_color": "@guideway",
+					"line_width": 3
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"line_join": "round",
+					"line_color": [
+						255,
+						255,
+						255
+					],
+					"line_dasharray": [
+						0,
+						11,
+						8,
+						1
+					],
+					"line_width": 1
+				}
+			]
+		}
+	}
+}

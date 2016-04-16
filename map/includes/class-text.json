@@ -1,0 +1,193 @@
+{
+	"classes": {
+		"text-roads": {
+			"tag": "道路标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				0
+			]
+		},
+		"text-island": {
+			"tag": "岛屿标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				0
+			]
+		},
+		"text-poi": {
+			"tag": "与食物相关的商店的标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				115,
+				74,
+				8
+			]
+		},
+		"text-parking_public": {
+			"tag": "公开停车场标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				102,
+				255
+			]
+		},
+		"text-parking_private": {
+			"tag": "私人停车场标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				102,
+				204,
+				175
+			]
+		},
+		"text-place_of_worship": {
+			"tag": "宗教标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				51
+			]
+		},
+		"text-wood": {
+			"tag": "深林标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				0
+			]
+		},
+		"text-peak": {
+			"tag": "山峰标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				128,
+				128,
+				0
+			]
+		},
+		"text-memorial_archaeological": {
+			"tag": "历史遗迹标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				128,
+				128,
+				0
+			]
+		},
+		"text-water": {
+			"tag": "河流湖泊标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				102,
+				153,
+				204
+			]
+		},
+		"text-point": {
+			"tag": "(leisure != '' or landuse != '') and point = 'yes'",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				170
+			]
+		},
+		"text-poi2": {
+			"tag": "bay,spring,alpine_but,shelter,bank",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				102,
+				153,
+				204
+			]
+		},
+		"text-poi3": {
+			"tag": "hotel,embassy,guest_house,bed_and_breakfast,fuel,bus_station",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				102,
+				255
+			]
+		},
+		"text-marina": {
+			"tag": "摩托艇停靠处",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				255
+			]
+		},
+		"text-poi4": {
+			"tag": "theam_park,museum",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				115,
+				74,
+				8
+			]
+		},
+		"text-poi5": {
+			"tag": "",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				51
+			]
+		},
+		"text-poi6": {
+			"tag": "",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				218,
+				0,
+				146
+			]
+		},
+		"text-poi7": {
+			"tag": "",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				153,
+				53,
+				153
+			]
+		},
+		"text-danger_area": {
+			"tag": "危险区域标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				255,
+				192,
+				203
+			]
+		},
+		"text-gate": {
+			"tag": "登机口标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				170,
+				102,
+				204
+			]
+		},
+		"text-area": {
+			"tag": "面标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				51
+			]
+		}
+	}
+}

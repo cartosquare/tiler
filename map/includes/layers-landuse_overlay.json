@@ -1,0 +1,38 @@
+{
+	"layers": {
+		"landuse_overlay": {
+			"data_source": "osm",
+			"data_name": "landuse_overlay",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "way",
+			"rules": [
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[landuse] = 'military'",
+					"fill_image": "@landuse-overlay_military",
+					"outline_color": "@landuse-overlay_military",
+					"outline_width": 3,
+					"outline_opacity": 0.329
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z13",
+					"data_filter": "[leisure] ='nature_reserve'",
+					"fill_image": "@landuse-nature_reserve-lowz",
+					"outline_color": "@landuse-nature_reserve-lowz",
+					"outline_width": 0.5
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[leisure] = 'nature_reserve'",
+					"fill_image": "@landuse-overlay-nature_reserve-highz",
+					"outline_color": "@landuse-overlay-nature_reserve-highz",
+					"outline_width": 1
+				}
+			]
+		}
+	}
+}

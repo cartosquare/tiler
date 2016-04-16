@@ -1,0 +1,155 @@
+{
+	"layers": {
+		"tracks-notunnel-nobridge": {
+			"data_source": "osm",
+			"data_name": "tracks_notunnel_nobridge",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[tracktype] = 'grade1'",
+					"line_color": [
+						255,
+						255,
+						255
+					],
+					"line_width": 3.5,
+					"line_opacity": 0.4
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[tracktype] = 'grade1'",
+					"line_color": "@track",
+					"line_opacity": 0.7,
+					"line_width": 2
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[tracktype] = 'grade2'",
+					"line_color": [
+						255,
+						255,
+						255
+					],
+					"line_width": 3,
+					"line_opacity": 0.4
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[tracktype] = 'grade2'",
+					"line_color": "@track",
+					"line_opacity": 0.8,
+					"line_width": 1.5,
+					"line_dasharray": [
+						9,
+						4
+					]
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[tracktype] = 'grade3'",
+					"line_color": [
+						255,
+						255,
+						255
+					],
+					"line_width": 3,
+					"line_opacity": 0.4
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[tracktype] = 'grade3'",
+					"line_color": "@track",
+					"line_opacity": 0.8,
+					"line_width": 1.5,
+					"line_dasharray": [
+						3,
+						4
+					]
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[tracktype] = 'grade4'",
+					"line_color": [
+						255,
+						255,
+						255
+					],
+					"line_width": 3,
+					"line_opacity": 0.4
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[tracktype] = 'grade4'",
+					"line_color": "@track",
+					"line_opacity": 0.8,
+					"line_width": 2,
+					"line_dasharray": [
+						4,
+						7,
+						1,
+						5
+					]
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[tracktype] = 'grade5'",
+					"line_color": [
+						255,
+						255,
+						255
+					],
+					"line_width": 3,
+					"line_opacity": 0.4
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[tracktype] = 'grade5'",
+					"line_color": "@track",
+					"line_opacity": 0.8,
+					"line_width": 2,
+					"line_dasharray": [
+						1,
+						5
+					]
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "not [tracktype] = 'grade1' and not [tracktype] = 'grade2' and not [tracktype] = 'grade3' and not [tracktype] = 'grade4' and not [tracktype] = 'grade5')",
+					"line_color": [
+						255,
+						255,
+						255
+					],
+					"line_width": 3,
+					"line_opacity": 0.4
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "not [tracktype] = 'grade1' and not [tracktype] = 'grade2' and not [tracktype] = 'grade3' and not [tracktype] = 'grade4' and not [tracktype] = 'grade5')",
+					"line_color": "@track",
+					"line_opacity": 0.7,
+					"line_width": 1.5,
+					"line_dasharray": [
+						3,
+						4
+					]
+				}
+			]
+		}
+	}
+}

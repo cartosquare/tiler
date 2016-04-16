@@ -1,0 +1,59 @@
+{
+	"classes": {
+		"buildings-station": {
+			"tag": "火车站台",
+			"fill_color": [
+				212,
+				170,
+				170
+			]
+		},
+		"buildings-supermarket": {
+			"tag": "超市",
+			"fill_color": [
+				255,
+				192,
+				103
+			]
+		},
+		"buildings-place_of_worship": {
+			"tag": "教堂或清真寺",
+			"fill_color": [
+				170,
+				170,
+				170
+			],
+			"outline_color": [
+				17,
+				17,
+				17
+			]
+		},
+		"buildings-light": {
+			"tag": "一般的建筑",
+			"fill_color": [
+				188,
+				169,
+				169
+			],
+			"outline_color": [
+				51,
+				0,
+				102
+			]
+		},
+		"buildings-terminal": {
+			"tag": "航站楼",
+			"fill_color": [
+				204,
+				153,
+				255
+			],
+			"outline_color": [
+				51,
+				0,
+				102
+			]
+		}
+	}
+}

@@ -1,0 +1,330 @@
+{
+	"layers": {
+		"placenames-large": {
+			"data_source": "osm",
+			"data_name": "placenames_large",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z1",
+					"res_min": "@z2",
+					"data_filter": "[place] = 'continent'",
+					"label_field": "name",
+					"label_text_font": "@placenames-large",
+					"label_text_size": 10,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-large"
+				},
+				{
+					"res_max": "@z2",
+					"res_min": "@z3",
+					"data_filter": "[place] = 'country'",
+					"label_field": "name",
+					"label_text_font": "@placenames-large",
+					"label_text_size": 8,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-large"
+				},
+				{
+					"res_max": "@z4",
+					"res_min": "@z6",
+					"data_filter": "[place] = 'country'",
+					"label_field": "name",
+					"label_text_font": "@placenames-large",
+					"label_text_size": 10,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-large"
+				},
+				{
+					"res_max": "@z4",
+					"res_min": "@z4",
+					"data_filter": "[place] = 'state'",
+					"label_field": "name",
+					"label_text_font": "@placenames-large",
+					"label_text_size": 9,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-large"
+				},
+				{
+					"res_max": "@z5",
+					"res_min": "@z6",
+					"data_filter": "[place] = 'state'",
+					"label_field": "name",
+					"label_text_font": "@placenames-large",
+					"label_text_size": 9,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-large"
+				},
+				{
+					"res_max": "@z7",
+					"res_min": "@z8",
+					"data_filter": "[place] = 'state'",
+					"label_field": "name",
+					"label_text_font": "@placenames-large",
+					"label_text_size": 9,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-large"
+				}
+			]
+		},
+		"placenames-capital": {
+			"data_source": "osm",
+			"data_name": "placenames_capital",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z5",
+					"res_min": "@z5",
+					"label_field": "name",
+					"label_text_font": "@placenames-capital",
+					"label_text_size": 9,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-capital"
+				},
+				{
+					"res_max": "@z6",
+					"res_min": "@z8",
+					"label_field": "name",
+					"label_text_font": "@placenames-capital",
+					"label_text_size": 11,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-capital"
+				},
+				{
+					"res_max": "@z9",
+					"res_min": "@z10",
+					"label_field": "name",
+					"label_text_font": "@placenames-capital",
+					"label_text_size": 11,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-capital"
+				},
+				{
+					"res_max": "@z11",
+					"res_min": "@z14",
+					"label_field": "name",
+					"label_text_font": "@placenames-capital",
+					"label_text_size": 14,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-capital"
+				}
+			]
+		},
+		"placenames-medium": {
+			"data_source": "osm",
+			"data_name": "placenames_medium",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z6",
+					"res_min": "@z8",
+					"label_field": "name",
+					"data_filter": "[place] = 'city' or [place] = 'metropolis'",
+					"label_text_font": "@placenames-medium",
+					"label_text_size": 8,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-medium"
+				},
+				{
+					"res_max": "@z9",
+					"res_min": "@z10",
+					"label_field": "name",
+					"data_filter": "[place] = 'city' or [place] = 'metropolis'",
+					"label_text_font": "@placenames-medium",
+					"label_text_size": 11,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-medium"
+				},
+				{
+					"res_max": "@z11",
+					"res_min": "@z14",
+					"label_field": "name",
+					"data_filter": "[place] = 'city' or [place] = 'metropolis'",
+					"label_text_font": "@placenames-medium",
+					"label_text_size": 14,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-medium"
+				},
+				{
+					"res_max": "@z9",
+					"res_min": "@z10",
+					"label_field": "name",
+					"data_filter": "[place] = 'town' or [place] = 'large_town' or [place] = 'small_town'",
+					"label_text_font": "@placenames-medium",
+					"label_text_size": 8,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-medium"
+				},
+				{
+					"res_max": "@z11",
+					"res_min": "@z13",
+					"label_field": "name",
+					"data_filter": "[place] = 'town' or [place] = 'large_town' or [place] = 'small_town'",
+					"label_text_font": "@placenames-medium",
+					"label_text_size": 10,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-medium"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"label_field": "name",
+					"data_filter": "[place] = 'town' or [place] = 'large_town' or [place] = 'small_town'",
+					"label_text_font": "@placenames-medium",
+					"label_text_size": 14,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-medium-small-highz"
+				}
+			]
+		},
+		"placenames-small": {
+			"data_source": "osm",
+			"data_name": "placenames_small",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z12",
+					"res_min": "@z13",
+					"label_field": "name",
+					"data_filter": "[place] = 'suburb'",
+					"label_text_font": "@placenames-small",
+					"label_text_size": 10,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-small"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"label_field": "name",
+					"data_filter": "[place] = 'suburb'",
+					"label_text_font": "@placenames-small",
+					"label_text_size": 13,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-small"
+				},
+				{
+					"res_max": "@z12",
+					"res_min": "@z14",
+					"label_field": "name",
+					"data_filter": "[place] = 'village' or [place] = 'large_village'",
+					"label_text_font": "@placenames-small",
+					"label_text_size": 9,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-small"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"label_field": "name",
+					"data_filter": "[place] = 'village' or [place] = 'large_village'",
+					"label_text_font": "@placenames-small",
+					"label_text_size": 12,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-medium-small-highz"
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"label_field": "name",
+					"data_filter": "[place] = 'hamlet' or [place] = 'locality' or [place] = 'isolated_dwelling' or [place] = 'farm'",
+					"label_text_font": "Microsoft Yahei",
+					"label_text_size": 11,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@placenames-medium-small-highz"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,75 @@
+{
+	"layers": {
+		"line-features": {
+			"data_source": "osm",
+			"data_name": "line_features",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z13",
+					"res_min": "@z14",
+					"data_filter": "[natural] = 'cliff'",
+					"line_image": "@line-featuers_cliff-lowz"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"data_filter": "[natural] = 'cliff'",
+					"line_image": "@line-featuers_cliff-highz"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"data_filter": "[man_made] = 'embankment'",
+					"line_image": "@line-featuers_embankment"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[barrier] = 'embankment'",
+					"line_width": 0.4,
+					"line_color": "@line-featuers_embankment"
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[natural] = 'hedge' or [barrier] = 'hedge'",
+					"line_width": 3,
+					"line_color": "@line-featuers_hedge"
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[barrier] != '' and not ([barrier] = 'hedge' or [barrier] = 'embankment')",
+					"line_width": 0.4,
+					"line_color": "@line-featuers_barrier"
+				}
+			]
+		},
+		"polygon-barriers ": {
+			"data_source": "osm",
+			"data_name": "polygon_barriers",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[natural] = 'hedge' or [barrier] = 'hedge'",
+					"fill_color": "@polygon-barriers_hedge"
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[barrier] != '' and not [barrier] = 'hedge'",
+					"outline_width": 0.4,
+					"outline_color": "@polygon-barriers",
+					"fill_opacity": 0
+				}
+			]
+		}
+	}
+}

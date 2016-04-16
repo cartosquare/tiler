@@ -1,0 +1,228 @@
+{
+	"layers": {
+		"roads-text-name": {
+			"data_source": "osm",
+			"data_name": "roads_text_name",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z13",
+					"res_min": "@z13",
+					"label_field": "name",
+					"data_filter": "[highway] = 'trunk' or [highway] = 'primary'",
+					"label_text_font": "@text-roads",
+					"label_text_size": 8,
+					"label_text_spacing": 1,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@text-roads"
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z13",
+					"label_field": "name",
+					"data_filter": "[highway] = 'secondary'",
+					"label_text_font": "@text-roads",
+					"label_text_size": 8,
+					"label_text_spacing": 1,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@text-roads"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z14",
+					"label_field": "name",
+					"data_filter": "[highway] = 'trunk' or [highway] = 'primary'",
+					"label_text_font": "@text-roads",
+					"label_text_size": 9,
+					"label_text_spacing": 2,
+					"label_text_color": "@text-roads"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"label_field": "name",
+					"data_filter": "[highway] = 'trunk' or [highway] = 'primary'",
+					"label_text_spacing": 2,
+					"label_text_font": "@text-roads",
+					"label_text_size": 10,
+					"label_text_color": "@text-roads"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z14",
+					"label_field": "name",
+					"data_filter": "[highway] = 'secondary'",
+					"label_text_font": "@text-roads",
+					"label_text_size": 9,
+					"label_text_spacing": 2,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@text-roads"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"label_field": "name",
+					"data_filter": "[highway] = 'secondary'",
+					"label_text_font": "@text-roads",
+					"label_text_size": 10,
+					"label_text_spacing": 4,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@text-roads"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z16",
+					"label_field": "name",
+					"data_filter": "[highway] = 'tertiary'",
+					"label_text_font": "@text-roads",
+					"label_text_size": 9,
+					"label_text_spacing": 3,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@text-roads"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"label_field": "name",
+					"data_filter": "[highway] = 'tertiary'",
+					"label_text_font": "@text-roads",
+					"label_text_size": 11,
+					"label_text_spacing": 6,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@text-roads"
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z15",
+					"label_field": "name",
+					"data_filter": "[highway] = 'proposed' or [highway] = 'construction'",
+					"label_text_font": "@text-roads",
+					"label_text_size": 9,
+					"label_text_spacing": 5,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@text-roads"
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"label_field": "name",
+					"data_filter": "[highway] = 'proposed' or [highway] = 'construction'",
+					"label_text_font": "@text-roads",
+					"label_text_size": 11,
+					"label_text_spacing": 10,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@text-roads"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z15",
+					"label_field": "name",
+					"data_filter": "[highway] = 'unclassified' or [highway] = 'residential'",
+					"label_text_font": "@text-roads",
+					"label_text_size": 8,
+					"label_text_spacing": 6,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@text-roads"
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z16",
+					"label_field": "name",
+					"data_filter": "[highway] = 'unclassified' or [highway] = 'residential'",
+					"label_text_font": "@text-roads",
+					"label_text_size": 9,
+					"label_text_spacing": 8,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@text-roads"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"label_field": "name",
+					"data_filter": "[highway] = 'unclassified' or [highway] = 'residential'",
+					"label_text_font": "@text-roads",
+					"label_text_size": 11,
+					"label_text_spacing": 16,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@text-roads"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z16",
+					"label_field": "name",
+					"data_filter": "not [highway] = 'trunk' and not [highway] = 'primary' and not [highway] = 'secondary' and not [highway] = 'tertiary' and not [highway] = 'proposed' and not [highway] = 'unclassified' and not [highway] = 'residential'",
+					"label_text_font": "@text-roads",
+					"label_text_size": 9,
+					"label_text_spacing": 10,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@text-roads"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"label_field": "name",
+					"data_filter": "not [highway] = 'trunk' and not [highway] = 'primary' and not [highway] = 'secondary' and not [highway] = 'tertiary' and not [highway] = 'proposed' and not [highway] = 'unclassified' and not [highway] = 'residential'",
+					"label_text_font": "@text-roads",
+					"label_text_size": 11,
+					"label_text_spacing": 20,
+					"label_text_outline_color": [
+						255,
+						255,
+						255
+					],
+					"label_text_color": "@text-roads"
+				}
+			]
+		}
+	}
+}

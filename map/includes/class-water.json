@@ -1,0 +1,149 @@
+{
+	"classes": {
+		"water-lines-casing": {
+			"tag": "河流外边线",
+			"line_color": [
+				255,
+				255,
+				255
+			]
+		},
+		"water-line": {
+			"tag": "河流",
+			"line_color": [
+				181,
+				208,
+				208
+			],
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				102,
+				153,
+				204
+			]
+		},
+		"water-weir": {
+			"tag": "水堰",
+			"line_color": [
+				170,
+				170,
+				170
+			]
+		},
+		"water-dam": {
+			"tag": "大坝",
+			"line_color": [
+				68,
+				68,
+				68
+			],
+			"label_text_color": [
+				34,
+				34,
+				34
+			],
+			"label_text_font": "Microsoft Yahei"
+		},
+		"water-area_glacier-lowz": {
+			"tag": "冰川",
+			"fill_image": "glacier.png",
+			"outline_color": [
+				153,
+				204,
+				255
+			]
+		},
+		"water-area_glacier-highz": {
+			"tag": "冰川",
+			"fill_image": "glacier2.png",
+			"outline_color": [
+				153,
+				204,
+				255
+			]
+		},
+		"water-area-docker_canal": {
+			"tag": "码头、人工运输渠",
+			"fill_image": "glacier2.png",
+			"fill_color": [
+				181,
+				208,
+				208
+			]
+		},
+		"water-area-basin": {
+			"tag": "盆地",
+			"fill_color": [
+				181,
+				208,
+				208
+			]
+		},
+		"water-area-water": {
+			"tag": "湖泊河流",
+			"fill_color": [
+				181,
+				208,
+				208
+			]
+		},
+		"water-area-mud": {
+			"tag": "泥浆地",
+			"fill_image": "mud.png"
+		},
+		"water-area-land": {
+			"tag": "水中岛屿",
+			"fill_color": [
+				242,
+				239,
+				233
+			]
+		},
+		"water-area-wetland": {
+			"tag": "湿地",
+			"fill_image": "marsh.png"
+		},
+		"glaciers-text": {
+			"tag": "冰川标注",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				153,
+				153,
+				255
+			]
+		},
+		"marinas-area": {
+			"tag": "休闲游艇和摩托艇的泊车处",
+			"outline_color": [
+				0,
+				0,
+				255
+			]
+		},
+		"piers-area": {
+			"tag": "码头上通往大海的桥梁",
+			"fill_color": [
+				242,
+				239,
+				233
+			],
+			"line_color": [
+				242,
+				239,
+				233
+			]
+		},
+		"piers-breakwater_groyne": {
+			"tag": "码头上保护海岸的丁坝和石矶",
+			"line_color": [
+				170,
+				170,
+				170
+			]
+		},
+		"waterway-lock_gate": {
+			"tag": "闸门",
+			"marker_image": "lock_gate.png"
+		}
+	}
+}

@@ -1,0 +1,67 @@
+{
+      "layers": {
+            "amenity-stations": {
+                  "data_source": "osm",
+                  "data_name": "amenity_stations",
+                  "encode": "utf-8",
+                  "geometry_column": "way",
+                  "fields": "*",
+                  "style_files": [
+                        "amenity_stations_style.json"
+                  ]
+            },
+            "amenity-stations-poly": {
+                  "data_source": "osm",
+                  "data_name": "amenity_stations_poly",
+                  "encode": "utf-8",
+                  "geometry_column": "way",
+                  "fields": "*",
+                  "clip": false,
+                  "style_files": [
+                        "amenity_stations_style.json"
+                  ]
+            },
+            "amenity-symbols": {
+                  "data_source": "osm",
+                  "data_name": "amenity_symbols",
+                  "encode": "utf-8",
+                  "geometry_column": "way",
+                  "fields": "*",
+                  "style_files": [
+                        "amenity_symbols_style.json"
+                  ]
+            },
+            "amenity-symbols-poly": {
+                  "data_source": "osm",
+                  "data_name": "amenity_symbols_poly",
+                  "encode": "utf-8",
+                  "geometry_column": "way",
+                  "fields": "*",
+                  "clip": false,
+                  "style_files": [
+                        "amenity_symbols_style.json"
+                  ]
+            },
+            "amenity-points": {
+                  "data_source": "osm",
+                  "data_name": "amenity_points",
+                  "encode": "utf-8",
+                  "geometry_column": "way",
+                  "fields": "*",
+                  "style_files": [
+                        "amenity_points_style.json"
+                  ]
+            },
+            "amenity-points-poly": {
+                  "data_source": "osm",
+                  "data_name": "amenity_points_poly",
+                  "encode": "utf-8",
+                  "geometry_column": "way",
+                  "fields": "*",
+                  "clip": false,
+                  "style_files": [
+                        "amenity_points_style.json"
+                  ]
+            }
+      }
+}

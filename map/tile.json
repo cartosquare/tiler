@@ -1,0 +1,62 @@
+{
+  "background_color": [
+    181,
+    208,
+    208
+  ],
+  "init": {
+    "center": [
+      12956216.491,
+      4853426.417
+    ],
+    "res": 305.748113140625
+  },
+  "data_sources_files": [
+    "datasource.json"
+  ],
+  "classes_files": [
+    "class-lod.json",
+    "class-admin.json",
+    "class-landcover.json",
+    "class-water.json",
+    "class-roads.json",
+    "class-barriers.json",
+    "class-buildings.json",
+    "class-amenity.json",
+    "class-text.json",
+    "class-others.json"
+  ],
+  "icon": "icons/",
+  "layers_files": [
+    "layers-shapefile.json",
+    "layers-landcover.json",
+    "layers-water.json",
+    "layers-tunnels.json",
+    "layers-landuse_overlay.json",
+    "layers-turning_circle_casing.json",
+    "layers-footbikecycle_tunnels.json",
+    "layers-tracks_tunnels.json",
+    "layers-barriers.json",
+    "layers-highway_area_casing.json",
+    "layers-minor_roads_casing.json",
+    "layers-highway_area_fill.json",
+    "layers-buildings.json",
+    "layers-tracks_notunnel_nobridge.json",
+    "layers-minor_roads_fill.json",
+    "layers-turning_circle_fill.json",
+    "layers-ferry_routes.json",
+    "layers-aerialways.json",
+    "layers-roads.json",
+    "layers-pre_bridges.json",
+    "layers-bridges.json",
+    "layers-trams.json",
+    "layers-guideways.json",
+    "layers-admin.json",
+    "layers-placenames.json",
+    "layers-power.json",
+    "layers-road_text_name.json",
+    "layers-text.json",
+    "layers-house_names.json",
+    "layers-national_theme_parks.json"
+  ]
+}

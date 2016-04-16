@@ -1,0 +1,440 @@
+{
+	"layers": {
+		"landcover": {
+			"data_source": "osm",
+			"data_name": "landcover",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[leisure] = 'swimming_pool'",
+					"fill_color": "@landcover-swimming_pool",
+					"outline_color": "@landcover-swimming_pool",
+					"outline_width": 0.5
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z19",
+					"data_filter": "[leisure] = 'playground'",
+					"fill_color": "@landcover-playground",
+					"outline_color": "@landcover-playground",
+					"outline_width": 0.3
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z19",
+					"data_filter": "[tourism] = 'camp_site' or [tourism] = 'caravan_site' or [tourism] = 'picnic_site'",
+					"fill_color": "@landcover-camp_picnic",
+					"outline_color": "@landcover-camp_picnic",
+					"outline_width": 0.3,
+					"fill_opacity": 0.5
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[tourism] = 'attraction'",
+					"fill_color": "@landcover-attraction"
+				},
+				{
+					"comment": "11-19",
+					"res_max": "@z11",
+					"res_min": "@z19",
+					"data_filter": "[landuse] = 'quarry'",
+					"fill_image": "@landcover-quarry",
+					"outline_color": "@landcover-quarry",
+					"outline_width": 0.5
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z12",
+					"data_filter": "[landuse] = 'vineyard'",
+					"fill_color": "@landcover-vineyard-lowz"
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z19",
+					"data_filter": "[landuse] = 'vineyard'",
+					"fill_image": "@landcover-vineyard-highz"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[landuse] = 'orchard'",
+					"fill_image": "@landcover-orchard"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z14",
+					"data_filter": "[landuse] = 'cemetery' or [landuse] = 'grave_yard' or [amenity] = 'grave_yard'",
+					"fill_color": "@landcover-grave_yard-lowz"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "([landuse] = 'cemetery' or [landuse] = 'grave_yard' or [amenity] = 'grave_yard') and [religion] = 'jewish'",
+					"fill_image": "@landcover-grave_yard-jewish"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "([landuse] = 'cemetery' or [landuse] = 'grave_yard' or [amenity] = 'grave_yard') and [religion] = 'INT-generic'",
+					"fill_image": "@landcover-grave_yard-generic"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[landuse] = 'residential'",
+					"fill_color": "@landcover-residential"
+				},
+				{
+					"res_max": "@z12",
+					"res_min": "@z19",
+					"data_filter": "[landuse] = 'garages'",
+					"fill_color": "@landcover-garages",
+					"fill_opacity": 0.2
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[military] = 'barracks'",
+					"fill_color": "@landcover-barracks"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z13",
+					"data_filter": "[landuse] = 'field' or [natural] = 'field'",
+					"fill_color": "@landcover-field",
+					"fill_opacity": 0.2
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[landuse] = 'field' or [natural] = 'field'",
+					"fill_color": "@landcover-field",
+					"fill_opacity": 0.2,
+					"outline_width": 0.3,
+					"outline_opacity": 0.4,
+					"outline_color": "@landcover-field"
+				},
+				{
+					"res_max": "@z9",
+					"res_min": "@z10",
+					"data_filter": "[military] = 'danger_area'",
+					"fill_color": "@landcover-danger_area-lowz",
+					"fill_opacity": 0.3
+				},
+				{
+					"res_max": "@z11",
+					"res_min": "@z19",
+					"data_filter": "[military] = 'danger_area'",
+					"fill_image": "@landcover-danger_area-highz"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[landuse] = 'meadow' or [landuse] = 'grass'",
+					"fill_color": "@landcover-grass"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[leisure] = 'park' or [leisure] = 'recreation_ground'",
+					"fill_color": "@landcover-park",
+					"fill_opacity": 0.6
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[tourism] = 'zoo'",
+					"fill_image": "@landcover-zoo"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[leisure] = 'common'",
+					"fill_color": "@landcover-common"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[leisure] = 'garden'",
+					"fill_color": "@landcover-garden"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[leisure] = 'golf_course'",
+					"fill_color": "@landcover-golf_course"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z13",
+					"data_filter": "[landuse] = 'allotments'",
+					"fill_color": "@landcover-allotments-lowz"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[landuse] = 'allotments'",
+					"fill_image": "@landcover-allotments-highz"
+				},
+				{
+					"res_max": "@z8",
+					"res_min": "@z13",
+					"data_filter": "[landuse] = 'forest'",
+					"fill_color": "@landcover-forest-lowz"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[landuse] = 'forest'",
+					"fill_image": "@landcover-forest-highz"
+				},
+				{
+					"res_max": "@z9",
+					"res_min": "@z19",
+					"data_filter": "[landuse] = 'farmyard'",
+					"fill_color": "@landcover-farmyard"
+				},
+				{
+					"res_max": "@z9",
+					"res_min": "@z19",
+					"data_filter": "[landuse] = 'farm' or [landuse] = 'farmland'",
+					"fill_color": "@landcover-farm"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[landuse] = 'recreation_ground'",
+					"fill_color": "@landcover-recreation"
+				},
+				{
+					"res_max": "@z11",
+					"res_min": "@z19",
+					"data_filter": "[landuse] = 'village_green'",
+					"fill_color": "@landcover-village_green"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z14",
+					"data_filter": "[landuse] = 'retail'",
+					"fill_color": "@landcover-retail"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"data_filter": "[landuse] = 'retail'",
+					"fill_color": "@landcover-retail",
+					"outline_color": "@landcover-retail",
+					"outline_width": 0.3
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[landuse] = 'industrial' or [landuse] = 'railway'",
+					"fill_color": "@landcover-industrial_railway"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z11",
+					"data_filter": "[power] = 'station' or [power] = 'generator'",
+					"fill_color": "@landcover-pow_station"
+				},
+				{
+					"res_max": "@z12",
+					"res_min": "@z19",
+					"data_filter": "[power] = 'station' or [power] = 'generator'",
+					"fill_color": "@landcover-pow_station",
+					"outline_color": "@landcover-pow_station",
+					"outline_width": 0.4
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z19",
+					"data_filter": "[power] = 'sub_station'",
+					"fill_color": "@landcover-pow_substation",
+					"outline_color": "@landcover-pow_substation",
+					"outline_width": 0.4
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[landuse] = 'commercial'",
+					"fill_color": "@landcover-commercial"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[landuse] = 'brownfield' or [landuse] = 'landfill' or [landuse] = 'greenfield' or [landuse] = 'construction'",
+					"fill_color": "@landcover-develop",
+					"fill_opacity": 0.7
+				},
+				{
+					"res_max": "@z8",
+					"res_min": "@z19",
+					"data_filter": "[natural] = 'wood'",
+					"fill_color": "@landcover-wood"
+				},
+				{
+					"res_max": "@z8",
+					"res_min": "@z19",
+					"data_filter": "[natural] = 'desert'",
+					"fill_color": "@landcover-desert"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[natural] = 'sand'",
+					"fill_color": "@landcover-sand"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[natural] = 'heath'",
+					"fill_color": "@landcover-heath"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[natural] = 'grassland'",
+					"fill_color": "@landcover-grassland"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z13",
+					"data_filter": "[natural] = 'scrub'",
+					"fill_color": "@landcover-scrub"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[natural] = 'scrub'",
+					"fill_image": "@landcover-scrub"
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z11",
+					"data_filter": "[amenity] = 'university' or [amenity] = 'college' or [amenity] = 'school' or [amenity] = 'hospital' or [amenity] = 'kindergarten'",
+					"fill_color": "@landcover-school_hospital"
+				},
+				{
+					"res_max": "@z12",
+					"res_min": "@z19",
+					"data_filter": "[amenity] = 'university' or [amenity] = 'college' or [amenity] = 'school' or [amenity] = 'hospital' or [amenity] = 'kindergarten'",
+					"fill_color": "@landcover-school_hospital",
+					"outline_color": "@landcover-school_hospital",
+					"outline_width": 0.3
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z14",
+					"data_filter": "[amenity] = 'parking'",
+					"fill_color": "@landcover-parking"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"data_filter": "[amenity] = 'parking'",
+					"fill_color": "@landcover-parking",
+					"outline_color": "@landcover-parking",
+					"outline_width": 0.3
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[amenity] = 'prison'",
+					"fill_image": "@landcover-prison"
+				},
+				{
+					"res_max": "@z12",
+					"res_min": "@z19",
+					"data_filter": "[aeroway] = 'apron'",
+					"fill_color": "@landcover-apron"
+				},
+				{
+					"res_max": "@z12",
+					"res_min": "@z19",
+					"data_filter": "[aeroway] = 'aerodrome'",
+					"fill_color": "@landcover-aerodrome",
+					"fill_opacity": 0.2,
+					"outline_color": "@landcover-aerodrome",
+					"outline_width": 0.2
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z19",
+					"data_filter": "[aeroway] = 'beach'",
+					"fill_image": "@landcover-beach"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'services' or [highway] = 'rest_area'",
+					"fill_color": "@landcover-service_rest_area"
+				}
+			]
+		},
+		"landcover-line": {
+			"data_source": "osm",
+			"data_name": "landcover_line",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z14",
+					"res_min": "@z15",
+					"line_join": "round",
+					"line_cap": "square",
+					"line_color": "@landcover-cutline",
+					"line_width": 3
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"line_join": "round",
+					"line_cap": "square",
+					"line_color": "@landcover-cutline",
+					"line_width": 6
+				}
+			]
+		},
+		"sports-grounds": {
+			"data_source": "osm",
+			"data_name": "sports_grounds",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[leisure] = 'sports_centre' or [leisure] = 'stadium'",
+					"fill_color": [
+						51,
+						204,
+						153
+					]
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[leisure] = 'track'",
+					"fill_color": "@sports-track",
+					"line_color": "@sports-track",
+					"line_width": 0.5
+				},
+				{
+					"res_max": "@z10",
+					"res_min": "@z19",
+					"data_filter": "[leisure] = 'pitch'",
+					"fill_color": "@sports-pitch",
+					"line_color": "@sports-pitch",
+					"line_width": 0.5
+				}
+			]
+		}
+	}
+}

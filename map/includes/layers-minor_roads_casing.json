@@ -1,0 +1,601 @@
+{
+	"layers": {
+		"minor-roads-casing": {
+			"data_source": "osm",
+			"data_name": "minor_roads_casing",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z12",
+					"res_min": "@z13",
+					"data_filter": "[highway] = 'living_street'",
+					"line_color": "@casing_living_street",
+					"line_width": 2.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z14",
+					"data_filter": "[highway] = 'living_street'",
+					"line_color": "@casing_living_street",
+					"line_width": 4,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z15",
+					"data_filter": "[highway] = 'living_street'",
+					"line_color": "@casing_living_street",
+					"line_width": 6,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z16",
+					"data_filter": "[highway] = 'living_street'",
+					"line_color": "@casing_living_street",
+					"line_width": 9,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'living_street'",
+					"line_color": "@casing_living_street",
+					"line_width": 14.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z12",
+					"res_min": "@z12",
+					"data_filter": "[highway] = 'raceway'",
+					"line_color": "@casing_raceway",
+					"line_width": 1.2,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z14",
+					"data_filter": "[highway] = 'raceway'",
+					"line_color": "@casing_raceway",
+					"line_width": 4,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'raceway'",
+					"line_color": "@casing_raceway",
+					"line_width": 7,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z13",
+					"data_filter": "[highway] = 'pedestrian' and not [tunnel] = 'yes'",
+					"line_color": "@casing_pedestrian",
+					"line_width": 2,
+					"line_join": "round",
+					"line_cap": "round"
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z13",
+					"data_filter": "[highway] = 'pedestrian' and [tunnel] = 'yes'",
+					"line_color": "@casing_pedestrian",
+					"line_width": 2,
+					"line_dasharray": [
+						4,
+						2
+					],
+					"line_join": "round",
+					"line_cap": "round"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z14",
+					"data_filter": "[highway] = 'pedestrian' and not [tunnel] = 'yes'",
+					"line_color": "@casing_pedestrian",
+					"line_width": 3.6,
+					"line_join": "round",
+					"line_cap": "round"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z14",
+					"data_filter": "[highway] = 'pedestrian' and [tunnel] = 'yes'",
+					"line_color": "@casing_pedestrian",
+					"line_width": 3.6,
+					"line_dasharray": [
+						4,
+						2
+					],
+					"line_join": "round",
+					"line_cap": "round"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z15",
+					"data_filter": "[highway] = 'pedestrian' and not [tunnel] = 'yes'",
+					"line_color": "@casing_pedestrian",
+					"line_width": 6.5,
+					"line_join": "round",
+					"line_cap": "round"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z15",
+					"data_filter": "[highway] = 'pedestrian' and [tunnel] = 'yes'",
+					"line_color": "@casing_pedestrian",
+					"line_width": 6.5,
+					"line_dasharray": [
+						4,
+						2
+					],
+					"line_join": "round",
+					"line_cap": "round"
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'pedestrian' and not [tunnel] = 'yes'",
+					"line_color": "@casing_pedestrian",
+					"line_width": 9,
+					"line_join": "round",
+					"line_cap": "round"
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'pedestrian' and [tunnel] = 'yes'",
+					"line_color": "@casing_pedestrian",
+					"line_width": 9,
+					"line_dasharray": [
+						4,
+						2
+					],
+					"line_join": "round",
+					"line_cap": "round"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z15",
+					"data_filter": "[highway] = 'service' and [tunnel] = 'yes'",
+					"line_color": "@casing_street",
+					"line_width": 2.5,
+					"line_dasharray": [
+						4,
+						2
+					]
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'service' and [tunnel] = 'yes'",
+					"line_color": "@casing_street",
+					"line_width": 7
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'service' and not service = 'INT-minor' and not [tunnel] = 'yes'",
+					"line_color": "@casing_street",
+					"line_width": 7
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'service' and service = 'INT-minor'",
+					"line_color": "@casing_street",
+					"line_width": 4
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z13",
+					"data_filter": "[highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' and not [tunnel] = 'yes'",
+					"line_color": "@casing_street",
+					"line_width": 3,
+					"line_join": "round",
+					"line_cap": "round"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z14",
+					"data_filter": "[highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' and not [tunnel] = 'yes'",
+					"line_color": "@casing_street",
+					"line_width": 4.5,
+					"line_join": "round",
+					"line_cap": "round"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z15",
+					"data_filter": "[highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' and not [tunnel] = 'yes'",
+					"line_color": "@casing_street",
+					"line_width": 8,
+					"line_join": "round",
+					"line_cap": "round"
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z16",
+					"data_filter": "[highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' and not [tunnel] = 'yes'",
+					"line_color": "@casing_street",
+					"line_width": 11,
+					"line_join": "round",
+					"line_cap": "round"
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z13",
+					"data_filter": "[highway] = 'tertiary_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_street",
+					"line_width": 6,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z14",
+					"data_filter": "[highway] = 'tertiary_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_street",
+					"line_width": 7.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z16",
+					"data_filter": "[highway] = 'tertiary_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_street",
+					"line_width": 11,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'tertiary_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_street",
+					"line_width": 16,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z13",
+					"data_filter": "[highway] = 'tertiary' and not [tunnel] = 'yes'",
+					"line_color": "@casing_street",
+					"line_width": 6,
+					"line_join": "round",
+					"line_cap": "round"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z14",
+					"data_filter": "[highway] = 'tertiary' and not [tunnel] = 'yes'",
+					"line_color": "@casing_street",
+					"line_width": 7.5,
+					"line_join": "round",
+					"line_cap": "round"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z16",
+					"data_filter": "[highway] = 'tertiary' and not [tunnel] = 'yes'",
+					"line_color": "@casing_street",
+					"line_width": 11,
+					"line_join": "round",
+					"line_cap": "round"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'tertiary' or [highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'road' and not [tunnel] = 'yes'",
+					"line_color": "@casing_street",
+					"line_width": 16,
+					"line_join": "round",
+					"line_cap": "round"
+				},
+				{
+					"res_max": "@z12",
+					"res_min": "@z12",
+					"data_filter": "[highway] = 'secondary_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_secondary",
+					"line_width": 2.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z14",
+					"data_filter": "[highway] = 'secondary_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_secondary",
+					"line_width": 8.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z16",
+					"data_filter": "[highway] = 'secondary_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_secondary",
+					"line_width": 11.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'secondary_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_secondary",
+					"line_width": 16,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z12",
+					"res_min": "@z12",
+					"data_filter": "[highway] = 'secondary' and not [tunnel] = 'yes'",
+					"line_color": "@casing_secondary",
+					"line_width": 2.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z14",
+					"data_filter": "[highway] = 'secondary' and not [tunnel] = 'yes'",
+					"line_color": "@casing_secondary",
+					"line_width": 8.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z16",
+					"data_filter": "[highway] = 'secondary' and not [tunnel] = 'yes'",
+					"line_color": "@casing_secondary",
+					"line_width": 11.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'secondary' and not [tunnel] = 'yes'",
+					"line_color": "@casing_secondary",
+					"line_width": 16,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z12",
+					"res_min": "@z12",
+					"data_filter": "[highway] = 'primary_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_primary",
+					"line_width": 3,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z14",
+					"data_filter": "[highway] = 'primary_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_primary",
+					"line_width": 7.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z16",
+					"data_filter": "[highway] = 'primary_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_primary",
+					"line_width": 11.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'primary_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_primary",
+					"line_width": 16,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z12",
+					"res_min": "@z12",
+					"data_filter": "[highway] = 'primary' and not [tunnel] = 'yes'",
+					"line_color": "@casing_primary",
+					"line_width": 3,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z14",
+					"data_filter": "[highway] = 'primary' and not [tunnel] = 'yes'",
+					"line_color": "@casing_primary",
+					"line_width": 7.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z16",
+					"data_filter": "[highway] = 'primary' and not [tunnel] = 'yes'",
+					"line_color": "@casing_primary",
+					"line_width": 11.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'primary' and not [tunnel] = 'yes'",
+					"line_color": "@casing_primary",
+					"line_width": 16,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z12",
+					"res_min": "@z12",
+					"data_filter": "[highway] = 'trunk_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_trunk",
+					"line_width": 3,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z14",
+					"data_filter": "[highway] = 'trunk_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_trunk",
+					"line_width": 7.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z16",
+					"data_filter": "[highway] = 'trunk_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_trunk",
+					"line_width": 11.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'trunk_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_trunk",
+					"line_width": 16,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z12",
+					"res_min": "@z12",
+					"data_filter": "[highway] = 'trunk' and not [tunnel] = 'yes'",
+					"line_color": "@casing_trunk",
+					"line_width": 3,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z14",
+					"data_filter": "[highway] = 'trunk' and not [tunnel] = 'yes'",
+					"line_color": "@casing_trunk",
+					"line_width": 7.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z16",
+					"data_filter": "[highway] = 'trunk' and not [tunnel] = 'yes'",
+					"line_color": "@casing_trunk",
+					"line_width": 11.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'trunk' and not [tunnel] = 'yes'",
+					"line_color": "@casing_trunk",
+					"line_width": 16,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z12",
+					"res_min": "@z12",
+					"data_filter": "[highway] = 'motorway_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_motorway",
+					"line_width": 1.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z14",
+					"data_filter": "[highway] = 'motorway_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_motorway",
+					"line_width": 4.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z16",
+					"data_filter": "[highway] = 'motorway_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_motorway",
+					"line_width": 8,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'motorway_link' and not [tunnel] = 'yes'",
+					"line_color": "@casing_motorway",
+					"line_width": 11,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z12",
+					"res_min": "@z12",
+					"data_filter": "[highway] = 'motorway' and not [tunnel] = 'yes'",
+					"line_color": "@casing_motorway",
+					"line_width": 3,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z13",
+					"res_min": "@z14",
+					"data_filter": "[highway] = 'motorway' and not [tunnel] = 'yes'",
+					"line_color": "@casing_motorway",
+					"line_width": 6.5,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z16",
+					"data_filter": "[highway] = 'motorway' and not [tunnel] = 'yes'",
+					"line_color": "@casing_motorway",
+					"line_width": 10,
+					"line_cap": "round",
+					"line_join": "round"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'motorway' and not [tunnel] = 'yes'",
+					"line_color": "@casing_motorway",
+					"line_width": 13,
+					"line_cap": "round",
+					"line_join": "round"
+				}
+			]
+		}
+	}
+}

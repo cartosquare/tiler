@@ -1,0 +1,154 @@
+{
+	"layers": {
+		"bridges-layer1": {
+			"data_source": "osm",
+			"data_name": "bridges_layer1",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"style_files": [
+				"bridges_layer_style.json"
+			]
+		},
+		"bridges-access1": {
+			"data_source": "osm",
+			"data_name": "bridges_access1",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"style_files": [
+				"bridges_access_style.json"
+			]
+		},
+		"bridges-directions1": {
+			"data_source": "osm",
+			"data_name": "bridges_directions1",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"style_files": [
+				"bridges_directions_style.json"
+			]
+		},
+		"bridges-layer2": {
+			"data_source": "osm",
+			"data_name": "bridges_layer2",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"style_files": [
+				"bridges_layer_style.json"
+			]
+		},
+		"bridges-access2": {
+			"data_source": "osm",
+			"data_name": "bridges_access2",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"style_files": [
+				"bridges_access_style.json"
+			]
+		},
+		"bridges-directions2": {
+			"data_source": "osm",
+			"data_name": "bridges_directions2",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"style_files": [
+				"bridges_directions_style.json"
+			]
+		},
+		"bridges-layer3": {
+			"data_source": "osm",
+			"data_name": "bridges_layer3",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"style_files": [
+				"bridges_layer_style.json"
+			]
+		},
+		"bridges-access3": {
+			"data_source": "osm",
+			"data_name": "bridges_access3",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"style_files": [
+				"bridges_access_style.json"
+			]
+		},
+		"bridges-directions3": {
+			"data_source": "osm",
+			"data_name": "bridges_directions3",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"style_files": [
+				"bridges_directions_style.json"
+			]
+		},
+		"bridges-layer4": {
+			"data_source": "osm",
+			"data_name": "bridges_layer4",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"style_files": [
+				"bridges_layer_style.json"
+			]
+		},
+		"bridges-access4": {
+			"data_source": "osm",
+			"data_name": "bridges_access4",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"style_files": [
+				"bridges_access_style.json"
+			]
+		},
+		"bridges-directions4": {
+			"data_source": "osm",
+			"data_name": "bridges_directions4",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"style_files": [
+				"bridges_directions_style.json"
+			]
+		},
+		"bridges-layer5": {
+			"data_source": "osm",
+			"data_name": "bridges_layer5",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"style_files": [
+				"bridges_layer_style.json"
+			]
+		},
+		"bridges-access5": {
+			"data_source": "osm",
+			"data_name": "bridges_access5",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"style_files": [
+				"bridges_access_style.json"
+			]
+		},
+		"bridges-directions5": {
+			"data_source": "osm",
+			"data_name": "bridges_directions5",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"style_files": [
+				"bridges_directions_style.json"
+			]
+		}
+	}
+}

@@ -1,0 +1,97 @@
+{
+	"classes": {
+		"world": {
+			"tag": "世界陆地",
+			"fill_color": [
+				242,
+				239,
+				233
+			]
+		},
+		"buildup": {
+			"tag": "建成区",
+			"fill_color": [
+				221,
+				221,
+				221
+			]
+		},
+		"countries_boundary": {
+			"tag": "国家边界",
+			"line_color": [
+				172,
+				70,
+				172
+			]
+		},
+		"admin01234": {
+			"tag": "2-4等级边界",
+			"line_color": [
+				128,
+				0,
+				128
+			]
+		},
+		"admin5678": {
+			"tag": "5-8等级边界",
+			"line_color": [
+				128,
+				0,
+				128
+			]
+		},
+		"admin-other": {
+			"tag": "9-10等级边界",
+			"line_color": [
+				128,
+				0,
+				128
+			]
+		},
+		"placenames-large": {
+			"tag": "大洲、国家",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				157,
+				108,
+				157
+			]
+		},
+		"placenames-capital": {
+			"tag": "首都",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				0
+			]
+		},
+		"placenames-medium": {
+			"tag": "城市、城镇",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				0
+			]
+		},
+		"placenames-small": {
+			"tag": "乡村",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				0,
+				0,
+				0
+			]
+		},
+		"placenames-medium-small-highz": {
+			"tag": "乡镇",
+			"label_text_font": "Microsoft Yahei",
+			"label_text_color": [
+				119,
+				119,
+				119
+			]
+		}
+	}
+}

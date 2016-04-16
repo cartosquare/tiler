@@ -1,0 +1,129 @@
+{
+	"rules": [
+		{
+			"res_max": "@z15",
+			"res_min": "@z15",
+			"data_filter": "[access] = 'permissive' and ([highway] = 'unclassified' or [highway] = 'residential' or [highway] = 'footway')",
+			"line_join": "round",
+			"line_cap": "round",
+			"line_color": "@access-permissive",
+			"line_dasharray": [
+				6,
+				8
+			],
+			"line_width": 6,
+			"line_opacity": 0.5
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z15",
+			"data_filter": "[access] = 'permissive' and ([highway] = 'service' and not [service] = 'INT-minor')",
+			"line_join": "round",
+			"line_cap": "round",
+			"line_color": "@access-permissive",
+			"line_dasharray": [
+				6,
+				8
+			],
+			"line_width": 3
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[access] = 'permissive' and ([highway] = 'unclassified' or [highway] = 'residential' or [highway] = 'footway' or [highway] = 'service')",
+			"line_join": "round",
+			"line_cap": "round",
+			"line_color": "@access-permissive",
+			"line_dasharray": [
+				6,
+				8
+			],
+			"line_width": 6,
+			"line_opacity": 0.5
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z15",
+			"data_filter": "[access] = 'destination' and ([highway] = 'unclassified' or [highway] = 'residential')",
+			"line_join": "round",
+			"line_cap": "round",
+			"line_opacity": 0.5,
+			"line_color": "@access-destination",
+			"line_dasharray": [
+				6,
+				8
+			],
+			"line_width": 6
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z15",
+			"data_filter": "[access] = 'destination' and ([highway] = 'service' and not [service] = 'INT-minor')",
+			"line_join": "round",
+			"line_cap": "round",
+			"line_opacity": 0.5,
+			"line_color": "@access-destination",
+			"line_dasharray": [
+				6,
+				8
+			],
+			"line_width": 3
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[access] = 'destination' and ([highway] = 'unclassified' or [highway] = 'residential' or [highway] = 'service')",
+			"line_join": "round",
+			"line_cap": "round",
+			"line_opacity": 0.5,
+			"line_color": "@access-destination",
+			"line_dasharray": [
+				6,
+				8
+			],
+			"line_width": 6
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z15",
+			"data_filter": "([access] = 'private' or [access] = 'no') and not [highway] = 'service'",
+			"line_join": "round",
+			"line_cap": "round",
+			"line_opacity": 0.5,
+			"line_color": "@access-private",
+			"line_dasharray": [
+				6,
+				8
+			],
+			"line_width": 6
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z15",
+			"data_filter": "([access] = 'private' or [access] = 'no') and ([highway] = 'service' and not [service] = 'INT-minor')",
+			"line_join": "round",
+			"line_cap": "round",
+			"line_opacity": 0.5,
+			"line_color": "@access-private",
+			"line_dasharray": [
+				6,
+				8
+			],
+			"line_width": 3
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[access] = 'private' or [access] = 'no'",
+			"line_join": "round",
+			"line_cap": "round",
+			"line_opacity": 0.5,
+			"line_color": "@access-private",
+			"line_dasharray": [
+				6,
+				8
+			],
+			"line_width": 6
+		}
+	]
+}

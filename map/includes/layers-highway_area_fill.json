@@ -1,0 +1,43 @@
+{
+	"layers": {
+		"highway-area-fill": {
+			"data_source": "osm",
+			"data_name": "highway_area_fill",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'platform' or [railway] = 'platform'",
+					"fill_color": "@highway-area_platform"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'track'",
+					"fill_color": "@highway-area_track"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'pedestrian' or [highway] = 'footway' or [highway] ='path'",
+					"fill_color": "@highway-area_pedestrian"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'residential' or [highway] = 'unclassified' or [highway] = 'service'",
+					"fill_color": "@highway-area_residential"
+				},
+				{
+					"res_max": "@z14",
+					"res_min": "@z19",
+					"data_filter": "[highway] = 'living_street'",
+					"fill_color": "@highway-area_living_street"
+				}
+			]
+		}
+	}
+}

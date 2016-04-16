@@ -1,0 +1,478 @@
+{
+	"rules": [
+		{
+			"res_max": "@z13",
+			"res_min": "@z19",
+			"data_filter": "[tourism] = 'alpine_hut'",
+			"marker_image": "@amenity-points-alpine_hut"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'shelter'",
+			"marker_image": "@amenity-points-shelter"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'atm'",
+			"marker_image": "@amenity-points-atm"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'bank'",
+			"marker_image": "@amenity-points-bank"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'bar'",
+			"marker_image": "@amenity-points-bar"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'bicycle_rental'",
+			"marker_image": "@amenity-points-bicycle_rental"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z16",
+			"data_filter": "[amenity] = 'bus_stop' or [highway] = 'bus_stop' or [amenity] = 'bus_station'",
+			"marker_image": "@amenity-points-bus_stop-lowz"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'bus_stop' or [highway] = 'bus_stop' or [amenity] = 'bus_station'",
+			"marker_image": "@amenity-points-bus_stop-highz"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[highway] = 'traffic_signals'",
+			"marker_image": "@amenity-points-traffic_light"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'cafe'",
+			"marker_image": "@amenity-points-cafe"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[tourism] = 'camp_site'",
+			"marker_image": "@amenity-points-camp_site"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[highway] = 'ford'",
+			"marker_image": "@amenity-points-ford"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[tourism] = 'caravan_site'",
+			"marker_image": "@amenity-points-caravan_site"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[tourism] = 'car_sharing'",
+			"marker_image": "@amenity-points-car_sharing"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[tourism] = 'chalet'",
+			"marker_image": "@amenity-points-chalet"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'cinema'",
+			"marker_image": "@amenity-points-cinema"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'fire_station'",
+			"marker_image": "@amenity-points-fire_station"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'fuel'",
+			"marker_image": "@amenity-points-fuel"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'guest_house'",
+			"marker_image": "@amenity-points-guest_house"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'bed_and_breakfast'",
+			"marker_image": "@amenity-points-bed_and_breakfast"
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'hospital'",
+			"marker_image": "@amenity-points-bed_hospital"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[tourism] = 'hostel'",
+			"marker_image": "@amenity-points-bed_hostel"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[tourism] = 'hotel'",
+			"marker_image": "@amenity-points-bed_hotel"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[tourism] = 'motel'",
+			"marker_image": "@amenity-points-motel"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'embassy'",
+			"marker_image": "@amenity-points-embassy"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'library'",
+			"marker_image": "library.p.20.png"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'courthouse'",
+			"marker_image": "@amenity-points-courthouse"
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z19",
+			"data_filter": "[waterway] = 'lock' or [lock] ='yes'",
+			"marker_image": "@amenity-points-lock"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[man_made] = 'mast'",
+			"marker_image": "@amenity-points-mast"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[tourism] = 'museum'",
+			"marker_image": "@museum.p.16.png"
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'parking' and ([access] = 'public' or [access] = 'yes' or not [access] != '')",
+			"marker_image": "@amenity-points-public_parking"
+		},
+		{
+			"res_max": "@z15",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'parking' and ([access] != '' and not [access] = 'public' and not [access] = 'yes')",
+			"marker_image": "parking_private.p.16.png"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'pharmacy'",
+			"marker_image": "@amenity-points-pharmacy"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'place_of_worship' and [religion] = 'christian'",
+			"marker_image": "@amenity-points-christian"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'place_of_worship' and [religion] = 'muslim'",
+			"marker_image": "@amenity-points-muslim"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'place_of_worship' and [religion] = 'jewish'",
+			"marker_image": "@amenity-points-jewish"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'place_of_worship' and [religion] != 'christian' and [religion] != 'muslim' and [religion] != 'jewish'",
+			"marker_image": "@amenity-points-worship_others"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'police'",
+			"marker_image": "@amenity-points-police"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'post_box'",
+			"marker_image": "@amenity-points-post_box"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'post_office'",
+			"marker_image": "@amenity-points-post_office"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'pub'",
+			"marker_image": "@amenity-points-pub"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'biergarten'",
+			"marker_image": "@amenity-points-biergarten"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'recycling'",
+			"marker_image": "@amenity-points-recycling"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'restaurant'",
+			"marker_image": "@amenity-points-restaurant"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'fast_food'",
+			"marker_image": "@amenity-points-fast_food"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'telephone'",
+			"marker_image": "@amenity-points-telephone"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'theatre'",
+			"marker_image": "@amenity-points-theatre"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'toilets'",
+			"marker_image": "@amenity-points-toilets"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'drinking_water'",
+			"marker_image": "@amenity-points-drinking_water"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'prison'",
+			"marker_image": "@amenity-points-drinking_prison"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[tourism] = 'viewpoint'",
+			"marker_image": "@amenity-points-view_point"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'veterinary'",
+			"marker_image": "@amenity-points-veterinary"
+		},
+		{
+			"res_max": "@z18",
+			"res_min": "@z19",
+			"data_filter": "[amenity] = 'waste_basket'",
+			"marker_image": "@amenity-points-waste_basket"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[man_made] = 'water_tower'",
+			"marker_image": "@amenity-points-water_tower"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[historic] = 'memorial'",
+			"marker_image": "@amenity-points-memorial"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[historic] = 'archaeological_site'",
+			"marker_image": "@amenity-points-archaeological_site"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'supermarket'",
+			"marker_image": "@amenity-points-supermarket"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'bakery'",
+			"marker_image": "@amenity-points-bakery"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'bicycle'",
+			"marker_image": "@amenity-points-bicycle"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'books'",
+			"marker_image": "@amenity-points-books"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'car'",
+			"marker_image": "@amenity-points-car"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'car_repair'",
+			"marker_image": "@amenity-points-car_repair"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'clothes' or [shop] = 'fashion'",
+			"marker_image": "@amenity-points-car_clothes"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'computer'",
+			"marker_image": "@amenity-points-computer"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'convenience'",
+			"marker_image": "@amenity-points-convenience"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'department_store'",
+			"marker_image": "@amenity-points-department_store"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'doityourself'",
+			"marker_image": "@amenity-points-doityourself"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'dry_cleaning'",
+			"marker_image": "@amenity-points-dry_cleaning"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'florist'",
+			"marker_image": "@amenity-points-florist"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'gift'",
+			"marker_image": "@amenity-points-gift"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'greengrocer'",
+			"marker_image": "@amenity-points-greengrocer"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'hairdresser'",
+			"marker_image": "@amenity-points-hairdresser"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'jewelry'",
+			"marker_image": "@amenity-points-jewelry"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'mobile_phone'",
+			"marker_image": "@amenity-points-mobile_phone"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'optician'",
+			"marker_image": "@amenity-points-optician"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[shop] = 'pet'",
+			"marker_image": "@amenity-points-pet"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[leisure] = 'playground'",
+			"marker_image": "@amenity-points-playground"
+		},
+		{
+			"res_max": "@z16",
+			"res_min": "@z19",
+			"data_filter": "[leisure] = 'picnic_site'",
+			"marker_image": "@amenity-points-picnic_site"
+		},
+		{
+			"res_max": "@z17",
+			"res_min": "@z19",
+			"data_filter": "[leisure] = 'slipway'",
+			"marker_image": "@amenity-points-slipway"
+		}
+	]
+}

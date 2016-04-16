@@ -1,0 +1,488 @@
+{
+	"classes": {
+		"landcover-swimming_pool": {
+			"tag": "游泳池",
+			"fill_color": [
+				181,
+				208,
+				208
+			],
+			"outline_color": [
+				0,
+				0,
+				255
+			]
+		},
+		"landcover-playground": {
+			"tag": "小孩玩耍的地方",
+			"fill_color": [
+				204,
+				255,
+				241
+			],
+			"outline_color": [
+				102,
+				102,
+				102
+			]
+		},
+		"landcover-camp_picnic": {
+			"tag": "露营地、野餐地",
+			"fill_color": [
+				204,
+				255,
+				153
+			],
+			"outline_color": [
+				102,
+				102,
+				102
+			]
+		},
+		"landcover-attraction": {
+			"tag": "旅游景点",
+			"fill_color": [
+				242,
+				204,
+				234
+			]
+		},
+		"landcover-quarry": {
+			"tag": "采矿地",
+			"fill_image": "quarry2.png",
+			"outline_color": [
+				150,
+				150,
+				150
+			]
+		},
+		"landcover-vineyard-lowz": {
+			"tag": "葡萄种植地-低级别",
+			"fill_color": [
+				171,
+				223,
+				150
+			]
+		},
+		"landcover-vineyard-highz": {
+			"tag": "葡萄种植地-高级别",
+			"fill_image": "vineyard.png"
+		},
+		"landcover-orchard": {
+			"tag": "粮食生产地的树木和灌木",
+			"fill_image": "orchard.png"
+		},
+		"landcover-grave_yard-lowz": {
+			"tag": "墓地",
+			"fill_color": [
+				170,
+				203,
+				175
+			]
+		},
+		"landcover-grave_yard-jewish": {
+			"tag": "墓地",
+			"fill_image": "grave_yard.png"
+		},
+		"landcover-grave_yard-generic": {
+			"tag": "墓地",
+			"fill_image": "grave_yard_generic.png"
+		},
+		"landcover-residential": {
+			"tag": "居住地",
+			"fill_color": [
+				221,
+				221,
+				221
+			]
+		},
+		"landcover-garages": {
+			"tag": "车库",
+			"fill_color": [
+				153,
+				153,
+				102
+			]
+		},
+		"landcover-barracks": {
+			"tag": "军营",
+			"fill_color": [
+				255,
+				143,
+				143
+			]
+		},
+		"landcover-field": {
+			"tag": "空旷杂草地",
+			"fill_color": [
+				102,
+				102,
+				0
+			],
+			"outline_color": [102,102,0]
+		},
+		"landcover-danger_area-lowz": {
+			"tag": "危险区、禁区",
+			"fill_color": [
+				255,
+				192,
+				203
+			]
+		},
+		"landcover-danger_area-highz": {
+			"tag": "危险区、禁区",
+			"fill_image": "danger.png"
+		},
+		"landcover-grass": {
+			"tag": "草地",
+			"fill_color": [
+				207,
+				236,
+				168
+			]
+		},
+		"landcover-service_rest_area": {
+			"tag": "高速公路休息区",
+			"fill_color": [
+				239, 200, 200
+			]
+		},
+		"landcover-park": {
+			"tag": "公园",
+			"fill_color": [
+				182,
+				253,
+				182
+			]
+		},
+		"landcover-zoo": {
+			"tag": "动物园",
+			"fill_image": "zoo.png"
+		},
+		"landcover-common": {
+			"tag": "不知道是什么东西",
+			"fill_color": [
+				207,
+				236,
+				168
+			]
+		},
+		"landcover-garden": {
+			"tag": "公园",
+			"fill_color": [
+				207,
+				236,
+				168
+			]
+		},
+		"landcover-golf_course": {
+			"tag": "高尔夫球场",
+			"fill_color": [
+				181,
+				227,
+				181
+			]
+		},
+		"landcover-allotments-lowz": {
+			"tag": "山寨？非官方居住地",
+			"fill_color": [
+				229,
+				199,
+				171
+			]
+		},
+		"landcover-allotments-highz": {
+			"tag": "山寨？非官方居住地",
+			"fill_image": "allotments.png"
+		},
+		"landcover-forest-lowz": {
+			"tag": "森林",
+			"fill_color": [
+				141,
+				197,
+				108
+			]
+		},
+		"landcover-forest-highz": {
+			"tag": "森林",
+			"fill_image": "forest.png"
+		},
+		"landcover-farmyard": {
+			"tag": "农场旁的院子，有房子、农具等",
+			"fill_color": [
+				221,
+				191,
+				146
+			]
+		},
+		"landcover-farm": {
+			"tag": "农场",
+			"fill_color": [
+				234,
+				216,
+				189
+			]
+		},
+		"landcover-recreation": {
+			"tag": "球场、网球场等场地",
+			"fill_color": [
+				207,
+				236,
+				168
+			]
+		},
+		"landcover-village_green": {
+			"tag": "村庄中心的绿地",
+			"fill_color": [
+				207,
+				236,
+				168
+			]
+		},
+		"landcover-retail": {
+			"tag": "主要的商店",
+			"fill_color": [
+				241,
+				218,
+				218
+			],
+			"outline_color": [
+				255,
+				0,
+				0
+			]
+		},
+		"landcover-industrial_railway": {
+			"tag": "工业、铁路用地",
+			"fill_color": [
+				223,
+				209,
+				214
+			]
+		},
+		"landcover-pow_station": {
+			"tag": "发电站",
+			"fill_color": [
+				187,
+				187,
+				187
+			],
+			"outline_color": [
+				85,
+				85,
+				85
+			]
+		},
+		"landcover-pow_substation": {
+			"tag": "变电站",
+			"fill_color": [
+				187,
+				187,
+				187
+			],
+			"outline_color": [
+				85,
+				85,
+				85
+			]
+		},
+		"landcover-commercial": {
+			"tag": "商业用地",
+			"fill_color": [
+				239,
+				200,
+				200
+			]
+		},
+		"landcover-develop": {
+			"tag": "改造过程中的土地。拆迁、待建或正在建造中",
+			"fill_color": [
+				239,
+				200,
+				200
+			]
+		},
+		"landcover-wood": {
+			"tag": "林地",
+			"fill_color": [
+				174,
+				209,
+				160
+			]
+		},
+		"landcover-desert": {
+			"tag": "沙漠",
+			"fill_color": [
+				227,
+				181,
+				122
+			]
+		},
+		"landcover-sand": {
+			"tag": "沙地",
+			"fill_color": [
+				255,
+				223,
+				136
+			]
+		},
+		"landcover-heath": {
+			"tag": "地势较低的未开垦的土地，灌木丛，但很少或根本没有树木覆盖",
+			"fill_color": [
+				214,
+				217,
+				159
+			]
+		},
+		"landcover-grassland": {
+			"tag": "杂草丛",
+			"fill_color": [
+				198,
+				228,
+				180
+			]
+		},
+		"landcover-scrub": {
+			"tag": "覆盖着灌木和矮小树木的荒地",
+			"fill_color": [
+				181,
+				227,
+				181
+			],
+			"fill_image": "scrub.png"
+		},
+		"landcover-school_hospital": {
+			"tag": "医疗教育用地",
+			"fill_color": [
+				240,
+				240,
+				216
+			],
+			"outline_color": [
+				165,
+				42,
+				42
+			]
+		},
+		"landcover-parking": {
+			"tag": "停车场",
+			"fill_color": [
+				247,
+				239,
+				183
+			],
+			"outline_color": [
+				238,
+				238,
+				209
+			]
+		},
+		"landcover-prison": {
+			"tag": "监狱",
+			"fill_image": "amenity_prison.png"
+		},
+		"landcover-apron": {
+			"tag": "机场停机坪",
+			"fill_color": [
+				233,
+				209,
+				255
+			]
+		},
+		"landcover-aerodrome": {
+			"tag": "机场",
+			"fill_color": [
+				204,
+				204,
+				204
+			],
+			"fill_opacity": 0.2,
+			"outline_color": [
+				85,
+				85,
+				85
+			]
+		},
+		"landcover-beach": {
+			"tag": "沙滩",
+			"fill_image": "beach.png"
+		},
+		"landcover-highway_service_rest": {
+			"tag": "高速公路服务区、休息区",
+			"fill_color": [
+				239,
+				200,
+				200
+			]
+		},
+		"landcover-cutline": {
+			"tag": "土地利用人工界线",
+			"line_color": [
+				242,
+				239,
+				233
+			]
+		},
+		"sports-stadium": {
+			"tag": "运动馆",
+			"fill_color": [
+				51,
+				204,
+				153
+			]
+		},
+		"sports-track": {
+			"tag": "跑道",
+			"fill_color": [
+				116,
+				220,
+				186
+			],
+			"line_color": [
+				136,
+				136,
+				136
+			]
+		},
+		"sports-pitch": {
+			"tag": "球场",
+			"fill_color": [
+				138,
+				211,
+				175
+			],
+			"line_color": [
+				136,
+				136,
+				136
+			]
+		},
+		"landuse-overlay_military": {
+			"tag": "军事区",
+			"fill_image": "military_red_hz2.png",
+			"outline_color": [
+				255,
+				85,
+				85
+			]
+		},
+		"landuse-nature_reserve-lowz": {
+			"tag": "自然保护区",
+			"fill_image": "nature_reserve5.png",
+			"outline_color": [
+				102,
+				204,
+				51
+			]
+		},
+		"landuse-overlay-nature_reserve-highz": {
+			"tag": "自然保护区",
+			"fill_image": "nature_reserve6.png",
+			"outline_color": [
+				102,
+				204,
+				51
+			]
+		}
+	}
+}

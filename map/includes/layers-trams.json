@@ -1,0 +1,56 @@
+{
+	"layers": {
+		"trams": {
+			"data_source": "osm",
+			"data_name": "trams",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z13",
+					"res_min": "@z14",
+					"data_filter": "[railway] = 'tram'",
+					"line_color": "@tram",
+					"line_width": 1
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"data_filter": "[railway] = 'tram' and not [bridge] = 'yes'",
+					"line_color": "@tram",
+					"line_width": 2
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"data_filter": "[railway] = 'tram' and [bridge] = 'yes'",
+					"line_color": [
+						0,
+						0,
+						0
+					],
+					"line_width": 5
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"data_filter": "[railway] = 'tram' and [bridge] = 'yes'",
+					"line_color": [
+						255,
+						255,
+						255
+					],
+					"line_width": 4
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z19",
+					"data_filter": "[railway] = 'tram' and [bridge] = 'yes'",
+					"line_color": "@tram",
+					"line_width": 2
+				}
+			]
+		}
+	}
+}

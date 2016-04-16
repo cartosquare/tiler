@@ -1,0 +1,79 @@
+{
+	"layers": {
+		"power_line": {
+			"data_source": "osm",
+			"data_name": "power_line",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z14",
+					"res_min": "@z15",
+					"line_width": 1,
+					"line_color": "@amenity-points-power_line"
+				},
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"line_width": 1.5,
+					"line_color": "@amenity-points-power_line"
+				}
+			]
+		},
+		"power_minorline": {
+			"data_source": "osm",
+			"data_name": "power_minorline",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"line_width": 0.5,
+					"line_color": "@amenity-points-power_line"
+				}
+			]
+		},
+		"power_towers": {
+			"data_source": "osm",
+			"data_name": "power_towers",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z14",
+					"res_min": "@z14",
+					"marker_image": "@amenity-points-power-lowz"
+				},
+				{
+					"res_max": "@z15",
+					"res_min": "@z16",
+					"marker_image": "@amenity-points-power-middlez"
+				},
+				{
+					"res_max": "@z17",
+					"res_min": "@z19",
+					"line_width": 1.5,
+					"marker_image": "@amenity-points-power-highz"
+				}
+			]
+		},
+		"power_poles": {
+			"data_source": "osm",
+			"data_name": "power_poles",
+			"encode": "utf-8",
+			"geometry_column": "way",
+			"fields": "*",
+			"rules": [
+				{
+					"res_max": "@z16",
+					"res_min": "@z19",
+					"marker_image": "@amenity-points-pole"
+				}
+			]
+		}
+	}
+}
