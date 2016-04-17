@@ -14,5 +14,5 @@ exports.options = {
         port: '8889'
     },
     
-    logLevel: 6
+    logLevel: 2
 }
