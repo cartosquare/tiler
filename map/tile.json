@@ -9,7 +9,7 @@
       12956216.491,
       4853426.417
     ],
-    "res": 305.748113140625
+    "res": 19.10925707128906
   },
   "data_sources_files": [
     "datasource.json"
@@ -27,6 +27,7 @@
     "class-others.json"
   ],
   "icon": "icons/",
+  "include": "/Users/xuxiang/site/tiler/map/includes",
   "layers_files": [
     "layers-shapefile.json",
     "layers-landcover.json",
@@ -53,6 +54,7 @@
     "layers-guideways.json",
     "layers-admin.json",
     "layers-placenames.json",
+    "layers-amenity.json",
     "layers-power.json",
     "layers-road_text_name.json",
     "layers-text.json",

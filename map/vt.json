@@ -1555,7 +1555,7 @@
       "data_name": "theme_park",
       "encode": "utf-8",
       "geometry_column": "way",
-      "fields": "way",
+      "fields": "",
       "clip": false,
       "rules": [
         {

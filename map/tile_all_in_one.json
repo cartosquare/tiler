@@ -9,7 +9,7 @@
 			12956216.491,
 			4853426.417
 		],
-		"res": 156543.033928
+		"res": 19.10925707128906
 	},
 	"data_sources": {
 		"world": {
@@ -15340,7 +15340,7 @@
 					"res_max": "@z17",
 					"res_min": "@z19",
 					"data_filter": "tourism = 'museum'",
-					"marker_image": "@museum.p.16.png"
+					"marker_image": "museum.p.16.png"
 				},
 				{
 					"res_max": "@z15",
@@ -15824,7 +15824,7 @@
 					"res_max": "@z17",
 					"res_min": "@z19",
 					"data_filter": "tourism = 'museum'",
-					"marker_image": "@museum.p.16.png"
+					"marker_image": "museum.p.16.png"
 				},
 				{
 					"res_max": "@z15",
