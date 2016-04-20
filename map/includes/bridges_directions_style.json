@@ -5,6 +5,7 @@
 			"res_min": "@z19",
 			"filter": "[oneway] = 'yes'",
 			"line_join": "bevel",
+			"line_cap": "bevel",
 			"line_color": "@highway-direction",
 			"line_dasharray": [
 				0,
@@ -19,6 +20,7 @@
 			"res_min": "@z19",
 			"filter": "[oneway] = 'yes'",
 			"line_join": "bevel",
+			"line_cap": "bevel",
 			"line_color": "@highway-direction",
 			"line_dasharray": [
 				0,
@@ -33,6 +35,7 @@
 			"res_min": "@z19",
 			"filter": "[oneway] = 'yes'",
 			"line_join": "bevel",
+			"line_cap": "bevel",
 			"line_color": "@highway-direction",
 			"line_dasharray": [
 				0,
@@ -47,6 +50,7 @@
 			"res_min": "@z19",
 			"filter": "[oneway] = 'yes'",
 			"line_join": "bevel",
+			"line_cap": "bevel",
 			"line_color": "@highway-direction",
 			"line_dasharray": [
 				0,
@@ -61,6 +65,7 @@
 			"res_min": "@z19",
 			"filter": "[oneway] = '-1'",
 			"line_join": "bevel",
+			"line_cap": "bevel",
 			"line_color": "@highway-direction",
 			"line_dasharray": [
 				0,
@@ -75,6 +80,7 @@
 			"res_min": "@z19",
 			"filter": "[oneway] = '-1'",
 			"line_join": "bevel",
+			"line_cap": "bevel",
 			"line_color": "@highway-direction",
 			"line_dasharray": [
 				0,
@@ -89,6 +95,7 @@
 			"res_min": "@z19",
 			"filter": "[oneway] = '-1'",
 			"line_join": "bevel",
+			"line_cap": "bevel",
 			"line_color": "@highway-direction",
 			"line_dasharray": [
 				0,
@@ -103,6 +110,7 @@
 			"res_min": "@z19",
 			"filter": "[oneway] = '-1'",
 			"line_join": "bevel",
+			"line_cap": "bevel",
 			"line_color": "@highway-direction",
 			"line_dasharray": [
 				0,
