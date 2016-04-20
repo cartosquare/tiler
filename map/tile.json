@@ -29,7 +29,7 @@
   "icon": "icons/",
   "include": "/Users/xuxiang/site/tiler/map/includes",
   "layers_files": [
-    "layers-shapefile.json",
+    "layers-land.json",
     "layers-landcover.json",
     "layers-water.json",
     "layers-tunnels.json",

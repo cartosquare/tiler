@@ -27,7 +27,7 @@ var vtDef = fs.readFileSync(__dirname + '/map/vt.json', 'utf-8');
 
 // load def
 var def = {};
-var def_schema = require(__dirname + '/map/tile.json');
+var def_schema = JSON.parse(fs.readFileSync(__dirname + '/map/tile.json', 'utf-8'));
 def.background_color = def_schema.background_color;
 def.icon = def_schema.icon;
 
@@ -35,7 +35,7 @@ def.data_sources = {};
 for (var ds of def_schema.data_sources_files) {
     console.log('load datasource schema: ' + ds);
 
-    var datasource = require(__dirname + '/map/includes/' + ds);
+    var datasource = JSON.parse(fs.readFileSync(__dirname + '/map/includes/' + ds, 'utf-8'));
 
     for (var dds in datasource.data_sources) {
         def.data_sources[dds] = datasource.data_sources[dds];
@@ -43,47 +43,57 @@ for (var ds of def_schema.data_sources_files) {
 }
 
 def.classes = {};
-for (var clazz of def_schema.classes_files) {
-    console.log('load class ' + clz);
-    
-    var clz = require(__dirname + '/map/includes/' + clazz);
-    
-    for (var clzz in clz.classes) {
-        def.classes[clzz] = clz.classes[clzz];
-    }
-}
+loadClasses(def, __dirname + '/map/includes/');
 
 def.layers = {};
+var layersMap = {};
 for (var layers of def_schema.layers_files) {
-    console.log('load layer schema: ' + layers);
+    var lys = JSON.parse(fs.readFileSync(__dirname + '/map/includes/' + layers, 'utf-8'));
+    layersMap[layers] = lys;
     
-    var lys = require(__dirname + '/map/includes/' + layers);
-    for (var llys in lys.layers) {
-        if (lys.layers[llys].style_files) {
-            var tmpLayer = lys.layers[llys];
+    loadLayers(def, lys.layers);
+}
+
+fs.writeFileSync('def.json', JSON.stringify(def), 'utf-8');
+
+function loadLayers(obj, layers) {
+    for (var llys in layers) {
+        if (layers[llys].style_files) {
+            var tmpLayer = layers[llys];
             tmpLayer.rules = [];
             
             var styles = tmpLayer.style_files;
             for (var sty of styles) {
-                var sty_json = require(__dirname + '/map/includes/' + sty);
+                var sty_json = JSON.parse(fs.readFileSync(__dirname + '/map/includes/' + sty, 'utf-8'));
                 
                 for (rule of sty_json.rules) {
                    tmpLayer.rules.push(rule);
                 }
             }
             delete tmpLayer.style_files;
-            def.layers[llys] = tmpLayer;
+            obj.layers[llys] = tmpLayer;
         } else {
-            def.layers[llys] = lys.layers[llys];
+            obj.layers[llys] = layers[llys];
         }
-        
     }
 }
 
+function loadClasses(obj, includeDir) {
+    for (var clazz of def_schema.classes_files) {
+            var clz;
+            if (clazz == 'class-lod.json') {
+                clz = JSON.parse(fs.readFileSync(__dirname + '/map/includes/' + clazz, 'utf-8'));
+            } else {
+                clz = JSON.parse(fs.readFileSync(includeDir + clazz, 'utf-8'));
+            }
+
+            for (var clzz in clz.classes) {
+                obj.classes[clzz] = clz.classes[clzz];
+            }
+        }
+}
 
 function style(req, res, next) {
-    console.log('style: ');
-    
     var params = req.params;
     var styles = params.styles;
    
@@ -140,8 +150,6 @@ function getTile(req, res, next) {
     var userIncludeDir = __dirname + '/user-maps/' + key + '/';
     var userDef = {};
     if (fs.existsSync(userIncludeDir)) {
-        console.log('user defined map...');
-        
         includeDir = userIncludeDir;
         // top file
         var topFile = JSON.parse(fs.readFileSync(includeDir + 'class-top.json', 'utf-8'));
@@ -151,28 +159,20 @@ function getTile(req, res, next) {
         userDef.icon = topFile.icon;
        
         userDef.classes = {};
-        for (var clazz of def_schema.classes_files) {
-            var clz;
-            if (clazz == 'class-lod.json') {
-                clz = JSON.parse(fs.readFileSync(__dirname + '/map/includes/' + clazz, 'utf-8'));
-            } else {
-                clz = JSON.parse(fs.readFileSync(includeDir + clazz, 'utf-8'));
-            }
-
-            for (var clzz in clz.classes) {
-                userDef.classes[clzz] = clz.classes[clzz];
-            }
-        }
+        loadClasses(userDef, includeDir);
         
         userDef.data_sources = def.data_sources;
 
-        userDef.layers = def.layers;
-
+        userDef.layers = {};
+        for (var layers of topFile.layers_files) {
+            
+            var key = "layers-" + layers + ".json";
+            loadLayers(userDef, layersMap[key].layers);
+            console.log('load layer: ' + key);
+        }
     } else {
         userDef = def;
     }
-    
-    console.log('color: ' + userDef.background_color);
     
     //fs.writeFileSync('test.json', JSON.stringify(userDef), 'utf-8');
     
