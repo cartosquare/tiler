@@ -3,7 +3,7 @@
 		{
 			"res_max": "@z16",
 			"res_min": "@z19",
-			"data_filter": "[aeroway] = 'helipad'",
+			"filter": "[aeroway] = 'helipad'",
 			"label_icon": "@amenity-symbols-helipad",
 			"label_field": "name",
 			"label_text_font": "@amenity-symbols-helipad",
@@ -19,7 +19,7 @@
 		{
 			"res_max": "@z9",
 			"res_min": "@z10",
-			"data_filter": "[aeroway] = 'airport'",
+			"filter": "[aeroway] = 'airport'",
 			"label_icon": "@amenity-symbols-airport",
 			"label_field": "name",
 			"label_text_font": "@amenity-symbols-airport",
@@ -35,7 +35,7 @@
 		{
 			"res_max": "@z11",
 			"res_min": "@z12",
-			"data_filter": "[aeroway] = 'airport'",
+			"filter": "[aeroway] = 'airport'",
 			"label_icon": "@amenity-symbols-airport",
 			"label_field": "name",
 			"label_text_font": "@amenity-symbols-airport",
@@ -51,7 +51,7 @@
 		{
 			"res_max": "@z10",
 			"res_min": "@z10",
-			"data_filter": "[aeroway] = 'aerodrome'",
+			"filter": "[aeroway] = 'aerodrome'",
 			"label_icon": "@amenity-symbols-aerodrome",
 			"label_field": "name",
 			"label_text_font": "@amenity-symbols-aerodrome",
@@ -67,7 +67,7 @@
 		{
 			"res_max": "@z11",
 			"res_min": "@z12",
-			"data_filter": "[aeroway] = 'aerodrome'",
+			"filter": "[aeroway] = 'aerodrome'",
 			"label_icon": "@amenity-symbols-aerodrome",
 			"label_field": "name",
 			"label_text_font": "@amenity-symbols-aerodrome",
@@ -83,97 +83,97 @@
 		{
 			"res_max": "@z14",
 			"res_min": "@z15",
-			"data_filter": "[railway] = 'level_crossing'",
+			"filter": "[railway] = 'level_crossing'",
 			"marker_image": "@amenity-symbols-level_crossing-lowz"
 		},
 		{
 			"res_max": "@z16",
 			"res_min": "@z19",
-			"data_filter": "[railway] = 'level_crossing'",
+			"filter": "[railway] = 'level_crossing'",
 			"marker_image": "@amenity-symbols-level_crossing-highz"
 		},
 		{
 			"res_max": "@z15",
 			"res_min": "@z19",
-			"data_filter": "[man_made] = 'lighthouse'",
+			"filter": "[man_made] = 'lighthouse'",
 			"marker_image": "@amenity-symbols-lighthouse"
 		},
 		{
 			"res_max": "@z11",
 			"res_min": "@z19",
-			"data_filter": "[natural] = 'peak'",
+			"filter": "[natural] = 'peak'",
 			"marker_image": "@amenity-symbols-peak"
 		},
 		{
 			"res_max": "@z11",
 			"res_min": "@z19",
-			"data_filter": "[natural] = 'volcano'",
+			"filter": "[natural] = 'volcano'",
 			"marker_image": "volcano.png"
 		},
 		{
 			"res_max": "@z15",
 			"res_min": "@z19",
-			"data_filter": "[natural] = 'cave_entrance'",
+			"filter": "[natural] = 'cave_entrance'",
 			"marker_image": "@amenity-symbols-cave_entrance"
 		},
 		{
 			"res_max": "@z14",
 			"res_min": "@z19",
-			"data_filter": "[natural] = 'spring'",
+			"filter": "[natural] = 'spring'",
 			"marker_image": "@amenity-symbols-cave_spring"
 		},
 		{
 			"res_max": "@z16",
 			"res_min": "@z16",
-			"data_filter": "[natural] = 'tree'",
+			"filter": "[natural] = 'tree'",
 			"marker_image": "@amenity-symbols-tree-lowz"
 		},
 		{
 			"res_max": "@z17",
 			"res_min": "@z19",
-			"data_filter": "[natural] = 'tree'",
+			"filter": "[natural] = 'tree'",
 			"marker_image": "@amenity-symbols-tree-highz"
 		},
 		{
 			"res_max": "@z15",
 			"res_min": "@z19",
-			"data_filter": "([power] = 'generator' and ([generator:source] = 'wind' or [power_source] = 'wind')) or [man_made] = 'power_wind'",
+			"filter": "([power] = 'generator' and ([generator:source] = 'wind' or [power_source] = 'wind')) or [man_made] = 'power_wind'",
 			"marker_image": "@amenity-symbols-power_wind"
 		},
 		{
 			"res_max": "@z16",
 			"res_min": "@z19",
-			"data_filter": "[man_made] = 'windmill'",
+			"filter": "[man_made] = 'windmill'",
 			"marker_image": "@amenity-symbols-windmill"
 		},
 		{
 			"res_max": "@z17",
 			"res_min": "@z19",
-			"data_filter": "[man_made] = 'mast'",
+			"filter": "[man_made] = 'mast'",
 			"marker_image": "@amenity-symbols-mast"
 		},
 		{
 			"res_max": "@z15",
 			"res_min": "@z19",
-			"data_filter": "[highway] = 'mini_roundabout'",
+			"filter": "[highway] = 'mini_roundabout'",
 			"marker_image": "@amenity-symbols-mini_roundabout"
 		},
 		{
 			"res_max": "@z15",
 			"res_min": "@z19",
-			"data_filter": "[highway] = 'gate' or [barrier] = 'gate'",
+			"filter": "[highway] = 'gate' or [barrier] = 'gate'",
 			"marker_image": "@amenity-symbols-gate"
 		},
 		{
 			"res_max": "@z16",
 			"res_min": "@z19",
-			"data_filter": "[barrier] = 'lift_gate'",
+			"filter": "[barrier] = 'lift_gate'",
 			"marker_image": "@amenity-symbols-lift_gate"
 		},
 		{
 			"res_max": "@z16",
 			"res_min": "@z19",
-			"data_filter": "[barrier] = 'bollard' or [barrier] = 'block'",
+			"filter": "[barrier] = 'bollard' or [barrier] = 'block'",
 			"marker_image": "@amenity-symbols-bollard"
 		}
 	]

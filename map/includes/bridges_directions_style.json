@@ -3,7 +3,7 @@
 		{
 			"res_max": "@z16",
 			"res_min": "@z19",
-			"data_filter": "[oneway] = 'yes'",
+			"filter": "[oneway] = 'yes'",
 			"line_join": "bevel",
 			"line_color": "@highway-direction",
 			"line_dasharray": [
@@ -17,7 +17,7 @@
 		{
 			"res_max": "@z16",
 			"res_min": "@z19",
-			"data_filter": "[oneway] = 'yes'",
+			"filter": "[oneway] = 'yes'",
 			"line_join": "bevel",
 			"line_color": "@highway-direction",
 			"line_dasharray": [
@@ -31,7 +31,7 @@
 		{
 			"res_max": "@z16",
 			"res_min": "@z19",
-			"data_filter": "[oneway] = 'yes'",
+			"filter": "[oneway] = 'yes'",
 			"line_join": "bevel",
 			"line_color": "@highway-direction",
 			"line_dasharray": [
@@ -45,7 +45,7 @@
 		{
 			"res_max": "@z16",
 			"res_min": "@z19",
-			"data_filter": "[oneway] = 'yes'",
+			"filter": "[oneway] = 'yes'",
 			"line_join": "bevel",
 			"line_color": "@highway-direction",
 			"line_dasharray": [
@@ -59,7 +59,7 @@
 		{
 			"res_max": "@z16",
 			"res_min": "@z19",
-			"data_filter": "[oneway] = '-1'",
+			"filter": "[oneway] = '-1'",
 			"line_join": "bevel",
 			"line_color": "@highway-direction",
 			"line_dasharray": [
@@ -73,7 +73,7 @@
 		{
 			"res_max": "@z16",
 			"res_min": "@z19",
-			"data_filter": "[oneway] = '-1'",
+			"filter": "[oneway] = '-1'",
 			"line_join": "bevel",
 			"line_color": "@highway-direction",
 			"line_dasharray": [
@@ -87,7 +87,7 @@
 		{
 			"res_max": "@z16",
 			"res_min": "@z19",
-			"data_filter": "[oneway] = '-1'",
+			"filter": "[oneway] = '-1'",
 			"line_join": "bevel",
 			"line_color": "@highway-direction",
 			"line_dasharray": [
@@ -101,7 +101,7 @@
 		{
 			"res_max": "@z16",
 			"res_min": "@z19",
-			"data_filter": "[oneway] = '-1'",
+			"filter": "[oneway] = '-1'",
 			"line_join": "bevel",
 			"line_color": "@highway-direction",
 			"line_dasharray": [

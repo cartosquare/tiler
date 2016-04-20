@@ -10,7 +10,7 @@
 				{
 					"res_max": "@z4",
 					"res_min": "@z6",
-					"data_filter": "[admin_level] = '2' or [admin_level] = '3'",
+					"filter": "[admin_level] = '2' or [admin_level] = '3'",
 					"line_color": "@admin01234",
 					"line_width": 0.6,
 					"line_opacity": 0.2
@@ -18,7 +18,7 @@
 				{
 					"res_max": "@z7",
 					"res_min": "@z9",
-					"data_filter": "[admin_level] = '2' or [admin_level] = '3'",
+					"filter": "[admin_level] = '2' or [admin_level] = '3'",
 					"line_color": "@admin01234",
 					"line_width": 2,
 					"line_opacity": 0.2
@@ -26,7 +26,7 @@
 				{
 					"res_max": "@z10",
 					"res_min": "@z19",
-					"data_filter": "[admin_level] = '2'",
+					"filter": "[admin_level] = '2'",
 					"line_color": "@admin01234",
 					"line_width": 6,
 					"line_opacity": 0.1
@@ -34,7 +34,7 @@
 				{
 					"res_max": "@z10",
 					"res_min": "@z19",
-					"data_filter": "[admin_level] = '3'",
+					"filter": "[admin_level] = '3'",
 					"line_color": "@admin01234",
 					"line_width": 5,
 					"line_dasharray": [
@@ -46,7 +46,7 @@
 				{
 					"res_max": "@z4",
 					"res_min": "@z6",
-					"data_filter": "[admin_level] = '4'",
+					"filter": "[admin_level] = '4'",
 					"line_color": "@admin01234",
 					"line_dasharray": [
 						4,
@@ -58,7 +58,7 @@
 				{
 					"res_max": "@z7",
 					"res_min": "@z10",
-					"data_filter": "[admin_level] = '4'",
+					"filter": "[admin_level] = '4'",
 					"line_color": "@admin01234",
 					"line_dasharray": [
 						4,
@@ -70,7 +70,7 @@
 				{
 					"res_max": "@z11",
 					"res_min": "@z19",
-					"data_filter": "[admin_level] = '4'",
+					"filter": "[admin_level] = '4'",
 					"line_color": "@admin01234",
 					"line_dasharray": [
 						4,
@@ -91,7 +91,7 @@
 				{
 					"res_max": "@z11",
 					"res_min": "@z19",
-					"data_filter": "[admin_level] = '5'",
+					"filter": "[admin_level] = '5'",
 					"line_color": "@admin5678",
 					"line_dasharray": [
 						6,
@@ -107,7 +107,7 @@
 				{
 					"res_max": "@z11",
 					"res_min": "@z19",
-					"data_filter": "[admin_level] = '6'",
+					"filter": "[admin_level] = '6'",
 					"line_color": "@admin5678",
 					"line_dasharray": [
 						6,
@@ -121,7 +121,7 @@
 				{
 					"res_max": "@z12",
 					"res_min": "@z19",
-					"data_filter": "[admin_level] = '8' or [admin_level] = '7'",
+					"filter": "[admin_level] = '8' or [admin_level] = '7'",
 					"line_color": "@admin5678",
 					"line_dasharray": [
 						5,
@@ -142,7 +142,7 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z19",
-					"data_filter": "[admin_level] = '10' or [admin_level] = '9'",
+					"filter": "[admin_level] = '10' or [admin_level] = '9'",
 					"line_color": "@admin-other",
 					"line_dasharray": [
 						2,
@@ -154,7 +154,7 @@
 				{
 					"res_max": "@z9",
 					"res_min": "@z11",
-					"data_filter": "[admin_level] != ''",
+					"filter": "[admin_level] != ''",
 					"line_color": "@admin-other",
 					"line_dasharray": [
 						2,

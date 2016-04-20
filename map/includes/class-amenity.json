@@ -430,7 +430,7 @@
 		},
 		"amenity-points-jewelry": {
 			"tag": "珠宝店",
-			"marker_image": "shop_jewelry.p.16.png"
+			"marker_image": "shop_jewelry.p_16.png"
 		},
 		"amenity-points-mobile_phone": {
 			"tag": "手机店",

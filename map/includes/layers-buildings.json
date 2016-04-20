@@ -10,27 +10,27 @@
 				{
 					"res_max": "@z10",
 					"res_min": "@z19",
-					"data_filter": "[railway] = 'station' or [building] = 'station'",
+					"filter": "[railway] = 'station' or [building] = 'station'",
 					"fill_color": "@buildings-station"
 				},
 				{
 					"res_max": "@z10",
 					"res_min": "@z19",
-					"data_filter": "[building] = 'supermarket'",
+					"filter": "[building] = 'supermarket'",
 					"fill_color": "@buildings-supermarket",
 					"fill_opacity": 0.5
 				},
 				{
 					"res_max": "@z10",
 					"res_min": "@z14",
-					"data_filter": "[amenity] = 'place_of_worship'",
+					"filter": "[amenity] = 'place_of_worship'",
 					"fill_color": "@buildings-place_of_worship",
 					"fill_opacity": 0.5
 				},
 				{
 					"res_max": "@z15",
 					"res_min": "@z19",
-					"data_filter": "[amenity] = 'place_of_worship'",
+					"filter": "[amenity] = 'place_of_worship'",
 					"fill_color": "@buildings-place_of_worship",
 					"fill_opacity": 0.9,
 					"outline_width": 0.3,
@@ -48,21 +48,21 @@
 				{
 					"res_max": "@z12",
 					"res_min": "@z19",
-					"data_filter": "[building] = 'INT-light'",
+					"filter": "[building] = 'INT-light'",
 					"fill_color": "@buildings-light",
 					"fill_opacity": 0.7
 				},
 				{
 					"res_max": "@z12",
 					"res_min": "@z19",
-					"data_filter": "[building] != 'INT-light' and [building] != ''",
+					"filter": "[building] != 'INT-light' and [building] != ''",
 					"fill_color": "@buildings-light",
 					"fill_opacity": 0.9
 				},
 				{
 					"res_max": "@z16",
 					"res_min": "@z19",
-					"data_filter": "[building] != 'INT-light' and [building] != ''",
+					"filter": "[building] != 'INT-light' and [building] != ''",
 					"outline_color": "@buildings-light",
 					"fill_opacity": 0.0,
 					"outline_width": 0.2
@@ -70,13 +70,13 @@
 				{
 					"res_max": "@z12",
 					"res_min": "@z19",
-					"data_filter": "[aeroway] = 'terminal'",
+					"filter": "[aeroway] = 'terminal'",
 					"fill_color": "@buildings-terminal"
 				},
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[aeroway] = 'terminal'",
+					"filter": "[aeroway] = 'terminal'",
 					"outline_color": "@buildings-terminal",
 					"fill_opacity": 0.0,
 					"outline_width": 0.2

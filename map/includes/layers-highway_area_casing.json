@@ -10,7 +10,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[highway] = 'platform' or [railway] = 'platform'",
+					"filter": "[highway] = 'platform' or [railway] = 'platform'",
 					"outline_color": "@highway-area_platform",
 					"fill_opacity": 0,
 					"outline_width": 2
@@ -18,7 +18,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[highway] = 'track'",
+					"filter": "[highway] = 'track'",
 					"outline_color": "@highway-area_track",
 					"fill_opacity": 0,
 					"outline_width": 2
@@ -26,7 +26,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[highway] = 'pedestrian' or [highway] = 'service' or [highway] = 'footway' or [highway] ='path'",
+					"filter": "[highway] = 'pedestrian' or [highway] = 'service' or [highway] = 'footway' or [highway] ='path'",
 					"outline_color": "@highway-area_pedestrian",
 					"fill_opacity": 0,
 					"outline_width": 1
@@ -34,7 +34,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[highway] = 'residential' or [highway] = 'unclassified'",
+					"filter": "[highway] = 'residential' or [highway] = 'unclassified'",
 					"outline_color": "@highway-area_residential",
 					"fill_opacity": 0,
 					"outline_width": 1

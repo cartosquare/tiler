@@ -33,7 +33,7 @@
 					"res_max": "@z14",
 					"res_min": "@z19",
 					"label_field": "name",
-					"data_filter": "[way_area] >= 150000",
+					"filter": "[way_area] >= 150000",
 					"label_text_font": "@text-area",
 					"label_text_size": 10,
 					"label_text_outline_color": [
@@ -47,7 +47,7 @@
 					"res_max": "@z15",
 					"res_min": "@z19",
 					"label_field": "name",
-					"data_filter": "[way_area] >= 80000 and [way_area] < 150000",
+					"filter": "[way_area] >= 80000 and [way_area] < 150000",
 					"label_text_font": "@text-area",
 					"label_text_size": 10,
 					"label_text_outline_color": [
@@ -61,7 +61,7 @@
 					"res_max": "@z16",
 					"res_min": "@z19",
 					"label_field": "name",
-					"data_filter": "[way_area] >= 20000 and [way_area] < 80000",
+					"filter": "[way_area] >= 20000 and [way_area] < 80000",
 					"label_text_font": "@text-area",
 					"label_text_size": 10,
 					"label_text_outline_color": [
@@ -75,7 +75,7 @@
 					"res_max": "@z17",
 					"res_min": "@z19",
 					"label_field": "name",
-					"data_filter": "[way_area] < 20000",
+					"filter": "[way_area] < 20000",
 					"label_text_font": "@text-area",
 					"label_text_size": 10,
 					"label_text_outline_color": [

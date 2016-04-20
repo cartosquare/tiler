@@ -10,61 +10,61 @@
 				{
 					"res_max": "@z16",
 					"res_min": "@z16",
-					"data_filter": "[int_tc_type] =  'service'",
+					"filter": "[int_tc_type] =  'service'",
 					"marker_image": "turning_circle-uncl-fill.12.png"
 				},
 				{
 					"res_max": "@z17",
 					"res_min": "@z19",
-					"data_filter": "[int_tc_type] =  'service'",
+					"filter": "[int_tc_type] =  'service'",
 					"marker_image": "turning_circle-uncl-fill.14.png"
 				},
 				{
 					"res_max": "@z15",
 					"res_min": "@z15",
-					"data_filter": "[int_tc_type] =  'living_street'",
+					"filter": "[int_tc_type] =  'living_street'",
 					"marker_image": "turning_circle-livs-fill.12.png"
 				},
 				{
 					"res_max": "@z16",
 					"res_min": "@z16",
-					"data_filter": "[int_tc_type] =  'living_street'",
+					"filter": "[int_tc_type] =  'living_street'",
 					"marker_image": "turning_circle-livs-fill.16.png"
 				},
 				{
 					"res_max": "@z17",
 					"res_min": "@z19",
-					"data_filter": "[int_tc_type] =  'living_street'",
+					"filter": "[int_tc_type] =  'living_street'",
 					"marker_image": "turning_circle-livs-fill.22.png"
 				},
 				{
 					"res_max": "@z15",
 					"res_min": "@z15",
-					"data_filter": "[int_tc_type] =  'residential' or [int_tc_type] =  'unclassified'",
+					"filter": "[int_tc_type] =  'residential' or [int_tc_type] =  'unclassified'",
 					"marker_image": "turning_circle-uncl-casing.14.png"
 				},
 				{
 					"res_max": "@z16",
 					"res_min": "@z16",
-					"data_filter": "[int_tc_type] =  'residential' or [int_tc_type] =  'unclassified'",
+					"filter": "[int_tc_type] =  'residential' or [int_tc_type] =  'unclassified'",
 					"marker_image": "turning_circle-uncl-fill.16.png"
 				},
 				{
 					"res_max": "@z17",
 					"res_min": "@z19",
-					"data_filter": "[int_tc_type] =  'residential' or [int_tc_type] =  'unclassified'",
+					"filter": "[int_tc_type] =  'residential' or [int_tc_type] =  'unclassified'",
 					"marker_image": "turning_circle-uncl-fill.22.png"
 				},
 				{
 					"res_max": "@z15",
 					"res_min": "@z16",
-					"data_filter": "[int_tc_type] =  'tertiary'",
+					"filter": "[int_tc_type] =  'tertiary'",
 					"marker_image": "turning_circle-tert-fill.16.png"
 				},
 				{
 					"res_max": "@z17",
 					"res_min": "@z19",
-					"data_filter": "[int_tc_type] =  'tertiary'",
+					"filter": "[int_tc_type] =  'tertiary'",
 					"marker_image": "turning_circle-tert-fill.22.png"
 				}
 			]

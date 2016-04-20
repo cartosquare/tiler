@@ -10,13 +10,13 @@
 				{
 					"res_max": "@z12",
 					"res_min": "@z19",
-					"data_filter": "[aerialway] = 'cable_car' or [aerialway] = 'gondola' or [aerialway] = 'goods'",
+					"filter": "[aerialway] = 'cable_car' or [aerialway] = 'gondola' or [aerialway] = 'goods'",
 					"line_image": "@cable_car"
 				},
 				{
 					"res_max": "@z12",
 					"res_min": "@z19",
-					"data_filter": "[aerialway] = 'chair_lift' or [aerialway] = 'drag_lift' or [aerialway] = 't-bar' or [aerialway] = 'j-bar' or [aerialway]  ='platter' or [aerialway] = 'rope_tow'",
+					"filter": "[aerialway] = 'chair_lift' or [aerialway] = 'drag_lift' or [aerialway] = 't-bar' or [aerialway] = 'j-bar' or [aerialway]  ='platter' or [aerialway] = 'rope_tow'",
 					"line_image": "@chair_lift"
 				}
 			]

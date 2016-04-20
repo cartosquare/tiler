@@ -10,7 +10,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[tracktype] = 'grade1'",
+					"filter": "[tracktype] = 'grade1'",
 					"line_color": [
 						155,
 						155,
@@ -25,7 +25,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[tracktype] = 'grade1'",
+					"filter": "[tracktype] = 'grade1'",
 					"line_color": [
 						255,
 						255,
@@ -36,7 +36,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[tracktype] = 'grade1'",
+					"filter": "[tracktype] = 'grade1'",
 					"line_color": "@track",
 					"line_width": 2,
 					"line_opacity": 0.5
@@ -44,7 +44,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[tracktype] = 'grade2'",
+					"filter": "[tracktype] = 'grade2'",
 					"line_color": [
 						155,
 						155,
@@ -59,7 +59,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[tracktype] = 'grade2'",
+					"filter": "[tracktype] = 'grade2'",
 					"line_color": [
 						255,
 						255,
@@ -70,7 +70,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[tracktype] = 'grade2'",
+					"filter": "[tracktype] = 'grade2'",
 					"line_color": "@track",
 					"line_width": 1.5,
 					"line_opacity": 0.5,
@@ -82,7 +82,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[tracktype] = 'grade3'",
+					"filter": "[tracktype] = 'grade3'",
 					"line_color": [
 						155,
 						155,
@@ -97,7 +97,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[tracktype] = 'grade3'",
+					"filter": "[tracktype] = 'grade3'",
 					"line_color": [
 						255,
 						255,
@@ -108,7 +108,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[tracktype] = 'grade3'",
+					"filter": "[tracktype] = 'grade3'",
 					"line_color": "@track",
 					"line_width": 2,
 					"line_opacity": 0.5
@@ -116,7 +116,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[tracktype] = 'grade4'",
+					"filter": "[tracktype] = 'grade4'",
 					"line_color": [
 						155,
 						155,
@@ -131,7 +131,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[tracktype] = 'grade4'",
+					"filter": "[tracktype] = 'grade4'",
 					"line_color": [
 						255,
 						255,
@@ -142,7 +142,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[tracktype] = 'grade4'",
+					"filter": "[tracktype] = 'grade4'",
 					"line_color": "@track",
 					"line_width": 2,
 					"line_opacity": 0.5,
@@ -156,7 +156,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[tracktype] = 'grade5'",
+					"filter": "[tracktype] = 'grade5'",
 					"line_color": [
 						155,
 						155,
@@ -171,7 +171,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[tracktype] = 'grade5'",
+					"filter": "[tracktype] = 'grade5'",
 					"line_color": [
 						255,
 						255,
@@ -182,7 +182,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[tracktype] = 'grade5'",
+					"filter": "[tracktype] = 'grade5'",
 					"line_color": "@track",
 					"line_width": 2,
 					"line_opacity": 0.5,
@@ -194,7 +194,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "tracktype is null or (tracktype != 'grade1' and tracktype != 'grade2' and tracktype != 'grade3' and tracktype != 'grade4' and tracktype != 'grade5')",
+					"filter": "tracktype is null or (tracktype != 'grade1' and tracktype != 'grade2' and tracktype != 'grade3' and tracktype != 'grade4' and tracktype != 'grade5')",
 					"line_color": [
 						155,
 						155,
@@ -209,7 +209,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "not [tracktype] = 'grade1' and not [tracktype] = 'grade2' and not [tracktype] = 'grade3' and not [tracktype] = 'grade4' and not [tracktype] = 'grade5')",
+					"filter": "not [tracktype] = 'grade1' and not [tracktype] = 'grade2' and not [tracktype] = 'grade3' and not [tracktype] = 'grade4' and not [tracktype] = 'grade5')",
 					"line_color": [
 						255,
 						255,
@@ -220,7 +220,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "not [tracktype] = 'grade1' and not [tracktype] = 'grade2' and not [tracktype] = 'grade3' and not [tracktype] = 'grade4' and not [tracktype] = 'grade5')",
+					"filter": "not [tracktype] = 'grade1' and not [tracktype] = 'grade2' and not [tracktype] = 'grade3' and not [tracktype] = 'grade4' and not [tracktype] = 'grade5')",
 					"line_color": "@track",
 					"line_width": 2,
 					"line_opacity": 1.5,

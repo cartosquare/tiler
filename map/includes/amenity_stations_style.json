@@ -3,49 +3,49 @@
 		{
 			"res_max": "@z18",
 			"res_min": "@z19",
-			"data_filter": "[railway] = 'subway_entrance'",
+			"filter": "[railway] = 'subway_entrance'",
 			"marker_image": "@amenity-stations-subway_entrance"
 		},
 		{
 			"res_max": "@z12",
 			"res_min": "@z12",
-			"data_filter": "[railway] = 'station' and [disused] = 'yes'",
+			"filter": "[railway] = 'station' and [disused] = 'yes'",
 			"marker_image": "@amenity-stations-disused_station-lowz"
 		},
 		{
 			"res_max": "@z13",
 			"res_min": "@z19",
-			"data_filter": "[railway] = 'station' and [disused] = 'yes'",
+			"filter": "[railway] = 'station' and [disused] = 'yes'",
 			"marker_image": "@amenity-stations-disused_station-highz"
 		},
 		{
 			"res_max": "@z13",
 			"res_min": "@z14",
-			"data_filter": "[railway] = 'station' and not [disused] = 'yes'",
+			"filter": "[railway] = 'station' and not [disused] = 'yes'",
 			"marker_image": "@amenity-station-lowz"
 		},
 		{
 			"res_max": "@z15",
 			"res_min": "@z19",
-			"data_filter": "[railway] = 'station' and not [disused] = 'yes'",
+			"filter": "[railway] = 'station' and not [disused] = 'yes'",
 			"marker_image": "@amenity-station-highz"
 		},
 		{
 			"res_max": "@z13",
 			"res_min": "@z14",
-			"data_filter": "[railway] = 'halt' or [railway] = 'tram_stop' or [aerialway] = 'station'",
+			"filter": "[railway] = 'halt' or [railway] = 'tram_stop' or [aerialway] = 'station'",
 			"marker_image": "@amenity-station-halt-lowz"
 		},
 		{
 			"res_max": "@z15",
 			"res_min": "@z19",
-			"data_filter": "[railway] = 'halt' or [railway] = 'tram_stop' or [aerialway] = 'station'",
+			"filter": "[railway] = 'halt' or [railway] = 'tram_stop' or [aerialway] = 'station'",
 			"marker_image": "@amenity-station-halt-highz"
 		},
 		{
 			"res_max": "@z14",
 			"res_min": "@z14",
-			"data_filter": "[railway] = 'halt' or [railway] = 'tram_stop' or [aerialway] = 'station'",
+			"filter": "[railway] = 'halt' or [railway] = 'tram_stop' or [aerialway] = 'station'",
 			"label_field": "name",
 			"label_text_font": "@amenity-station-halt-highz",
 			"label_text_size": 8,
@@ -61,7 +61,7 @@
 		{
 			"res_max": "@z15",
 			"res_min": "@z19",
-			"data_filter": "[railway] = 'halt' or [railway] = 'tram_stop' or [aerialway] = 'station'",
+			"filter": "[railway] = 'halt' or [railway] = 'tram_stop' or [aerialway] = 'station'",
 			"label_field": "name",
 			"label_text_font": "@amenity-station-halt-highz",
 			"label_text_size": 10,
@@ -77,7 +77,7 @@
 		{
 			"res_max": "@z14",
 			"res_min": "@z14",
-			"data_filter": "[railway] = 'station' and not [disused] = 'yes'",
+			"filter": "[railway] = 'station' and not [disused] = 'yes'",
 			"label_field": "name",
 			"label_text_font": "@amenity-station-highz",
 			"label_text_size": 9,
@@ -93,7 +93,7 @@
 		{
 			"res_max": "@z15",
 			"res_min": "@z19",
-			"data_filter": "[railway] = 'station' and not disused = 'yes'",
+			"filter": "[railway] = 'station' and not disused = 'yes'",
 			"label_field": "name",
 			"label_text_font": "@amenity-station-highz",
 			"label_text_size": 11,
@@ -109,7 +109,7 @@
 		{
 			"res_max": "@z15",
 			"res_min": "@z19",
-			"data_filter": "[railway] = 'station' and [disused] = 'yes'",
+			"filter": "[railway] = 'station' and [disused] = 'yes'",
 			"label_field": "name",
 			"label_text_font": "@amenity-stations-disused_station-highz",
 			"label_text_size": 9,

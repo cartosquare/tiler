@@ -10,14 +10,14 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z14",
-					"data_filter": "[waterway] = 'stream' or [waterway] = 'ditch' or [waterway] = 'drain'",
+					"filter": "[waterway] = 'stream' or [waterway] = 'ditch' or [waterway] = 'drain'",
 					"line_color": "@water-lines-casing",
 					"line_width": 1.5
 				},
 				{
 					"res_max": "@z15",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'stream'",
+					"filter": "[waterway] = 'stream'",
 					"line_color": "@water-lines-casing",
 					"line_width": 2.5
 				}
@@ -33,7 +33,7 @@
 				{
 					"res_max": "@z6",
 					"res_min": "@z7",
-					"data_filter": "[natural] = 'glacier'",
+					"filter": "[natural] = 'glacier'",
 					"fill_image": "@water-area_glacier-lowz",
 					"outline_color": "@water-area_glacier-lowz",
 					"outline_width": 1.5,
@@ -45,7 +45,7 @@
 				{
 					"res_max": "@z8",
 					"res_min": "@z19",
-					"data_filter": "[natural] = 'glacier'",
+					"filter": "[natural] = 'glacier'",
 					"fill_image": "@water-area_glacier-highz",
 					"outline_color": "@water-area_glacier-highz",
 					"outline_width": 1.5,
@@ -57,31 +57,31 @@
 				{
 					"res_max": "@z9",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'dock' or [waterway] = 'mill_pond' or [waterway] = 'canal'",
+					"filter": "[waterway] = 'dock' or [waterway] = 'mill_pond' or [waterway] = 'canal'",
 					"fill_color": "@water-area-docker_canal"
 				},
 				{
 					"res_max": "@z7",
 					"res_min": "@z19",
-					"data_filter": "[landuse] = 'basin'",
+					"filter": "[landuse] = 'basin'",
 					"fill_color": "@water-area-basin"
 				},
 				{
 					"res_max": "@z6",
 					"res_min": "@z19",
-					"data_filter": "[natural] = 'lake' or [natural] = 'water' or [landuse] = 'reservoir' or [waterway] = 'riverbank' or [landuse] = 'water' or [natural] = 'bay'",
+					"filter": "[natural] = 'lake' or [natural] = 'water' or [landuse] = 'reservoir' or [waterway] = 'riverbank' or [landuse] = 'water' or [natural] = 'bay'",
 					"fill_color": "@water-area-water"
 				},
 				{
 					"res_max": "@z13",
 					"res_min": "@z19",
-					"data_filter": "[natural] = 'mud'",
+					"filter": "[natural] = 'mud'",
 					"fill_image": "@water-area-mud"
 				},
 				{
 					"res_max": "@z10",
 					"res_min": "@z19",
-					"data_filter": "[natural] = 'land'",
+					"filter": "[natural] = 'land'",
 					"fill_color": "@water-area-land"
 				}
 			]
@@ -96,7 +96,7 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z19",
-					"data_filter": "[natural] = 'marsh' or [natural] = 'wetland'",
+					"filter": "[natural] = 'marsh' or [natural] = 'wetland'",
 					"fill_image": "@water-area-wetland"
 				}
 			]
@@ -111,7 +111,7 @@
 				{
 					"res_max": "@z10",
 					"res_min": "@z19",
-					"data_filter": "[way_area] >= 10000000",
+					"filter": "[way_area] >= 10000000",
 					"label_align": "center",
 					"label_field": "name",
 					"label_text_font": "@glaciers-text",
@@ -128,7 +128,7 @@
 				{
 					"res_max": "@z11",
 					"res_min": "@z19",
-					"data_filter": "[way_area] >= 5000000 and [way_area] < 10000000",
+					"filter": "[way_area] >= 5000000 and [way_area] < 10000000",
 					"label_align": "center",
 					"label_field": "name",
 					"label_text_font": "@glaciers-text",
@@ -145,7 +145,7 @@
 				{
 					"res_max": "@z11",
 					"res_min": "@z19",
-					"data_filter": "[way_area] < 5000000",
+					"filter": "[way_area] < 5000000",
 					"label_align": "center",
 					"label_field": "name",
 					"label_text_font": "@glaciers-text",
@@ -171,21 +171,21 @@
 				{
 					"res_max": "@z8",
 					"res_min": "@z8",
-					"data_filter": "[waterway] = 'river'",
+					"filter": "[waterway] = 'river'",
 					"line_color": "@water-line",
 					"line_width": 0.7
 				},
 				{
 					"res_max": "@z9",
 					"res_min": "@z9",
-					"data_filter": "[waterway] = 'river'",
+					"filter": "[waterway] = 'river'",
 					"line_color": "@water-line",
 					"line_width": 1.2
 				},
 				{
 					"res_max": "@z10",
 					"res_min": "@z11",
-					"data_filter": "[waterway] = 'river'",
+					"filter": "[waterway] = 'river'",
 					"line_color": "@water-line",
 					"line_width": 1.6
 				}
@@ -201,7 +201,7 @@
 				{
 					"res_max": "@z15",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'weir'",
+					"filter": "[waterway] = 'weir'",
 					"line_join": "round",
 					"line_cap": "round",
 					"line_color": "@water-weir",
@@ -210,7 +210,7 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z15",
-					"data_filter": "[waterway] = 'wadi'",
+					"filter": "[waterway] = 'wadi'",
 					"line_join": "round",
 					"line_cap": "round",
 					"line_color": "@water-line",
@@ -223,7 +223,7 @@
 				{
 					"res_max": "@z16",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'wadi'",
+					"filter": "[waterway] = 'wadi'",
 					"line_join": "round",
 					"line_cap": "round",
 					"line_color": "@water-line",
@@ -236,7 +236,7 @@
 				{
 					"res_max": "@z12",
 					"res_min": "@z12",
-					"data_filter": "[waterway] = 'river'",
+					"filter": "[waterway] = 'river'",
 					"line_join": "round",
 					"line_cap": "round",
 					"line_color": "@water-line",
@@ -245,7 +245,7 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z13",
-					"data_filter": "[waterway] = 'river'",
+					"filter": "[waterway] = 'river'",
 					"line_join": "round",
 					"line_cap": "round",
 					"line_color": "@water-line",
@@ -254,7 +254,7 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z13",
-					"data_filter": "[waterway] = 'river'",
+					"filter": "[waterway] = 'river'",
 					"label_field": "name",
 					"label_text_font": "@water-line",
 					"label_text_size": 9,
@@ -269,7 +269,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z14",
-					"data_filter": "[waterway] = 'river'",
+					"filter": "[waterway] = 'river'",
 					"line_join": "round",
 					"line_cap": "round",
 					"line_color": "@water-line",
@@ -278,7 +278,7 @@
 				{
 					"res_max": "@z15",
 					"res_min": "@z16",
-					"data_filter": "[waterway] = 'river'",
+					"filter": "[waterway] = 'river'",
 					"line_join": "round",
 					"line_cap": "round",
 					"line_color": "@water-line",
@@ -287,7 +287,7 @@
 				{
 					"res_max": "@z17",
 					"res_min": "@z17",
-					"data_filter": "[waterway] = 'river'",
+					"filter": "[waterway] = 'river'",
 					"line_join": "round",
 					"line_cap": "round",
 					"line_color": "@water-line",
@@ -296,7 +296,7 @@
 				{
 					"res_max": "@z18",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'river'",
+					"filter": "[waterway] = 'river'",
 					"line_join": "round",
 					"line_cap": "round",
 					"line_color": "@water-line",
@@ -305,7 +305,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'river'",
+					"filter": "[waterway] = 'river'",
 					"label_field": "name",
 					"label_text_font": "@water-line",
 					"label_text_size": 10,
@@ -320,7 +320,7 @@
 				{
 					"res_max": "@z12",
 					"res_min": "@z12",
-					"data_filter": "[waterway] = 'canal' and not [disused] = 'yes'",
+					"filter": "[waterway] = 'canal' and not [disused] = 'yes'",
 					"line_join": "round",
 					"line_cap": "round",
 					"line_color": "@water-line",
@@ -329,7 +329,7 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z13",
-					"data_filter": "[waterway] = 'canal' and not [disused] = 'yes'",
+					"filter": "[waterway] = 'canal' and not [disused] = 'yes'",
 					"line_join": "round",
 					"line_cap": "round",
 					"line_color": "@water-line",
@@ -338,7 +338,7 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z13",
-					"data_filter": "[waterway] = 'canal' and not [disused] = 'yes'",
+					"filter": "[waterway] = 'canal' and not [disused] = 'yes'",
 					"label_field": "name",
 					"label_text_font": "@water-line",
 					"label_text_size": 8,
@@ -353,7 +353,7 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z14",
-					"data_filter": "[waterway] = 'stream' or [waterway] = 'ditch' or [waterway] = 'drain'",
+					"filter": "[waterway] = 'stream' or [waterway] = 'ditch' or [waterway] = 'drain'",
 					"line_join": "round",
 					"line_cap": "round",
 					"line_color": "@water-line",
@@ -362,7 +362,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z14",
-					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'river' and [tunnel] = 'yes'",
 					"line_color": "@water-line",
 					"line_width": 6,
 					"line_dasharray": [
@@ -373,7 +373,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z14",
-					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'river' and [tunnel] = 'yes'",
 					"line_color": [
 						255,
 						255,
@@ -384,7 +384,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z14",
-					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'river' and [tunnel] = 'yes'",
 					"label_field": "name",
 					"label_text_font": "@water-line",
 					"label_text_size": 10,
@@ -400,7 +400,7 @@
 				{
 					"res_max": "@z15",
 					"res_min": "@z16",
-					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'river' and [tunnel] = 'yes'",
 					"line_color": "@water-line",
 					"line_width": 7,
 					"line_dasharray": [
@@ -411,7 +411,7 @@
 				{
 					"res_max": "@z15",
 					"res_min": "@z16",
-					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'river' and [tunnel] = 'yes'",
 					"line_color": [
 						255,
 						255,
@@ -422,7 +422,7 @@
 				{
 					"res_max": "@z15",
 					"res_min": "@z16",
-					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'river' and [tunnel] = 'yes'",
 					"label_field": "name",
 					"label_text_font": "@water-line",
 					"label_text_size": 10,
@@ -437,7 +437,7 @@
 				{
 					"res_max": "@z17",
 					"res_min": "@z17",
-					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'river' and [tunnel] = 'yes'",
 					"line_color": "@water-line",
 					"line_width": 11,
 					"line_dasharray": [
@@ -448,7 +448,7 @@
 				{
 					"res_max": "@z17",
 					"res_min": "@z17",
-					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'river' and [tunnel] = 'yes'",
 					"line_color": [
 						255,
 						255,
@@ -459,7 +459,7 @@
 				{
 					"res_max": "@z17",
 					"res_min": "@z17",
-					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'river' and [tunnel] = 'yes'",
 					"label_field": "name",
 					"label_text_font": "@water-line",
 					"label_text_size": 10,
@@ -474,7 +474,7 @@
 				{
 					"res_max": "@z18",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'river' and [tunnel] = 'yes'",
 					"line_color": "@water-line",
 					"line_width": 13,
 					"line_dasharray": [
@@ -485,7 +485,7 @@
 				{
 					"res_max": "@z18",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'river' and [tunnel] = 'yes'",
 					"line_color": [
 						255,
 						255,
@@ -496,7 +496,7 @@
 				{
 					"res_max": "@z18",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'river' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'river' and [tunnel] = 'yes'",
 					"label_field": "name",
 					"label_text_font": "@water-line",
 					"label_text_size": 10,
@@ -511,7 +511,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z16",
-					"data_filter": "[waterway] = 'canal' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'canal' and [tunnel] = 'yes'",
 					"line_color": "@water-line",
 					"line_width": 7,
 					"line_dasharray": [
@@ -522,7 +522,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z16",
-					"data_filter": "[waterway] = 'canal' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'canal' and [tunnel] = 'yes'",
 					"line_color": [
 						255,
 						255,
@@ -533,7 +533,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z16",
-					"data_filter": "[waterway] = 'canal' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'canal' and [tunnel] = 'yes'",
 					"label_field": "name",
 					"label_text_font": "@water-line",
 					"label_text_size": 9,
@@ -548,7 +548,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z16",
-					"data_filter": "[waterway] = 'canal' and not [tunnel] = 'yes' and not [disused] = 'yes'",
+					"filter": "[waterway] = 'canal' and not [tunnel] = 'yes' and not [disused] = 'yes'",
 					"line_join": "round",
 					"line_color": "@water-line",
 					"line_width": 7
@@ -556,7 +556,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z16",
-					"data_filter": "[waterway] = 'canal' and not [tunnel] = 'yes' and not [disused] = 'yes'",
+					"filter": "[waterway] = 'canal' and not [tunnel] = 'yes' and not [disused] = 'yes'",
 					"label_field": "name",
 					"label_text_font": "@water-line",
 					"label_text_size": 9,
@@ -571,7 +571,7 @@
 				{
 					"res_max": "@z17",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'canal' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'canal' and [tunnel] = 'yes'",
 					"line_color": "@water-line",
 					"line_width": 11,
 					"line_dasharray": [
@@ -582,7 +582,7 @@
 				{
 					"res_max": "@z17",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'canal' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'canal' and [tunnel] = 'yes'",
 					"line_color": [
 						255,
 						255,
@@ -593,7 +593,7 @@
 				{
 					"res_max": "@z17",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'canal' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'canal' and [tunnel] = 'yes'",
 					"label_field": "name",
 					"label_text_font": "@water-line",
 					"label_text_size": 9,
@@ -608,7 +608,7 @@
 				{
 					"res_max": "@z17",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'canal' and not [tunnel] = 'yes' and not [disused] = 'yes'",
+					"filter": "[waterway] = 'canal' and not [tunnel] = 'yes' and not [disused] = 'yes'",
 					"line_cap": "round",
 					"line_color": "@water-line",
 					"line_width": 7
@@ -616,7 +616,7 @@
 				{
 					"res_max": "@z17",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'canal' and not [tunnel] = 'yes' and not [disused] = 'yes'",
+					"filter": "[waterway] = 'canal' and not [tunnel] = 'yes' and not [disused] = 'yes'",
 					"label_field": "name",
 					"label_text_font": "@water-line",
 					"label_text_size": 9,
@@ -631,7 +631,7 @@
 				{
 					"res_max": "@z12",
 					"res_min": "@z12",
-					"data_filter": "[waterway] = 'derelict_canal' or ([waterway] = 'canal' and [disused] = 'yes')",
+					"filter": "[waterway] = 'derelict_canal' or ([waterway] = 'canal' and [disused] = 'yes')",
 					"line_join": "round",
 					"line_cap": "round",
 					"line_color": "@water-line",
@@ -645,7 +645,7 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z13",
-					"data_filter": "[waterway] = 'derelict_canal' or ([waterway] = 'canal' and [disused] = 'yes')",
+					"filter": "[waterway] = 'derelict_canal' or ([waterway] = 'canal' and [disused] = 'yes')",
 					"line_join": "round",
 					"line_cap": "round",
 					"line_color": "@water-line",
@@ -659,7 +659,7 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z13",
-					"data_filter": "[waterway] = 'derelict_canal' or ([waterway] = 'canal' and [disused] = 'yes')",
+					"filter": "[waterway] = 'derelict_canal' or ([waterway] = 'canal' and [disused] = 'yes')",
 					"label_field": "name",
 					"label_text_font": "@water-line",
 					"label_text_size": 9,
@@ -674,7 +674,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'derelict_canal' or ([waterway] = 'canal' and [disused] = 'yes')",
+					"filter": "[waterway] = 'derelict_canal' or ([waterway] = 'canal' and [disused] = 'yes')",
 					"line_join": "round",
 					"line_cap": "round",
 					"line_color": "@water-line",
@@ -688,7 +688,7 @@
 				{
 					"res_max": "@z14",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'derelict_canal' or ([waterway] = 'canal' and [disused] = 'yes')",
+					"filter": "[waterway] = 'derelict_canal' or ([waterway] = 'canal' and [disused] = 'yes')",
 					"label_field": "name",
 					"label_text_font": "@water-line",
 					"label_text_size": 10,
@@ -703,7 +703,7 @@
 				{
 					"res_max": "@z15",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'stream' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'stream' and [tunnel] = 'yes'",
 					"line_color": "@water-line",
 					"line_width": 2.4,
 					"line_dasharray": [
@@ -714,7 +714,7 @@
 				{
 					"res_max": "@z15",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'stream' and [tunnel] = 'yes'",
+					"filter": "[waterway] = 'stream' and [tunnel] = 'yes'",
 					"line_color": [
 						243,
 						247,
@@ -725,14 +725,14 @@
 				{
 					"res_max": "@z15",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'stream' and not [tunnel] = 'yes'",
+					"filter": "[waterway] = 'stream' and not [tunnel] = 'yes'",
 					"line_color": "@water-line",
 					"line_width": 2
 				},
 				{
 					"res_max": "@z15",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'stream' and not [tunnel] = 'yes'",
+					"filter": "[waterway] = 'stream' and not [tunnel] = 'yes'",
 					"label_field": "name",
 					"label_text_font": "@water-line",
 					"label_text_size": 8,
@@ -747,7 +747,7 @@
 				{
 					"res_max": "@z15",
 					"res_min": "@z19",
-					"data_filter": "([waterway] = 'drain' or [waterway] = 'ditch') and [tunnel] = 'yes'",
+					"filter": "([waterway] = 'drain' or [waterway] = 'ditch') and [tunnel] = 'yes'",
 					"line_color": "@water-line",
 					"line_width": 2,
 					"line_dasharray": [
@@ -758,7 +758,7 @@
 				{
 					"res_max": "@z15",
 					"res_min": "@z19",
-					"data_filter": "([waterway] = 'drain' or [waterway] = 'ditch') and [tunnel] = 'yes'",
+					"filter": "([waterway] = 'drain' or [waterway] = 'ditch') and [tunnel] = 'yes'",
 					"line_color": [
 						243,
 						247,
@@ -769,14 +769,14 @@
 				{
 					"res_max": "@z15",
 					"res_min": "@z19",
-					"data_filter": "([waterway] = 'drain' or [waterway] = 'ditch') and not [tunnel] = 'yes'",
+					"filter": "([waterway] = 'drain' or [waterway] = 'ditch') and not [tunnel] = 'yes'",
 					"line_color": "@water-line",
 					"line_width": 1
 				},
 				{
 					"res_max": "@z15",
 					"res_min": "@z19",
-					"data_filter": "([waterway] = 'drain' or [waterway] = 'ditch') and not [tunnel] = 'yes'",
+					"filter": "([waterway] = 'drain' or [waterway] = 'ditch') and not [tunnel] = 'yes'",
 					"label_field": "name",
 					"label_text_font": "@water-line",
 					"label_text_size": 8,
@@ -876,42 +876,42 @@
 				{
 					"res_max": "@z11",
 					"res_min": "@z12",
-					"data_filter": "[man_made] = 'breakwater' or [man_made] = 'groyne'",
+					"filter": "[man_made] = 'breakwater' or [man_made] = 'groyne'",
 					"line_color": "@piers-breakwater_groyne",
 					"line_width": 1
 				},
 				{
 					"res_max": "@z11",
 					"res_min": "@z12",
-					"data_filter": "[man_made] = 'pier'",
+					"filter": "[man_made] = 'pier'",
 					"line_color": "@piers-area",
 					"line_width": 1.5
 				},
 				{
 					"res_max": "@z13",
 					"res_min": "@z15",
-					"data_filter": "[man_made] = 'breakwater' or [man_made] = 'groyne'",
+					"filter": "[man_made] = 'breakwater' or [man_made] = 'groyne'",
 					"line_color": "@piers-breakwater_groyne",
 					"line_width": 2
 				},
 				{
 					"res_max": "@z13",
 					"res_min": "@z15",
-					"data_filter": "[man_made] = 'pier'",
+					"filter": "[man_made] = 'pier'",
 					"line_color": "@piers-area",
 					"line_width": 3
 				},
 				{
 					"res_max": "@z16",
 					"res_min": "@z19",
-					"data_filter": "[man_made] = 'breakwater' or [man_made] = 'groyne'",
+					"filter": "[man_made] = 'breakwater' or [man_made] = 'groyne'",
 					"line_color": "@piers-breakwater_groyne",
 					"line_width": 4
 				},
 				{
 					"res_max": "@z16",
 					"res_min": "@z19",
-					"data_filter": "[man_made] = 'pier'",
+					"filter": "[man_made] = 'pier'",
 					"line_color": "@piers-area",
 					"line_width": 7
 				}
@@ -927,7 +927,7 @@
 				{
 					"res_max": "@z17",
 					"res_min": "@z19",
-					"data_filter": "[waterway] = 'lock_gate'",
+					"filter": "[waterway] = 'lock_gate'",
 					"marker_image": "@waterway-lock_gate"
 				}
 			]

@@ -10,21 +10,21 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z14",
-					"data_filter": "[railway] = 'tram'",
+					"filter": "[railway] = 'tram'",
 					"line_color": "@tram",
 					"line_width": 1
 				},
 				{
 					"res_max": "@z15",
 					"res_min": "@z19",
-					"data_filter": "[railway] = 'tram' and not [bridge] = 'yes'",
+					"filter": "[railway] = 'tram' and not [bridge] = 'yes'",
 					"line_color": "@tram",
 					"line_width": 2
 				},
 				{
 					"res_max": "@z15",
 					"res_min": "@z19",
-					"data_filter": "[railway] = 'tram' and [bridge] = 'yes'",
+					"filter": "[railway] = 'tram' and [bridge] = 'yes'",
 					"line_color": [
 						0,
 						0,
@@ -35,7 +35,7 @@
 				{
 					"res_max": "@z15",
 					"res_min": "@z19",
-					"data_filter": "[railway] = 'tram' and [bridge] = 'yes'",
+					"filter": "[railway] = 'tram' and [bridge] = 'yes'",
 					"line_color": [
 						255,
 						255,
@@ -46,7 +46,7 @@
 				{
 					"res_max": "@z15",
 					"res_min": "@z19",
-					"data_filter": "[railway] = 'tram' and [bridge] = 'yes'",
+					"filter": "[railway] = 'tram' and [bridge] = 'yes'",
 					"line_color": "@tram",
 					"line_width": 2
 				}

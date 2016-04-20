@@ -10,7 +10,7 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z19",
-					"data_filter": "[highway] = 'bridleway' or ([highway] = 'path' and [horse] = 'designated')",
+					"filter": "[highway] = 'bridleway' or ([highway] = 'path' and [horse] = 'designated')",
 					"line_color": [
 						155,
 						155,
@@ -25,7 +25,7 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z19",
-					"data_filter": "[highway] = 'bridleway' or ([highway] = 'path' and [horse] = 'designated')",
+					"filter": "[highway] = 'bridleway' or ([highway] = 'path' and [horse] = 'designated')",
 					"line_color": [
 						255,
 						255,
@@ -36,7 +36,7 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z19",
-					"data_filter": "[highway] = 'bridleway' or ([highway] = 'path' and [horse] = 'designated')",
+					"filter": "[highway] = 'bridleway' or ([highway] = 'path' and [horse] = 'designated')",
 					"line_color": "@bridleway",
 					"line_opacity": 0.5,
 					"line_width": 2,
@@ -48,7 +48,7 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z19",
-					"data_filter": "[highway] = 'path' and not ([bicycle] = 'designated' or [foot] = 'designated' or [horse] = 'designated')",
+					"filter": "[highway] = 'path' and not ([bicycle] = 'designated' or [foot] = 'designated' or [horse] = 'designated')",
 					"line_color": [
 						155,
 						155,
@@ -63,7 +63,7 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z19",
-					"data_filter": "[highway] = 'path' and not ([bicycle] = 'designated' or [foot] = 'designated' or [horse] = 'designated')",
+					"filter": "[highway] = 'path' and not ([bicycle] = 'designated' or [foot] = 'designated' or [horse] = 'designated')",
 					"line_color": [
 						255,
 						255,
@@ -75,7 +75,7 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z19",
-					"data_filter": "[highway] = 'path' and not (bicycle = 'designated' or [foot] = 'designated' or [horse] = 'designated')",
+					"filter": "[highway] = 'path' and not (bicycle = 'designated' or [foot] = 'designated' or [horse] = 'designated')",
 					"line_color": "@path",
 					"line_width": 0.5,
 					"line_dasharray": [
@@ -86,7 +86,7 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z19",
-					"data_filter": "[highway] = 'cycleway' or ([highway] = 'path' and [bicycle] = 'designated')",
+					"filter": "[highway] = 'cycleway' or ([highway] = 'path' and [bicycle] = 'designated')",
 					"line_color": [
 						155,
 						155,
@@ -101,7 +101,7 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z19",
-					"data_filter": "[highway] = 'cycleway' or ([highway] = 'path' and [bicycle] = 'designated')",
+					"filter": "[highway] = 'cycleway' or ([highway] = 'path' and [bicycle] = 'designated')",
 					"line_color": [
 						255,
 						255,
@@ -112,7 +112,7 @@
 				{
 					"res_max": "@z13",
 					"res_min": "@z19",
-					"data_filter": "[highway] = 'cycleway' or ([highway] = 'path' and [bicycle] = 'designated')",
+					"filter": "[highway] = 'cycleway' or ([highway] = 'path' and [bicycle] = 'designated')",
 					"line_color": "@cycleway",
 					"line_opacity": 0.5,
 					"line_width": 2,

@@ -49,7 +49,7 @@
 				{
 					"res_max": "@z8",
 					"res_min": "@z9",
-					"data_filter": "[way_area] >= 200000000",
+					"filter": "[way_area] >= 200000000",
 					"label_field": "name",
 					"label_text_font": "@national_park",
 					"label_text_size": 8,
