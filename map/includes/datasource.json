@@ -1,9 +1,5 @@
 {
 	"data_sources": {
-		"osm2": {
-			"source": "osm",
-			"type": "cloud_vector_tile"
-		},
 		"osm": {
 			"source": "vt_source",
 			"type": "vector_tile"

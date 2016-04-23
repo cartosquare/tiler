@@ -36,13 +36,11 @@ def.icon = def_schema.icon;
 def.data_sources = {};
 var has_cloud_source = false;
 for (var ds of def_schema.data_sources_files) {
-    console.log('load datasource schema: ' + ds);
-
     var datasource = JSON.parse(fs.readFileSync(__dirname + '/map/includes/' + ds, 'utf-8'));
 
     for (var dds in datasource.data_sources) {
         def.data_sources[dds] = datasource.data_sources[dds];
-        if (datasource.data_sources[dds].type = 'cloud_vector_tile') {
+        if (datasource.data_sources[dds].type == 'cloud_vector_tile') {
             has_cloud_source = true;
         }
     }
@@ -171,7 +169,6 @@ function getTile(req, res, next) {
             
             var key = "layers-" + layers + ".json";
             loadLayers(userDef, layersMap[key].layers);
-            console.log('load layer: ' + key);
         }
     } else {
         userDef = def;
