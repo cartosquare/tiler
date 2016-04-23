@@ -6,7 +6,8 @@ exports.options = {
         name: 'osm',
         url: 'PG:dbname=osm host=localhost port=5432 user=gis',
         initialConnSize: 5,
-        maxConnSize: 15
+        maxConnSize: 15,
+        open: false
     },
     
     weed: {

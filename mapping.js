@@ -12,8 +12,10 @@ gmap.initLog(options.logLevel || 6);//, __dirname + '/log');
 gmap.registerFonts(options.mapDir + "/fonts");
 
 // data source pool
-console.log("Connect SQL datasource " + options.osmConn.url + " ...");
-gmap.registerPool(options.osmConn.name, options.osmConn.url, options.osmConn.initialConnSize, options.osmConn.maxConnSize, "PG");
+if (options.osmConn.open) {
+    console.log("Connect SQL datasource " + options.osmConn.url + " ...");
+    gmap.registerPool(options.osmConn.name, options.osmConn.url, options.osmConn.initialConnSize, options.osmConn.maxConnSize, "PG");
+}
 
 // seaweed storage
 console.log("Resgist weed storage " + options.weed.host + ":" + options.weed.port + " ...")
