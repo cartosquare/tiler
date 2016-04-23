@@ -34,6 +34,7 @@ def.background_color = def_schema.background_color;
 def.icon = def_schema.icon;
 
 def.data_sources = {};
+var has_cloud_source = false;
 for (var ds of def_schema.data_sources_files) {
     console.log('load datasource schema: ' + ds);
 
@@ -41,6 +42,9 @@ for (var ds of def_schema.data_sources_files) {
 
     for (var dds in datasource.data_sources) {
         def.data_sources[dds] = datasource.data_sources[dds];
+        if (datasource.data_sources[dds].type = 'cloud_vector_tile') {
+            has_cloud_source = true;
+        }
     }
 }
 
@@ -172,42 +176,67 @@ function getTile(req, res, next) {
     } else {
         userDef = def;
     }
-    
+
     //fs.writeFileSync('test.json', JSON.stringify(userDef), 'utf-8');
-    
-    var opts = {
-        mapDir: options.mapDir,
-        lod: lod,
-        style: vtDef,
-        fromFile: false,
-        renderType: 2, // render vector tile
-        z: z,
-        x: x,
-        y: y,
-        bufferSize: 32,
-        renderLabel: true,
-        saveCloud: true,
-        tileURL: vtPath,
-        retinaFactor: retina
-    };
 
-    gmap.getFile(vtPath, function(err, data) {
-        err = err || !data || data.length == 0;
+    if (has_cloud_source) {
+        var opts = {
+            mapDir: options.mapDir,
+            lod: lod,
+            style: vtDef,
+            fromFile: false,
+            renderType: 2, // render vector tile
+            z: z,
+            x: x,
+            y: y,
+            bufferSize: 32,
+            renderLabel: true,
+            saveCloud: true,
+            tileURL: vtPath,
+            retinaFactor: retina
+        };
 
-        if (err) {
-            gmap.tile(opts, function(err, stream) {
-                if (err) {
-                    return next(new restify.InternalServerError('render vector tile fail!'));
-                } else {
-                    opts.style = JSON.stringify(userDef);
-                    genTile(opts, req, res, next);
-                }
-            });
-        } else {
-            opts.style = JSON.stringify(userDef);
-            genTile(opts, req, res, next);
-        }
-    });
+        gmap.getFile(vtPath, function (err, data) {
+            err = err || !data || data.length == 0;
+
+            if (err) {
+                gmap.tile(opts, function (err, stream) {
+                    if (err) {
+                        return next(new restify.InternalServerError('render vector tile fail!'));
+                    } else {
+                        opts.style = JSON.stringify(userDef);
+                        genTile(opts, req, res, next);
+                    }
+                });
+            } else {
+                opts.style = JSON.stringify(userDef);
+                genTile(opts, req, res, next);
+            }
+        });
+    } else {
+        var opts = {
+            mapDir: options.mapDir,
+            lod: lod,
+            style: JSON.stringify(userDef),
+            fromFile: false,
+            renderType: 0, // render png tile
+            z: z,
+            x: x,
+            y: y,
+            bufferSize: 32,
+            renderLabel: true,
+            saveCloud: false,
+            retinaFactor: retina
+        };
+
+        gmap.tile(opts, function (err, stream) {
+            if (err) {
+                return next(new restify.InternalServerError('render tile fail!'));
+            } else {
+                res.end(stream, 'binary');
+            }
+        });
+    }
 }
 
 exports.getTile = getTile;
