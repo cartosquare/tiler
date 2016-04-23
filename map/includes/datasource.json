@@ -1,8 +1,12 @@
 {
 	"data_sources": {
-		"osm": {
+		"osm2": {
 			"source": "osm",
 			"type": "cloud_vector_tile"
+		},
+		"osm": {
+			"source": "tiler/all",
+			"type": "vector_tile"
 		}
 	}
 }
