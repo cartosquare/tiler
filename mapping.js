@@ -54,7 +54,7 @@ for (var layers of def_schema.layers_files) {
     loadLayers(def, lys.layers);
 }
 
-fs.writeFileSync('def.json', JSON.stringify(def), 'utf-8');
+//fs.writeFileSync('def.json', JSON.stringify(def), 'utf-8');
 
 function loadLayers(obj, layers) {
     for (var llys in layers) {
@@ -120,8 +120,6 @@ function _getVtPath(name, z, x, y) {
 }
 
 function genTile(opts, req, res, next) {
-    console.log('generate tile ');
-    
     opts.saveCloud = false;
     opts.renderType = 0;
     gmap.tile(opts, function(err, stream) {
@@ -140,7 +138,8 @@ function getTile(req, res, next) {
     var z = parseInt(params.z) || 0;
     var x = parseInt(params.x) || 0;
     var y = parseInt(params.y) || 0;
-
+    var retina = parseInt(params.retina) || 1;
+    
     var vtPath = _getVtPath(name, z, x, y);
 
     var key = params.key;
@@ -187,26 +186,22 @@ function getTile(req, res, next) {
         renderLabel: true,
         saveCloud: true,
         tileURL: vtPath,
-        retinaFactor: 2.0
+        retinaFactor: retina
     };
 
     gmap.getFile(vtPath, function(err, data) {
-        console.log('gmap.getFile result: ' + err);
         err = err || !data || data.length == 0;
 
         if (err) {
-            console.log('regenerate vector tile...');
             gmap.tile(opts, function(err, stream) {
                 if (err) {
                     return next(new restify.InternalServerError('render vector tile fail!'));
                 } else {
-                    console.log('regenerate vector tile success.');
                     opts.style = JSON.stringify(userDef);
                     genTile(opts, req, res, next);
                 }
             });
         } else {
-            console.log('vector tile exists');
             opts.style = JSON.stringify(userDef);
             genTile(opts, req, res, next);
         }
