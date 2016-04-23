@@ -16,7 +16,6 @@
 			"encode": "utf-8",
 			"geometry_column": "way",
 			"fields": "*",
-			"clip": false,
 			"style_files": [
 				"text_style.json"
 			]
@@ -27,7 +26,6 @@
 			"encode": "utf-8",
 			"geometry_column": "way",
 			"fields": "*",
-			"clip": false,
 			"rules": [
 				{
 					"res_max": "@z14",
@@ -36,6 +34,7 @@
 					"filter": "[way_area] >= 150000",
 					"label_text_font": "@text-area",
 					"label_text_size": 10,
+					"label_align": "center",
 					"label_text_outline_color": [
 						255,
 						255,
@@ -50,6 +49,7 @@
 					"filter": "[way_area] >= 80000 and [way_area] < 150000",
 					"label_text_font": "@text-area",
 					"label_text_size": 10,
+					"label_align": "center",
 					"label_text_outline_color": [
 						255,
 						255,
@@ -64,6 +64,7 @@
 					"filter": "[way_area] >= 20000 and [way_area] < 80000",
 					"label_text_font": "@text-area",
 					"label_text_size": 10,
+					"label_align": "center",
 					"label_text_outline_color": [
 						255,
 						255,
@@ -78,6 +79,7 @@
 					"filter": "[way_area] < 20000",
 					"label_text_font": "@text-area",
 					"label_text_size": 10,
+					"label_align": "center",
 					"label_text_outline_color": [
 						255,
 						255,
