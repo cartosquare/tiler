@@ -1,7 +1,7 @@
 // 配置参数
 exports.options = {
     port: 3040,
-    mapDir:  '/var/geohey/mapping',
+    mapDir:  '/root/cartosquare-tiler/map',
     osmConn: {
         name: 'osm',
         url: 'PG:dbname=osm host=localhost port=5432 user=gis',

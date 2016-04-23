@@ -5,7 +5,7 @@
 			"type": "cloud_vector_tile"
 		},
 		"osm": {
-			"source": "tiler/all",
+			"source": "vt_source",
 			"type": "vector_tile"
 		}
 	}
