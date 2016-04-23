@@ -142,10 +142,8 @@ function getTile(req, res, next) {
     var y = parseInt(params.y) || 0;
 
     var vtPath = _getVtPath(name, z, x, y);
-    console.log('Get vector-tile at ' + vtPath);
 
     var key = params.key;
-    console.log('key: ' + key);
     var includeDir = __dirname + '/map/includes/';
     var userIncludeDir = __dirname + '/user-maps/' + key + '/';
     var userDef = {};
@@ -188,7 +186,8 @@ function getTile(req, res, next) {
         bufferSize: 32,
         renderLabel: true,
         saveCloud: true,
-        tileURL: vtPath
+        tileURL: vtPath,
+        retinaFactor: 2.0
     };
 
     gmap.getFile(vtPath, function(err, data) {
