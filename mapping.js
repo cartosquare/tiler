@@ -1,5 +1,7 @@
 // options
-var options = require('./config/settings.js').options;
+var ENV = process.argv[2] || 'production';
+var options = require('./config/env/' + ENV).options;
+
 var restify = require('restify');
 var fs = require('fs');
 var gmap = require('./lib/gmap.node');
